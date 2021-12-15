@@ -7,6 +7,10 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+
+require('dotenv').config();
+require('./config/database');
+
 var app = express();
 
 // view engine setup
@@ -39,3 +43,4 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
