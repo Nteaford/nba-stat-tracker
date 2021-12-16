@@ -2,11 +2,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const gameSchema = new Schema({
-  date: String,
+  date: Date,
   homeTeamScore: String,
   visitorTeamScore: String,
-  season: String,
-  postseason: String,
+  season: Number,
+  postseason: Boolean,
   homeTeam: {type: Schema.Types.ObjectId, ref: 'nbaTeam'},
   visitorTeam: {type: Schema.Types.ObjectId, ref: 'nbaTeam'},
 

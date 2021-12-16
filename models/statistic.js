@@ -24,7 +24,6 @@ const statSchema = new Schema({
   reb: Number,
   stl: Number,
   nbaTeam:{type: Schema.Types.ObjectId, ref: 'nbaTeam'},
-  
 });
 
 module.exports = mongoose.model('Stat', statSchema);

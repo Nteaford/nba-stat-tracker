@@ -5,9 +5,9 @@ const playerSchema = new Schema({
   firstName: String,
   lastName: String,
   position: String,
-  heightFeet: String,
-  heightInches: String,
-  weightPounds: String,
+  heightFeet: Number,
+  heightInches: Number,
+  weightPounds: Number,
   nbaTeam:{
     type: [{type: Schema.Types.ObjectId, ref: 'nbaTeam'}],
 },
