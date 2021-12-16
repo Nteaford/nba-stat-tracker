@@ -7,16 +7,9 @@ const gameSchema = new Schema({
   visitorTeamScore: String,
   season: String,
   postseason: String,
-  homeTeam: {
-      nbaTeam:{
-          type: [{type: Schema.Types.ObjectId, ref: 'nbaTeam'}],
-        },
-    },
-  visitorTeam: {
-      nbaTeam:{
-          type: [{type: Schema.Types.ObjectId, ref: 'nbaTeam'}],
-        },
-    },
+  homeTeam: {type: Schema.Types.ObjectId, ref: 'nbaTeam'},
+  visitorTeam: {type: Schema.Types.ObjectId, ref: 'nbaTeam'},
+
 });
 
 module.exports = mongoose.model('Game', gameSchema);
