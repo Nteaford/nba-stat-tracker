@@ -1,8 +1,221 @@
 <%- include('./partials/header') %>
 
 <body>
-  <h1>Home</h1>
-  <p>Welcome to <%= title %></p>
+  <h1>Welcome to <%= title %></h1>
+
+<h3>Recent Games</h3>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Date</th>
+      <th scope="col">Home Team</th>
+      <th scope="col">Score</th>
+      <th scope="col">Away Team</th>
+      <th scope="col">Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"> DATE TO BE INSERTED HERE</th>
+      <td>HOME TEAM TO BE INSERTED HERE</td>
+      <td>SCORE HERE</td>
+      <td>AWAY TEAM HERE</td>
+      <td>SCORE HERE</td>
+    </tr>
+    <tr>
+      <th scope="row"> DATE TO BE INSERTED HERE</th>
+      <td>HOME TEAM TO BE INSERTED HERE</td>
+      <td>SCORE HERE</td>
+      <td>AWAY TEAM HERE</td>
+      <td>SCORE HERE</td>
+    </tr>
+    <tr>
+      <th scope="row"> DATE TO BE INSERTED HERE</th>
+      <td>HOME TEAM TO BE INSERTED HERE</td>
+      <td>SCORE HERE</td>
+      <td>AWAY TEAM HERE</td>
+      <td>SCORE HERE</td>
+    </tr>
+    <tr>
+      <th scope="row"> DATE TO BE INSERTED HERE</th>
+      <td>HOME TEAM TO BE INSERTED HERE</td>
+      <td>SCORE HERE</td>
+      <td>AWAY TEAM HERE</td>
+      <td>SCORE HERE</td>
+    </tr>
+    <tr>
+      <th scope="row"> DATE TO BE INSERTED HERE</th>
+      <td>HOME TEAM TO BE INSERTED HERE</td>
+      <td>SCORE HERE</td>
+      <td>AWAY TEAM HERE</td>
+      <td>SCORE HERE</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+
+<% if (user) { %>
+<h3>My Players</h3>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Team</th>
+      <th scope="col">Position</th>
+      <th scope="col">Game Date</th>
+      <th scope="col">Opponent</th>
+      <th scope="col">Points</th>
+      <th scope="col">Assists</th>
+      <th scope="col">Minutes</th>
+      <th scope="col">Fouls</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"> NAME TO BE INSERTED HERE</th>
+      <td>TEAM</td>
+      <td>POSITION</td>
+      <td>DATE</td>
+      <td>OPPONENT</td>
+      <td>POINTS</td>
+      <td>ASSISTS</td>
+      <td>MINUTES</td>
+      <td>FOULS</td>
+    </tr>
+    <tr>
+      <th scope="row"> NAME TO BE INSERTED HERE</th>
+      <td>TEAM</td>
+      <td>POSITION</td>
+      <td>DATE</td>
+      <td>OPPONENT</td>
+      <td>POINTS</td>
+      <td>ASSISTS</td>
+      <td>MINUTES</td>
+      <td>FOULS</td>
+    </tr>
+    <tr>
+      <th scope="row"> NAME TO BE INSERTED HERE</th>
+      <td>TEAM</td>
+      <td>POSITION</td>
+      <td>DATE</td>
+      <td>OPPONENT</td>
+      <td>POINTS</td>
+      <td>ASSISTS</td>
+      <td>MINUTES</td>
+      <td>FOULS</td>
+    </tr>
+    <tr>
+      <th scope="row"> NAME TO BE INSERTED HERE</th>
+      <td>TEAM</td>
+      <td>POSITION</td>
+      <td>DATE</td>
+      <td>OPPONENT</td>
+      <td>POINTS</td>
+      <td>ASSISTS</td>
+      <td>MINUTES</td>
+      <td>FOULS</td>
+    </tr>
+    <tr>
+      <th scope="row"> NAME TO BE INSERTED HERE</th>
+      <td>TEAM</td>
+      <td>POSITION</td>
+      <td>DATE</td>
+      <td>OPPONENT</td>
+      <td>POINTS</td>
+      <td>ASSISTS</td>
+      <td>MINUTES</td>
+      <td>FOULS</td>
+    </tr>
+  </tbody>
+</table>
+
+<% } else{ %>
+<h3>Players</h3>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Team</th>
+      <th scope="col">Position</th>
+      <th scope="col">Game Date</th>
+      <th scope="col">Opponent</th>
+      <th scope="col">Points</th>
+      <th scope="col">Assists</th>
+      <th scope="col">Minutes</th>
+      <th scope="col">Fouls</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"> NAME TO BE INSERTED HERE</th>
+      <td>TEAM</td>
+      <td>POSITION</td>
+      <td>DATE</td>
+      <td>OPPONENT</td>
+      <td>POINTS</td>
+      <td>ASSISTS</td>
+      <td>MINUTES</td>
+      <td>FOULS</td>
+    </tr>
+    <tr>
+      <th scope="row"> NAME TO BE INSERTED HERE</th>
+      <td>TEAM</td>
+      <td>POSITION</td>
+      <td>DATE</td>
+      <td>OPPONENT</td>
+      <td>POINTS</td>
+      <td>ASSISTS</td>
+      <td>MINUTES</td>
+      <td>FOULS</td>
+    </tr>
+    <tr>
+      <th scope="row"> NAME TO BE INSERTED HERE</th>
+      <td>TEAM</td>
+      <td>POSITION</td>
+      <td>DATE</td>
+      <td>OPPONENT</td>
+      <td>POINTS</td>
+      <td>ASSISTS</td>
+      <td>MINUTES</td>
+      <td>FOULS</td>
+    </tr>
+    <tr>
+      <th scope="row"> NAME TO BE INSERTED HERE</th>
+      <td>TEAM</td>
+      <td>POSITION</td>
+      <td>DATE</td>
+      <td>OPPONENT</td>
+      <td>POINTS</td>
+      <td>ASSISTS</td>
+      <td>MINUTES</td>
+      <td>FOULS</td>
+    </tr>
+    <tr>
+      <th scope="row"> NAME TO BE INSERTED HERE</th>
+      <td>TEAM</td>
+      <td>POSITION</td>
+      <td>DATE</td>
+      <td>OPPONENT</td>
+      <td>POINTS</td>
+      <td>ASSISTS</td>
+      <td>MINUTES</td>
+      <td>FOULS</td>
+    </tr>
+  </tbody>
+</table>
+
+<% } %>
+
+
 </body>
 
 <%- include('./partials/footer') %>
