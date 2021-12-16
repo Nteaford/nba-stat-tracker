@@ -15,8 +15,14 @@
     <div class="container-fluid">
       <div class="d-flex">
         <a class="nav-link" href="/">Home</a>
-        <a class="nav-link" href="/flights"> My Teams </a>
-        <a class="nav-link" href="/flights/new"> Add Team </a>
+        <% if (user) { %>
+            <!-- <a class="nav-link" href="/myteams" <%- title === 'My Teams' ? 'class="active"' : '' %>> My Teams </a>
+            <a class="nav-link" href="/myteams/new" <%- title === 'Add Team ' ? 'class="active"' : '' %>> Add Team </a> -->
+            <a href="/logout">LOG OUT</a>
+        <% } else { %>
+            <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
+            <% } %>
+
       </div>
       <!-- <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
