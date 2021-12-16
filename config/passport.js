@@ -32,7 +32,14 @@ passport.serializeUser(function(user, cb) {
 });
 
 passport.deserializeUser(function(userId, cb) {
-  User.findById(userId).then(function(user) {
+  User.findById(userId).populate({
+    path:'teams', 
+    populate: {
+      path: 'players',
+      model: 'Player'
+    }
+  })
+  .exec(function(err, user) {
     cb(null, user);
   })
 });

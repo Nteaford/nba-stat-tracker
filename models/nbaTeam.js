@@ -10,4 +10,4 @@ const nbaTeamSchema = new Schema({
   name: String,
 });
 
-module.exports = mongoose.model('nbaTeam', nbaTeamSchema);
+module.exports = mongoose.model('NbaTeam', nbaTeamSchema);

@@ -1,0 +1,46 @@
+<%- include('./partials/header') %>
+
+<body>
+  <h1> <%= title %></h1>
+
+<h3>Recent Games</h3>
+
+<!-- <% teams.forEach(function(t) { %> -->
+    
+    <table class="table table-striped">
+        <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Team</th>
+              <th scope="col">Position</th>
+              <th scope="col">Game Date</th>
+              <th scope="col">Opponent</th>
+              <th scope="col">Points</th>
+              <th scope="col">Assists</th>
+              <th scope="col">Minutes</th>
+              <th scope="col">Fouls</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <% players.forEach(function(p) { %>  -->
+            <tr>
+              <th scope="row"> NAME TO BE INSERTED HERE</th>
+              <td> p.TEAM</td>
+              <td>POSITION</td>
+              <td>DATE</td>
+              <td>OPPONENT</td>
+              <td>POINTS</td>
+              <td>ASSISTS</td>
+              <td>MINUTES</td>
+              <td>FOULS</td>
+            </tr>
+            <!-- <% }; %> -->
+            
+          </tbody>
+    </table>
+    <br>
+    <% }); %>
+     
+</body>
+
+<%- include('./partials/footer') %>

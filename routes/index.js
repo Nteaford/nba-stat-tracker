@@ -1,11 +1,13 @@
 var express = require('express');
 const passport = require('passport');
-var router = express.Router();
+const router = express.Router();
+const indexesCtrl = require('../controllers/indexes');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'NBA Stat Tracker' });
-});
+router.get('/', indexesCtrl.onLoadNbaTeams);
+
+
+
 
 // Google OAuth login route
 router.get('/auth/google', passport.authenticate(
