@@ -18,11 +18,11 @@
   <tbody>
     <% games.forEach(function(g) { %>
     <tr>
-      <th scope="row"> DATE </th>
-      <td>HOME TEAM TO BE INSERTED HERE</td>
-      <td>SCORE HERE</td>
-      <td>AWAY TEAM HERE</td>
-      <td>SCORE HERE</td>
+      <th scope="row"> <%= new Date(g.date).toLocaleDateString() %> </th>
+      <td> <%= g.home_team && g.home_team.full_name %> </td>
+      <td> <%= g.home_team_score %> </td>
+      <td> <%= g.visitor_team && g.visitor_team.full_name %> </td>
+      <td> <%= g.visitor_team_score %> </td>
     </tr>
     <% })%>
     
