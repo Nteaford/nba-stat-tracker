@@ -4,9 +4,7 @@ const router = express.Router();
 const indexesCtrl = require('../controllers/indexes');
 
 /* GET home page. */
-router.get('/', indexesCtrl.onLoadNbaTeams);
-
-
+router.get('/', indexesCtrl.onLoad);
 
 
 // Google OAuth login route
