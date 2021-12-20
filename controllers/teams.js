@@ -1,8 +1,7 @@
-const Game = require('../models/game')
-const NbaTeam = require('../models/nbaTeam')
-const Player = require('../models/player')
-const Stat = require('../models/stat')
+const Team = require('../models/team')
 const User = require('../models/user')
+const fetch = require('node-fetch');
+const moment = require('moment');
 
 module.exports = {
 index,
@@ -23,7 +22,7 @@ async function newTeam(req, res) {
     const teams = req.user.teams;
 
     //  teams = await User.teams.find({});
-    res.render("teams/new", { title: "Add Teams"});
+    res.render("teams/new", { title: "Pick your Teams"});
 }
 
 

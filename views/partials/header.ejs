@@ -15,8 +15,8 @@
       <div class="d-flex">
         <a class="nav-link" href="/">Home</a>
         <% if (user) { %>
-            <!-- <a class="nav-link" href="/myteams" <%- title === 'My Teams' ? 'class="active"' : '' %>> My Teams </a>
-            <a class="nav-link" href="/myteams/new" <%- title === 'Add Team ' ? 'class="active"' : '' %>> Add Team </a> -->
+            <a class="nav-link" href="/teams" <%- title === 'My Teams' ? 'class="active"' : '' %>> My Teams </a>
+            <a class="nav-link" href="/teams/new" <%- title === 'Build a Team ' ? 'class="active"' : '' %>> Build a  Team </a>
             <a href="/logout">LOG OUT</a>
         <% } else { %>
             <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>

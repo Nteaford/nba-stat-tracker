@@ -1,7 +1,5 @@
-const Game = require('../models/game')
-const NbaTeam = require('../models/nbaTeam')
-const Player = require('../models/player')
-const Stat = require('../models/stat')
+const Team = require('../models/team')
+const User = require('../models/user')
 const fetch = require('node-fetch');
 const moment = require('moment');
 
@@ -25,9 +23,6 @@ async function onLoad(req, res) {
     const playerThree = await onLoadPlayer('James', 'Harden');
     const playerFour = await onLoadPlayer('Giannis', 'Antetokounmpo');
     const playerFive = await onLoadPlayer('Joel', 'Embiid');
-
-    console.log(teams);
-    console.log(playerOne);
     
      res.render('index', { title: "Welcome to NBA Stat Tracker", games, teams, playerOne, playerTwo, playerThree, playerFour, playerFive});
 }

@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const teamSchema = new Schema({
     name: String,
-    players: [{ type: Schema.Types.ObjectId, ref: 'Player'}],
+    players: [{type: String}],
   });
 
 module.exports = mongoose.model('Team', teamSchema);
