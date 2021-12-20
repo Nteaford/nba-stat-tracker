@@ -1,9 +1,11 @@
-<%- include('./partials/header') %>
+<%- include('../partials/header') %>
 
 <body>
   <h1> <%= title %></h1>
+<br>
+<br>
+<br>
 
-<h3>Recent Games</h3>
 <% if (teams) { %>
 <% teams.forEach(function(t) { %>
     
@@ -22,7 +24,7 @@
             </tr>
           </thead>
           <tbody>
-            <!-- <% players.forEach(function(p) { %>  -->
+            <% players.forEach(function(p) { %> 
             <tr>
               <th scope="row"> NAME TO BE INSERTED HERE</th>
               <td> TEAM</td>
@@ -34,7 +36,7 @@
               <td>MINUTES</td>
               <td>FOULS</td>
             </tr>
-            <!-- <% }; %> -->
+            <% }); %>
             
           </tbody>
     </table>
@@ -43,10 +45,13 @@
 
     <% } %>
 
-<!-- <form action="" method='' >
+<form id="add-team-nav" method="GET" action="/teams/<%= user._id %>/new">
 <button type="button" class="btn btn-secondary">Create New Team</button>
-</form> -->
+</form>
      
 </body>
+<br>
+<br>
+<br>
 
-<%- include('./partials/footer') %>
+<%- include('../partials/footer') %>

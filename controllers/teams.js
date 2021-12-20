@@ -6,11 +6,30 @@ const User = require('../models/user')
 
 module.exports = {
 index,
+new: newTeam,
+create,
 };
 
 
 async function index(req, res) {
     const teams = req.user.teams;
+
+    //  teams = await User.teams.find({});
+    res.render("teams/index", { title: "My Teams", teams });
+}
+
+
+async function newTeam(req, res) {
+    const teams = req.user.teams;
+
+    //  teams = await User.teams.find({});
+    res.render("teams/new", { title: "Add Teams"});
+}
+
+
+async function create(req, res) {
+    const teams = req.user.teams;
+
     //  teams = await User.teams.find({});
     res.render("teams/index", { title: "My Teams", teams });
 }
