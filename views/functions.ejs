@@ -1,0 +1,18 @@
+<%
+async function teamToPlayerPG(t.id) {
+    
+    let playerId;
+    let players = [];
+    
+    const response = await fetch(`${playersURL}`)
+    .then(response => response.json())
+    .then(function (playerData) {
+        let playerFilter = playerData.data.filter(function (playerDatum) {
+            return (playerDatum.team.id === t.id && playerDatum.position === "PG");
+            })
+            players = playerFilter;
+        })
+        return players;  
+    }
+
+    %>

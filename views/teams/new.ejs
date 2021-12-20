@@ -1,29 +1,59 @@
+<% include('./functions') %> 
 <%- include('../partials/header') %>
 
 <body>
   <h1> <%= title %></h1>
 <br>
+<p><%=teams.data[0].full_name%></p>
 <br>
 <br>
-
-
-<div class="btn-group">
-    <button type="button" class="btn btn-danger">Action</button>
-    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="sr-only">Toggle Dropdown</span>
-    </button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-  </div>
-
 
 <form id="add-team-nav" method="GET" action="/teams/<%= user._id %>/new">
-<button type="button" class="btn btn-secondary">Create New Team</button>
+<label>Team Name:</label>
+    <input name="name">
+    <br>
+
+
+ <label>Point Guard:</label>
+<div class="btn-group">
+    <button type="button" class="btn btn-primary">Team</button>
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="sr-only">Select</span>
+    </button>
+    <div class="dropdown-menu">
+        <% teams.data.forEach(function(t) { %>
+      <a class="dropdown-item" href="#">
+          <%=t.full_name %>
+      </a>
+      <% }); %>
+    </div>
+  </div>
+<br>
+<br>
+
+
+ <label>Point Guard:</label>
+ <label>Team:</label>
+            <select name="team" onchange="teamToPlayerPG">
+                <% teams.data.forEach(function(t) { %>
+                <option value="<% t.id %>"> <%=t.full_name %></option>
+                <% }); %>
+            </select> <br>
+ <label>Player:</label>
+            <select name="player">
+                <% teamToPlayerPG(t.id) %>
+                <% players.data.forEach(function(p) { %>
+                <option value="<% p.id %>"> <%=p.first_name %> <%=p.last_name %></option>
+                <% }); %>
+            </select> <br>
+    </div>
+  </div>
+<br>
+<br>
+
+
+
+<button type="button" class="btn btn-secondary">Finalize Team</button>
 </form>
      
 
