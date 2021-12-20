@@ -29,10 +29,14 @@ async function newTeam(req, res) {
 
 async function create(req, res) {
     const teams = req.user.teams;
-
-    //  teams = await User.teams.find({});
-    res.render("teams/index", { title: "My Teams", teams });
+    let newTeam = new Team(req.body);
+    req.user.team.push(newTeam);
+    user.save(function(err) {
+        console.log(newTeam)
+        res.redirect(`/teams/${user._id}`);
+    });
 }
+
 
 
 
