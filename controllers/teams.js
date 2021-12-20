@@ -11,6 +11,7 @@ index,
 
 async function index(req, res) {
     const teams = req.user.teams;
+    //  teams = await User.teams.find({});
     res.render("teams/index", { title: "My Teams", teams });
 }
 

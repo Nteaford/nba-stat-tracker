@@ -131,59 +131,59 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row"> NAME TO BE INSERTED HERE</th>
-      <td>TEAM</td>
-      <td>POSITION</td>
-      <td>DATE</td>
-      <td>OPPONENT</td>
-      <td>POINTS</td>
-      <td>ASSISTS</td>
-      <td>MINUTES</td>
-      <td>FOULS</td>
+      <th scope="row"> <%= playerOne.player.first_name playerOne.player.last_name %> </th>
+      <td> <%= playerOne.team.full_name %></td>
+      <td><%= playerOne.player.position %></td>
+      <td><%= new Date(playerOne.game.date).toLocaleDateString %></td>
+      <td><%= playerOne.game.visitor_team.id %></td>
+      <td><%= playerOne.pts %></td>
+      <td><%= playerOne.ast %></td>
+      <td><%= playerOne.min %></td>
+      <td><%= playerOne.pf %></td>
     </tr>
     <tr>
-      <th scope="row"> NAME TO BE INSERTED HERE</th>
-      <td>TEAM</td>
-      <td>POSITION</td>
-      <td>DATE</td>
-      <td>OPPONENT</td>
-      <td>POINTS</td>
-      <td>ASSISTS</td>
-      <td>MINUTES</td>
-      <td>FOULS</td>
+      <th scope="row"> <%= playerTwo.player.first_name playerTwo.player.last_name %> </th>
+      <td> <%= playerTwo.team.full_name %></td>
+      <td><%= playerTwo.player.position %></td>
+      <td><%= new Date(playerTwo.game.date).toLocaleDateString %></td>
+      <td><%= playerTwo.game.visitor_team.id %></td>
+      <td><%= playerTwo.pts %></td>
+      <td><%= playerTwo.ast %></td>
+      <td><%= playerTwo.min %></td>
+      <td><%= playerTwo.pf %></td>
     </tr>
     <tr>
-      <th scope="row"> NAME TO BE INSERTED HERE</th>
-      <td>TEAM</td>
-      <td>POSITION</td>
-      <td>DATE</td>
-      <td>OPPONENT</td>
-      <td>POINTS</td>
-      <td>ASSISTS</td>
-      <td>MINUTES</td>
-      <td>FOULS</td>
+      <th scope="row"> <%= playerThree.player.first_name playerThree.player.last_name %> </th>
+      <td> <%= playerThree.team.full_name %></td>
+      <td><%= playerThree.player.position %></td>
+      <td><%= new Date(playerThree.game.date).toLocaleDateString %></td>
+      <td><%= playerThree.game.visitor_team.id %></td>
+      <td><%= playerThree.pts %></td>
+      <td><%= playerThree.ast %></td>
+      <td><%= playerThree.min %></td>
+      <td><%= playerThree.pf %></td>
     </tr>
     <tr>
-      <th scope="row"> NAME TO BE INSERTED HERE</th>
-      <td>TEAM</td>
-      <td>POSITION</td>
-      <td>DATE</td>
-      <td>OPPONENT</td>
-      <td>POINTS</td>
-      <td>ASSISTS</td>
-      <td>MINUTES</td>
-      <td>FOULS</td>
+      <th scope="row"> <%= playerFour.player.first_name playerFour.player.last_name %> </th>
+      <td> <%= playerFour.team.full_name %></td>
+      <td><%= playerFour.player.position %></td>
+      <td><%= new Date(playerFour.game.date).toLocaleDateString %></td>
+      <td><%= playerFour.game.visitor_team.id %></td>
+      <td><%= playerFour.pts %></td>
+      <td><%= playerFour.ast %></td>
+      <td><%= playerFour.min %></td>
+      <td><%= playerFour.pf %></td>
     </tr>
     <tr>
-      <th scope="row"> NAME TO BE INSERTED HERE</th>
-      <td>TEAM</td>
-      <td>POSITION</td>
-      <td>DATE</td>
-      <td>OPPONENT</td>
-      <td>POINTS</td>
-      <td>ASSISTS</td>
-      <td>MINUTES</td>
-      <td>FOULS</td>
+      <th scope="row"> <%= playerFive.player.first_name playerFive.player.last_name %> </th>
+      <td> <%= playerFive.team.full_name %></td>
+      <td><%= playerFive.player.position %></td>
+      <td><%= new Date(playerFive.game.date).toLocaleDateString %></td>
+      <td><%= playerFive.game.visitor_team.id %></td>
+      <td><%= playerFive.pts %></td>
+      <td><%= playerFive.ast %></td>
+      <td><%= playerFive.min %></td>
+      <td><%= playerFive.pf %></td>
     </tr>
   </tbody>
 </table>

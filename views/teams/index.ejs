@@ -4,8 +4,8 @@
   <h1> <%= title %></h1>
 
 <h3>Recent Games</h3>
-
-<!-- <% teams.forEach(function(t) { %> -->
+<% if (teams) { %>
+<% teams.forEach(function(t) { %>
     
     <table class="table table-striped">
         <thead>
@@ -39,7 +39,13 @@
           </tbody>
     </table>
     <br>
-    <!-- <% }); %> -->
+    <% }); %>
+
+    <% } %>
+
+<!-- <form action="" method='' >
+<button type="button" class="btn btn-secondary">Create New Team</button>
+</form> -->
      
 </body>
 
