@@ -112,7 +112,7 @@
   </tbody>
 </table>
 
-<% } else{ %>
+<% } else { %>
 <h3>Players</h3>
 
 <table class="table table-striped">
@@ -131,66 +131,96 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row"> <%= playerOne.player.first_name playerOne.player.last_name %> </th>
-      <td> <%= playerOne.team.full_name %></td>
-      <td><%= playerOne.player.position %></td>
-      <td><%= new Date(playerOne.game.date).toLocaleDateString %></td>
-      <td><%= playerOne.game.visitor_team.id %></td>
-      <td><%= playerOne.pts %></td>
-      <td><%= playerOne.ast %></td>
-      <td><%= playerOne.min %></td>
-      <td><%= playerOne.pf %></td>
+      <th scope="row"> <%= playerOne[0].player.first_name%> <%= playerOne[0].player.last_name %> </th>
+      <td> <%= playerOne[0].team.full_name %></td>
+      <td><%= playerOne[0].player.position %></td>
+      <td><%= new Date(playerOne[0].game.date).toLocaleDateString() %></td>
+      
+      <td>
+        <% if(playerOne[0].game.visitor_team_id === playerOne[0].team.id) { %>
+          <%= teams.data[(playerOne[0].game.home_team_id) - 1 ].full_name %>
+        <% } else { %>
+          <%= teams.data[(playerOne[0].game.visitor_team_id) - 1 ].full_name %>
+          <% } %>
+        </td>
+
+      <td><%= playerOne[0].pts %></td>
+      <td><%= playerOne[0].ast %></td>
+      <td><%= playerOne[0].min %></td>
+      <td><%= playerOne[0].pf %></td>
     </tr>
     <tr>
-      <th scope="row"> <%= playerTwo.player.first_name playerTwo.player.last_name %> </th>
-      <td> <%= playerTwo.team.full_name %></td>
-      <td><%= playerTwo.player.position %></td>
-      <td><%= new Date(playerTwo.game.date).toLocaleDateString %></td>
-      <td><%= playerTwo.game.visitor_team.id %></td>
-      <td><%= playerTwo.pts %></td>
-      <td><%= playerTwo.ast %></td>
-      <td><%= playerTwo.min %></td>
-      <td><%= playerTwo.pf %></td>
+      <th scope="row"> <%= playerTwo[0].player.first_name%> <%= playerTwo[0].player.last_name %> </th>
+      <td> <%= playerTwo[0].team.full_name %></td>
+      <td><%= playerTwo[0].player.position %></td>
+      <td><%= new Date(playerTwo[0].game.date).toLocaleDateString() %></td>
+      <td>
+        <% if(playerTwo[0].game.visitor_team_id === playerTwo[0].team.id) { %>
+          <%= teams.data[(playerTwo[0].game.home_team_id) - 1 ].full_name %>
+        <% } else { %>
+          <%= teams.data[(playerTwo[0].game.visitor_team_id) - 1 ].full_name %>
+          <% } %>
+        </td>
+      <td><%= playerTwo[0].pts %></td>
+      <td><%= playerTwo[0].ast %></td>
+      <td><%= playerTwo[0].min %></td>
+      <td><%= playerTwo[0].pf %></td>
     </tr>
     <tr>
-      <th scope="row"> <%= playerThree.player.first_name playerThree.player.last_name %> </th>
-      <td> <%= playerThree.team.full_name %></td>
-      <td><%= playerThree.player.position %></td>
-      <td><%= new Date(playerThree.game.date).toLocaleDateString %></td>
-      <td><%= playerThree.game.visitor_team.id %></td>
-      <td><%= playerThree.pts %></td>
-      <td><%= playerThree.ast %></td>
-      <td><%= playerThree.min %></td>
-      <td><%= playerThree.pf %></td>
+      <th scope="row"> <%= playerThree[0].player.first_name%> <%= playerThree[0].player.last_name %> </th>
+      <td> <%= playerThree[0].team.full_name %></td>
+      <td><%= playerThree[0].player.position %></td>
+      <td><%= new Date(playerThree[0].game.date).toLocaleDateString() %></td>
+      <td>
+        <% if(playerThree[0].game.visitor_team_id === playerThree[0].team.id) { %>
+          <%= teams.data[(playerThree[0].game.home_team_id) - 1 ].full_name %>
+        <% } else { %>
+          <%= teams.data[(playerThree[0].game.visitor_team_id) - 1 ].full_name %>
+          <% } %>
+        </td>
+      <td><%= playerThree[0].pts %></td>
+      <td><%= playerThree[0].ast %></td>
+      <td><%= playerThree[0].min %></td>
+      <td><%= playerThree[0].pf %></td>
     </tr>
     <tr>
-      <th scope="row"> <%= playerFour.player.first_name playerFour.player.last_name %> </th>
-      <td> <%= playerFour.team.full_name %></td>
-      <td><%= playerFour.player.position %></td>
-      <td><%= new Date(playerFour.game.date).toLocaleDateString %></td>
-      <td><%= playerFour.game.visitor_team.id %></td>
-      <td><%= playerFour.pts %></td>
-      <td><%= playerFour.ast %></td>
-      <td><%= playerFour.min %></td>
-      <td><%= playerFour.pf %></td>
+      <th scope="row"> <%= playerFour[0].player.first_name%> <%= playerFour[0].player.last_name %> </th>
+      <td> <%= playerFour[0].team.full_name %></td>
+      <td><%= playerFour[0].player.position %></td>
+      <td><%= new Date(playerFour[0].game.date).toLocaleDateString() %></td>
+      <td>
+        <% if(playerFour[0].game.visitor_team_id === playerFour[0].team.id) { %>
+          <%= teams.data[(playerFour[0].game.home_team_id) - 1 ].full_name %>
+        <% } else { %>
+          <%= teams.data[(playerFour[0].game.visitor_team_id) - 1 ].full_name %>
+          <% } %>
+        </td>
+      <td><%= playerFour[0].pts %></td>
+      <td><%= playerFour[0].ast %></td>
+      <td><%= playerFour[0].min %></td>
+      <td><%= playerFour[0].pf %></td>
     </tr>
     <tr>
-      <th scope="row"> <%= playerFive.player.first_name playerFive.player.last_name %> </th>
-      <td> <%= playerFive.team.full_name %></td>
-      <td><%= playerFive.player.position %></td>
-      <td><%= new Date(playerFive.game.date).toLocaleDateString %></td>
-      <td><%= playerFive.game.visitor_team.id %></td>
-      <td><%= playerFive.pts %></td>
-      <td><%= playerFive.ast %></td>
-      <td><%= playerFive.min %></td>
-      <td><%= playerFive.pf %></td>
+      <th scope="row"> <%= playerFive[0].player.first_name%> <%= playerFive[0].player.last_name %> </th>
+      <td> <%= playerFive[0].team.full_name %></td>
+      <td><%= playerFive[0].player.position %></td>
+      <td><%= new Date(playerFive[0].game.date).toLocaleDateString() %></td>
+      <td>
+        <% if(playerFive[0].game.visitor_team_id === playerFive[0].team.id) { %>
+          <%= teams.data[(playerFive[0].game.home_team_id) - 1 ].full_name %>
+        <% } else { %>
+          <%= teams.data[(playerFive[0].game.visitor_team_id) - 1 ].full_name %>
+          <% } %>
+        </td>
+      <td><%= playerFive[0].pts %></td>
+      <td><%= playerFive[0].ast %></td>
+      <td><%= playerFive[0].min %></td>
+      <td><%= playerFive[0].pf %></td>
     </tr>
   </tbody>
 </table>
 
 <% } %>
 
-
-</body>
 
 <%- include('./partials/footer') %>
