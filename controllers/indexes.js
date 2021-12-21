@@ -32,7 +32,7 @@ async function onLoad(req, res) {
     const playerThree = results[4];
     const playerFour = results[5];
     const playerFive = results[6];
-    res.render('index', { title: "Welcome to NBA Stat Tracker", games, teams, playerOne, playerTwo, playerThree, playerFour, playerFive});
+    res.render('index', { title: "the NBA Stat Tracker", games, teams, playerOne, playerTwo, playerThree, playerFour, playerFive});
   }
 
 

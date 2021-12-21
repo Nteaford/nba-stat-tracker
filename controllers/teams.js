@@ -3,7 +3,7 @@ const User = require('../models/user')
 const fetch = require('node-fetch');
 const moment = require('moment');
 
-const playersURL = 'https://www.balldontlie.io/api/v1/players';
+const playersURL = 'https://www.balldontlie.io/api/v1/players?per_page=100';
 const teamsURL = 'https://www.balldontlie.io/api/v1/teams?seasons[]=2021';
 
 module.exports = {
@@ -33,8 +33,8 @@ async function newTeam(req, res) {
             }
         });
     });
- console.log(teams);
- console.log(teams.data[22].players[0]);
+//  console.log(teams);
+ console.log(players);
     res.render("teams/new", { title: "NBA Draft Day", teams});
 }
 
