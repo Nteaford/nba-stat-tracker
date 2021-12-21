@@ -22,9 +22,19 @@ async function index(req, res) {
 
 
 async function newTeam(req, res) {
-   const teams = await onLoadTeams();
-console.log(teams);
-    //  teams = await User.teams.find({});
+    const teams = await onLoadTeams();
+    const players = await onLoadPlayers();
+
+    await teams.data.forEach(function(team) {
+        team.players = [],
+        players.data.forEach(function(player) {
+            if(team.id === player.team.id) {
+                team.players.push(player);
+            }
+        });
+    });
+ console.log(teams);
+ console.log(teams.data[22].players[0]);
     res.render("teams/new", { title: "NBA Draft Day", teams});
 }
 
@@ -39,8 +49,6 @@ async function create(req, res) {
     });
 }
 
-
-
 async function onLoadTeams(req, res) {
     let finalProduct;
     const response = await fetch(teamsURL)
@@ -52,18 +60,15 @@ async function onLoadTeams(req, res) {
     return finalProduct;
 }
 
-async function teamToPlayerPG(req, res) {
-    
+
+async function onLoadPlayers(req, res) {
     let playerId;
     let endProduct = [];
     
     const response = await fetch(`${playersURL}`)
     .then(response => response.json())
     .then(function (playerData) {
-        let playerFilter = playerData.data.filter(function (playerDatum) {
-            return (playerDatum.team.id === req.body && playerDatum.position === "PG");
-            })
-            endProduct = playerFilter;
-        })
+        endProduct = playerData;
+    })
         return endProduct;  
     }

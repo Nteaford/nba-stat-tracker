@@ -3,7 +3,7 @@
 <body>
   <h1> <%= title %></h1>
 <br>
-<p><%=teams.data[0].full_name%></p>
+<p><%=teams.data[22].players[0].first_name%></p>
 <br>
 <br>
 
@@ -14,21 +14,34 @@
 
 
  <label>Point Guard:</label>
-<div class="btn-group">
-    <button type="button" class="btn btn-primary">Team</button>
-    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="sr-only">Select</span>
-    </button>
-    <div class="dropdown-menu">
+  <div class="dropdown show">
+    <a class="btn btn-primary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     Select a Team
+    </a>
+  
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
         <% teams.data.forEach(function(t) { %>
-      <a class="dropdown-item" href="#">
-          <%=t.full_name %>
-      </a>
-      <% }); %>
+            <a class="dropdown-item" href="#"> <%=t.full_name %> </a>
+            <% }); %>
+      
     </div>
   </div>
-<br>
-<br>
+
+ <label>Player:</label>
+  <div class="dropdown show">
+    <a class="btn btn-primary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     Select a Team
+    </a>
+  
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <% teams.data[22].players.forEach(function(p) { %>
+            <a class="dropdown-item" href="#"> <%=p.first_name %> <%=p.last_name %> </a>
+            <% }); %>
+      
+    </div>
+  </div>
+
+
 
 
  <!-- <label>Point Guard:</label>

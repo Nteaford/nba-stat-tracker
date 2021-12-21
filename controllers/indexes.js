@@ -16,17 +16,24 @@ module.exports = {
 
 
 async function onLoad(req, res) {
-    const games = await onLoadGames();
-    const teams = await onLoadTeams();
-    const playerOne = await onLoadPlayer('Stephen', 'Curry');
-    const playerTwo = await onLoadPlayer('Kevin', 'Durant');
-    const playerThree = await onLoadPlayer('James', 'Harden');
-    const playerFour = await onLoadPlayer('Giannis', 'Antetokounmpo');
-    const playerFive = await onLoadPlayer('Joel', 'Embiid');
-    
-     res.render('index', { title: "Welcome to NBA Stat Tracker", games, teams, playerOne, playerTwo, playerThree, playerFour, playerFive});
-}
-
+    const results = await Promise.all([
+      onLoadGames(),
+      onLoadTeams(),
+      onLoadPlayer('Stephen', 'Curry'),
+      onLoadPlayer('Kevin', 'Durant'),
+      onLoadPlayer('James', 'Harden'),
+      onLoadPlayer('Giannis', 'Antetokounmpo'),
+      onLoadPlayer('Joel', 'Embiid'),
+    ]);
+    const games = results[0];
+    const teams = results[1];
+    const playerOne = results[2];
+    const playerTwo = results[3];
+    const playerThree = results[4];
+    const playerFour = results[5];
+    const playerFive = results[6];
+    res.render('index', { title: "Welcome to NBA Stat Tracker", games, teams, playerOne, playerTwo, playerThree, playerFour, playerFive});
+  }
 
 
 async function onLoadTeams(req, res) {
