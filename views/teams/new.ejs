@@ -7,14 +7,16 @@
     <br>
     <br>
     <br>
-
-    <form id="add-team-nav" method="POST" action="/teams/<%= user._id %>/">
+    
+    <form id="add-team-nav" method="POST" action="/teams/create/">
       <label>Team Name:</label>
       <input name="name">
+      <button type="submit" class="btn btn-secondary">Finalize Team Name</button>
+    </form>
       <br>
       <br>
 
-
+      <% if (nameSelected) { %>
       <label>Player 1:</label>
       <div class="dropdown show">
         <a class="btn btn-primary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
@@ -29,8 +31,9 @@
             <% }); %>
         </div>
       </div>
+      <% } %>
 
-      <% if (playerSelect) { %>
+      <% if (teamSelected) { %>
       <div class="dropdown show">
         <a class="btn btn-primary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
@@ -49,8 +52,6 @@
 
 
 
-      <button type="button" class="btn btn-secondary">Finalize Team</button>
-    </form>
 
 
 

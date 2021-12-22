@@ -14,6 +14,6 @@ router.get('/new/:team/:player', isLoggedIn,teamsCtrl.addToTeam);
 
 
 
-router.post('/', isLoggedIn, teamsCtrl.create);
+router.post('/create', isLoggedIn, teamsCtrl.create);
 
 module.exports = router;

@@ -28,13 +28,21 @@ async function index(req, res) {
 
 async function newTeam(req, res) {
     const teams = await onLoadTeams();
-
+    
     res.render("teams/new", { title: "NBA Draft Day", teamSelected:false, nameSelected:false});
 }
+
+async function create(req, res) {
+    const teams = await onLoadTeams();
+    Team.create(req.body, function (err) {
+        res.render('teams/new', {title: "NBA Draft Day", nameSelected:true, teamSelected:false, name:req.body, teams } );
+    });
+}
+
 async function new1(req, res) {
     const teams = await onLoadTeams();
 
-    res.render("teams/new", { title: "NBA Draft Day", teams, teamSelected: false, nameSelected:true});
+    res.render("teams/new", { title: "NBA Draft Day", teams, teamSelected: true, nameSelected:true});
 }
 async function new2(req, res) {
     let players = [];
@@ -57,15 +65,6 @@ async function addToTeam(req, res) {
 
 
 
-async function create(req, res) {
-    const teams = req.user.teams;
-    let newTeam = new Team(req.body);
-    req.user.team.push(newTeam);
-    user.save(function (err) {
-        console.log(newTeam)
-        res.redirect(`/teams/${user._id}`);
-    });
-}
 
 async function onLoadTeams(req, res) {
     let finalProduct;
