@@ -9,6 +9,7 @@ router.get('/', isLoggedIn, teamsCtrl.index);
 router.post('/create', isLoggedIn, teamsCtrl.createTeam);
 router.get('/new', isLoggedIn,teamsCtrl.new);
 
+router.get('/show/:team', isLoggedIn, teamsCtrl.show)
 router.get('/new/:team/:nbaTeam', isLoggedIn,teamsCtrl.playerSelectionTeam);
 router.get('/new/:team/:nbaTeam/:player', isLoggedIn,teamsCtrl.addToTeam);
 
