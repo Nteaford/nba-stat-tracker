@@ -1,17 +1,24 @@
 <%- include('../partials/header') %>
 
-<body>
-  <h1> <%= title %></h1>
-<br>
-<br>
-<br>
+  <body>
+    <h1>
+      <%= title %>
+    </h1>
+    <br>
+    <br>
+    <br>
 
-<% if (teams) { %>
-<% teams.forEach(function(t) { %>
-    
-    <table class="table table-striped">
-        <thead>
+    <% if (teams) { %>
+      <% teams.forEach(function(t) { %>
+
+        <h2>
+          <%= t.name %>
+        </h2>
+        <a href="/teams/<%= team._id %>" class="btn btn-info" role="button" >Details</a>
+        <% team.player.forEach(function(p) { <table class="table table-striped">
+          <thead>
             <tr>
+
               <th scope="col">Name</th>
               <th scope="col">Team</th>
               <th scope="col">Position</th>
@@ -24,33 +31,59 @@
             </tr>
           </thead>
           <tbody>
-            <% players.forEach(function(p) { %> 
             <tr>
-              <th scope="row"> NAME TO BE INSERTED HERE</th>
-              <td> TEAM</td>
-              <td>POSITION</td>
-              <td>DATE</td>
-              <td>OPPONENT</td>
-              <td>POINTS</td>
-              <td>ASSISTS</td>
-              <td>MINUTES</td>
-              <td>FOULS</td>
+              <th scope="row">
+                <%= p.statArray[0].data.player.first_name%>
+                  <%= p.statArray[0].data.player.last_name %>
+              </th>
+              <td>
+                <%= p.statArray[0].data.team.full_name %>
+              </td>
+              <td>
+                <%= p.statArray[0].data.player.position %>
+              </td>
+              <td>
+                <%= new Date(p.statArray[0].data.game.date).toLocaleDateString() %>
+              </td>
+
+              <td>
+                <% if(p.statArray[0].data.game.visitor_team_id===p.statArray[0].data.team.id) { %>
+                  <%= teams.data[(p.statArray[0].data.game.home_team_id) - 1 ].full_name %>
+                    <% } else { %>
+                      <%= teams.data[(p.statArray[0].data.game.visitor_team_id) - 1 ].full_name %>
+                        <% } %>
+              </td>
+
+              <td>
+                <%= p.statArray[0].data.pts %>
+              </td>
+              <td>
+                <%= p.statArray[0].data.ast %>
+              </td>
+              <td>
+                <%= p.statArray[0].data.min %>
+              </td>
+              <td>
+                <%= p.statArray[0].data.pf %>
+              </td>
             </tr>
-            <% }); %>
+
             
+            <% }) %>
+
           </tbody>
-    </table>
-    <br>
-    <% }); %>
+          </table>
 
-    <% } %>
+          <% }) %>
 
-<form id="add-team-nav" method="GET" action="/teams/<%= user._id %>/new">
-<button type="button" class="btn btn-secondary">Create New Team</button>
-</form>
-     
-<br>
-<br>
-<br>
+            <% } %>
 
-<%- include('../partials/footer') %>
+              <form id="add-team-nav" method="GET" action="/teams/new">
+                <button type="button" class="btn btn-secondary">Create New Team</button>
+              </form>
+
+              <br>
+              <br>
+              <br>
+
+              <%- include('../partials/footer') %>

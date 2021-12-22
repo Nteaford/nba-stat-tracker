@@ -20,7 +20,27 @@ module.exports = {
 
 async function index(req, res) {
     const teams = await Team.find({});
+   await teams.forEach(function(team) {
+        players.forEach(async function (player) {
+            await fetch(`${statsURL}&player_ids[]=${player}`)
+            .then(response => response.json())
+            .then(function (playerStatistics) {
+                playerStatistics.data.forEach(function (stat) {
+                    stat.date = new Date(stat.date);
+                })
+                return playerStatistics;
+            })
+            .then(function (playerStatisticsUpdated) {
 
+                let playerStatisticsSorted = playerStatistics.data.sort(function (playerStatisticA, playerStatisticB) {
+                    return (playerStatisticA.date - playerStatisticB.date);
+                })
+                let statSlice = playerStatisticsSorted.slice((playerStatisticsSorted.length - 3), playerStatisticsSorted.length)
+                player.statArray = statSlice;
+            });
+        return player.statArray;
+    });
+    })
 res.render("teams/index", { title: "My Teams", teams });
 }
 
