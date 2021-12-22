@@ -80,7 +80,7 @@ async function createTeam(req, res) {
 
 async function playerSelectionTeam(req, res) {
     let players = [];
-    const nbaTeams = await playerNBATeamMatcher();
+    const nbaTeams = await playerNBATeamMatcher2(req.params.nbaTeam);
     console.log('reqId', req.params.nbaTeam);
     players = nbaTeams.data[req.params.nbaTeam - 1].players;
     console.log(players);
@@ -236,6 +236,85 @@ async function playerNBATeamMatcher(req, res) {
             })
         })
     console.log("nbaTeams", nbaTeams);
+    return nbaTeams;
+}
+
+
+
+
+async function onLoadPlayer(first, last) {
+    let playerStats;
+    let playerId;
+    let endProduct;
+
+    const response = await fetch(`${playersURL}?search=${last}`)
+        .then(response => response.json())
+        .then(function (playerData) {
+            let playerFilter = playerData.data.filter(function (playerDatum) {
+                return (playerDatum.first_name === first && playerDatum.last_name === last);
+            })
+            playerId = playerFilter[0];
+        })
+        .then(async function () {
+            await fetch(`${statsURL}&player_ids[]=${playerId.id}`)
+                .then(response => response.json())
+                .then(function (playerStatistics) {
+                    let playerStatisticsSorted = playerStatistics.data.sort(function (playerStatisticA, playerStatisticB) {
+                        return (playerStatisticA.id - playerStatisticB.id);
+                    })
+                    let statSlice = playerStatisticsSorted.slice((playerStatisticsSorted.length - 1), playerStatisticsSorted.length)
+                    endProduct = statSlice;
+                    // console.log('ep', endProduct); 
+                });
+
+        });
+    return endProduct;
+}
+async function playerNBATeamMatcher2(nbaTeamId) {
+    let gameIdArray = [];
+    let endProduct = [];
+    let statsData = [];
+    const nbaTeams = await onLoadNBATeams();
+    const response = await fetch(`${gamesURL}&team_ids[]=${nbaTeamId}`)
+        .then(response => response.json())
+        .then(function (gamesData) {
+            gamesData.data.forEach(function (game) {
+                game.date = new Date(game.date);
+            })
+            return gamesData;
+        })
+        .then(function (gamesDataUpdated) {
+            let gamesDataSorted = gamesDataUpdated.data.sort(function (gamesDatumA, gamesDatumB) {
+                return (gamesDatumA.date - gamesDatumB.date);
+            })
+            let gameSlice = gamesDataSorted.slice((gamesDataSorted.length - 1), gamesDataSorted.length)
+            gameSlice.forEach(function (game) {
+                gameIdArray.push(game.id);
+            });
+            return gameIdArray;
+        })
+        .then(async function () {
+                await fetch(`${statsURL}&game_ids[]=${gameIdArray[0]}&page=1`)
+                    .then(response => response.json())
+                    .then(function (data) {
+                       console.log("dataoutput", data)
+                        statsData.push(...data.data);
+                    })
+            console.log('sD', statsData);
+            return statsData;
+        })
+        .then(function (statsData) {
+            nbaTeams.data.forEach(function (nbaTeam) {
+                nbaTeam.players = [];
+                statsData.forEach(function (stat) {
+                    if (nbaTeam.id === stat.player.team_id) {
+                        nbaTeam.players.push(stat.player);
+                    };
+                });
+                return nbaTeams;
+            })
+        })
+    console.log("nbaTeamsUpdated", nbaTeams);
     return nbaTeams;
 }
 
