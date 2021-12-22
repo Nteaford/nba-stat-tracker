@@ -1,66 +1,43 @@
 <%- include('../partials/header') %>
 
-<body>
-  <h1> <%= title %></h1>
-<br>
-<p><%=teams.data[22].players[0].first_name%></p>
-<br>
-<br>
-
-<form id="add-team-nav" method="GET" action="/teams/<%= user._id %>/new">
-<label>Team Name:</label>
-    <input name="name">
+  <body>
+    <h1>
+      <%= title %>
+    </h1>
+    <br>
+    <br>
     <br>
 
+    <form id="add-team-nav" method="POST" action="/teams/<%= user._id %>/">
+      <label>Team Name:</label>
+      <input name="name">
+      <br>
+      <br>
 
- <label>Point Guard:</label>
-  <div class="dropdown show">
-    <a class="btn btn-primary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-     Select a Team
-    </a>
-  
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <% teams.data.forEach(function(t) { %>
-            <a class="dropdown-item" href="#"> <%=t.full_name %> </a>
+
+      <label>Player 1:</label>
+      <div class="dropdown show">
+        <a class="btn btn-primary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Select a Team
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <% teams.data.forEach(function(t) { %>
+            <a class="dropdown-item" href="/teams/new/<%= t.id %>">
+              <%=t.full_name %>
+            </a>
             <% }); %>
-      
-    </div>
-  </div>
+        </div>
+      </div>
 
- <label>Player:</label>
-  <div class="dropdown show">
-    <a class="btn btn-primary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-     Select a Team
-    </a>
-  
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <% teams.data[22].players.forEach(function(p) { %>
-            <a class="dropdown-item" href="#"> <%=p.first_name %> <%=p.last_name %> </a>
-            <% }); %>
-      
-    </div>
-  </div>
+
+      <br>
 
 
 
-
- <!-- <label>Point Guard:</label>
- <label>Team:</label>
-            <select name="team" onchange="teamToPlayerPG">
-                <% teams.data.forEach(function(t) { %>
-                <option value="<% t.id %>"> <%=t.full_name %></option>
-                <% }); %>
-            </select> <br> -->
-
-<div>
- 
-<br>
+      <button type="button" class="btn btn-secondary">Finalize Team</button>
+    </form>
 
 
 
-<button type="button" class="btn btn-secondary">Finalize Team</button>
-</form>
-     
-
-
-<%- include('../partials/footer') %>
+    <%- include('../partials/footer') %>

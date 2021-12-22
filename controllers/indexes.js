@@ -79,11 +79,11 @@ async function onLoadPlayer(first, last) {
             playerId = playerFilter[0];
         })
         .then(async function () {
-            await fetch(`${statsURL}&player_ids[]=${playerId.id}`)
-            .then(response => response.json())
-            .then(function (playerStatistics) {
-                let playerStatisticsSorted = playerStatistics.data.sort(function(playerStatisticA, playerStatisticB) {
-                    return (playerStatisticA.id - playerStatisticB.id);
+        await fetch(`${statsURL}&player_ids[]=${playerId.id}`)
+        .then(response => response.json())
+        .then(function (playerStatistics) {
+            let playerStatisticsSorted = playerStatistics.data.sort(function(playerStatisticA, playerStatisticB) {
+                return (playerStatisticA.id - playerStatisticB.id);
                 })
                 let statSlice = playerStatisticsSorted.slice((playerStatisticsSorted.length - 1), playerStatisticsSorted.length)
                 endProduct = statSlice;
