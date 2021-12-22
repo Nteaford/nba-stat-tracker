@@ -166,110 +166,79 @@ async function onLoadPlayers(req, res) {
 }
 
 
-async function playerNBATeamMatcher(req, res) {
-    let gameIdArray = [];
-    let endProduct = [];
-    let statsData = [];
-    const nbaTeams = await onLoadNBATeams();
-    const response = await fetch(`${gamesURL}`)
-        .then(response => response.json())
-        .then(function (gamesData) {
-            gamesData.data.forEach(function (game) {
-                game.date = new Date(game.date);
-            })
-            return gamesData;
-        })
-        .then(function (gamesDataUpdated) {
-            let gamesDataSorted = gamesDataUpdated.data.sort(function (gamesDatumA, gamesDatumB) {
-                return (gamesDatumA.date - gamesDatumB.date);
-            })
-            let gameSlice = gamesDataSorted.slice((gamesDataSorted.length - 17), gamesDataSorted.length)
-            gameSlice.forEach(function (game) {
-                gameIdArray.push(game.id);
-            });
-            console.log("GIA", gameIdArray[0]);
-            return gameIdArray;
-        })
-        .then(async function () {
-            const results = await Promise.all([
+// async function playerNBATeamMatcher(req, res) {
+//     let gameIdArray = [];
+//     let endProduct = [];
+//     let statsData = [];
+//     const nbaTeams = await onLoadNBATeams();
+//     const response = await fetch(`${gamesURL}`)
+//         .then(response => response.json())
+//         .then(function (gamesData) {
+//             gamesData.data.forEach(function (game) {
+//                 game.date = new Date(game.date);
+//             })
+//             return gamesData;
+//         })
+//         .then(function (gamesDataUpdated) {
+//             let gamesDataSorted = gamesDataUpdated.data.sort(function (gamesDatumA, gamesDatumB) {
+//                 return (gamesDatumA.date - gamesDatumB.date);
+//             })
+//             let gameSlice = gamesDataSorted.slice((gamesDataSorted.length - 17), gamesDataSorted.length)
+//             gameSlice.forEach(function (game) {
+//                 gameIdArray.push(game.id);
+//             });
+//             console.log("GIA", gameIdArray[0]);
+//             return gameIdArray;
+//         })
+//         .then(async function () {
+//             const results = await Promise.all([
 
-                await fetch(`${statsURL}&game_ids[]=${gameIdArray[0]}&game_ids[]=${gameIdArray[1]}&game_ids[]=${gameIdArray[2]}&game_ids[]=${gameIdArray[3]}&game_ids[]=${gameIdArray[4]}&game_ids[]=${gameIdArray[5]}&game_ids[]=${gameIdArray[6]}&game_ids[]=${gameIdArray[7]}&game_ids[]=${gameIdArray[8]}&game_ids[]=${gameIdArray[9]}&game_ids[]=${gameIdArray[10]}&game_ids[]=${gameIdArray[11]}&game_ids[]=${gameIdArray[12]}&game_ids[]=${gameIdArray[13]}&game_ids[]=${gameIdArray[14]}&game_ids[]=${gameIdArray[15]}&game_ids[]=${gameIdArray[16]}&game_ids[]=${gameIdArray[17]}&page=1`)
-                    .then(response => response.json())
-                    .then(function (data) {
-                        statsData.push(...data.data);
-                    }),
-
-
-                await fetch(`${statsURL}&game_ids[]=${gameIdArray[0]}&game_ids[]=${gameIdArray[1]}&game_ids[]=${gameIdArray[2]}&game_ids[]=${gameIdArray[3]}&game_ids[]=${gameIdArray[4]}&game_ids[]=${gameIdArray[5]}&game_ids[]=${gameIdArray[6]}&game_ids[]=${gameIdArray[7]}&game_ids[]=${gameIdArray[8]}&game_ids[]=${gameIdArray[9]}&game_ids[]=${gameIdArray[10]}&game_ids[]=${gameIdArray[11]}&game_ids[]=${gameIdArray[12]}&game_ids[]=${gameIdArray[13]}&game_ids[]=${gameIdArray[14]}&game_ids[]=${gameIdArray[15]}&game_ids[]=${gameIdArray[16]}&game_ids[]=${gameIdArray[17]}&page=2`)
-                    .then(response => response.json())
-                    .then(function (data) {
-                        statsData.push(...data.data);
-                    }),
-
-                await fetch(`${statsURL}&game_ids[]=${gameIdArray[0]}&game_ids[]=${gameIdArray[1]}&game_ids[]=${gameIdArray[2]}&game_ids[]=${gameIdArray[3]}&game_ids[]=${gameIdArray[4]}&game_ids[]=${gameIdArray[5]}&game_ids[]=${gameIdArray[6]}&game_ids[]=${gameIdArray[7]}&game_ids[]=${gameIdArray[8]}&game_ids[]=${gameIdArray[9]}&game_ids[]=${gameIdArray[10]}&game_ids[]=${gameIdArray[11]}&game_ids[]=${gameIdArray[12]}&game_ids[]=${gameIdArray[13]}&game_ids[]=${gameIdArray[14]}&game_ids[]=${gameIdArray[15]}&game_ids[]=${gameIdArray[16]}&game_ids[]=${gameIdArray[17]}&page=3`)
-                    .then(response => response.json())
-                    .then(function (data) {
-                        statsData.push(...data.data);
-                    }),
-
-                await fetch(`${statsURL}&game_ids[]=${gameIdArray[0]}&game_ids[]=${gameIdArray[1]}&game_ids[]=${gameIdArray[2]}&game_ids[]=${gameIdArray[3]}&game_ids[]=${gameIdArray[4]}&game_ids[]=${gameIdArray[5]}&game_ids[]=${gameIdArray[6]}&game_ids[]=${gameIdArray[7]}&game_ids[]=${gameIdArray[8]}&game_ids[]=${gameIdArray[9]}&game_ids[]=${gameIdArray[10]}&game_ids[]=${gameIdArray[11]}&game_ids[]=${gameIdArray[12]}&game_ids[]=${gameIdArray[13]}&game_ids[]=${gameIdArray[14]}&game_ids[]=${gameIdArray[15]}&game_ids[]=${gameIdArray[16]}&game_ids[]=${gameIdArray[17]}&page=4`).then(response => response.json())
-                    .then(function (data) {
-                        statsData.push(...data.data);
-                    }),
-                await fetch(`${statsURL}&game_ids[]=${gameIdArray[0]}&game_ids[]=${gameIdArray[1]}&game_ids[]=${gameIdArray[2]}&game_ids[]=${gameIdArray[3]}&game_ids[]=${gameIdArray[4]}&game_ids[]=${gameIdArray[5]}&game_ids[]=${gameIdArray[6]}&game_ids[]=${gameIdArray[7]}&game_ids[]=${gameIdArray[8]}&game_ids[]=${gameIdArray[9]}&game_ids[]=${gameIdArray[10]}&game_ids[]=${gameIdArray[11]}&game_ids[]=${gameIdArray[12]}&game_ids[]=${gameIdArray[13]}&game_ids[]=${gameIdArray[14]}&game_ids[]=${gameIdArray[15]}&game_ids[]=${gameIdArray[16]}&game_ids[]=${gameIdArray[17]}&page=5`)
-                    .then(response => response.json())
-                    .then(function (data) {
-                        statsData.push(...data.data);
-                    })
-            ]);
-            return statsData;
-        })
-        .then(function (statsData) {
-            nbaTeams.data.forEach(function (nbaTeam) {
-                nbaTeam.players = [];
-                statsData.forEach(function (stat) {
-                    if (nbaTeam.id === stat.player.team_id) {
-                        nbaTeam.players.push(stat.player);
-                    };
-                });
-                return nbaTeams;
-            })
-        })
-    console.log("nbaTeams", nbaTeams);
-    return nbaTeams;
-}
+//                 await fetch(`${statsURL}&game_ids[]=${gameIdArray[0]}&game_ids[]=${gameIdArray[1]}&game_ids[]=${gameIdArray[2]}&game_ids[]=${gameIdArray[3]}&game_ids[]=${gameIdArray[4]}&game_ids[]=${gameIdArray[5]}&game_ids[]=${gameIdArray[6]}&game_ids[]=${gameIdArray[7]}&game_ids[]=${gameIdArray[8]}&game_ids[]=${gameIdArray[9]}&game_ids[]=${gameIdArray[10]}&game_ids[]=${gameIdArray[11]}&game_ids[]=${gameIdArray[12]}&game_ids[]=${gameIdArray[13]}&game_ids[]=${gameIdArray[14]}&game_ids[]=${gameIdArray[15]}&game_ids[]=${gameIdArray[16]}&game_ids[]=${gameIdArray[17]}&page=1`)
+//                     .then(response => response.json())
+//                     .then(function (data) {
+//                         statsData.push(...data.data);
+//                     }),
 
 
+//                 await fetch(`${statsURL}&game_ids[]=${gameIdArray[0]}&game_ids[]=${gameIdArray[1]}&game_ids[]=${gameIdArray[2]}&game_ids[]=${gameIdArray[3]}&game_ids[]=${gameIdArray[4]}&game_ids[]=${gameIdArray[5]}&game_ids[]=${gameIdArray[6]}&game_ids[]=${gameIdArray[7]}&game_ids[]=${gameIdArray[8]}&game_ids[]=${gameIdArray[9]}&game_ids[]=${gameIdArray[10]}&game_ids[]=${gameIdArray[11]}&game_ids[]=${gameIdArray[12]}&game_ids[]=${gameIdArray[13]}&game_ids[]=${gameIdArray[14]}&game_ids[]=${gameIdArray[15]}&game_ids[]=${gameIdArray[16]}&game_ids[]=${gameIdArray[17]}&page=2`)
+//                     .then(response => response.json())
+//                     .then(function (data) {
+//                         statsData.push(...data.data);
+//                     }),
 
+//                 await fetch(`${statsURL}&game_ids[]=${gameIdArray[0]}&game_ids[]=${gameIdArray[1]}&game_ids[]=${gameIdArray[2]}&game_ids[]=${gameIdArray[3]}&game_ids[]=${gameIdArray[4]}&game_ids[]=${gameIdArray[5]}&game_ids[]=${gameIdArray[6]}&game_ids[]=${gameIdArray[7]}&game_ids[]=${gameIdArray[8]}&game_ids[]=${gameIdArray[9]}&game_ids[]=${gameIdArray[10]}&game_ids[]=${gameIdArray[11]}&game_ids[]=${gameIdArray[12]}&game_ids[]=${gameIdArray[13]}&game_ids[]=${gameIdArray[14]}&game_ids[]=${gameIdArray[15]}&game_ids[]=${gameIdArray[16]}&game_ids[]=${gameIdArray[17]}&page=3`)
+//                     .then(response => response.json())
+//                     .then(function (data) {
+//                         statsData.push(...data.data);
+//                     }),
 
-async function onLoadPlayer(first, last) {
-    let playerStats;
-    let playerId;
-    let endProduct;
+//                 await fetch(`${statsURL}&game_ids[]=${gameIdArray[0]}&game_ids[]=${gameIdArray[1]}&game_ids[]=${gameIdArray[2]}&game_ids[]=${gameIdArray[3]}&game_ids[]=${gameIdArray[4]}&game_ids[]=${gameIdArray[5]}&game_ids[]=${gameIdArray[6]}&game_ids[]=${gameIdArray[7]}&game_ids[]=${gameIdArray[8]}&game_ids[]=${gameIdArray[9]}&game_ids[]=${gameIdArray[10]}&game_ids[]=${gameIdArray[11]}&game_ids[]=${gameIdArray[12]}&game_ids[]=${gameIdArray[13]}&game_ids[]=${gameIdArray[14]}&game_ids[]=${gameIdArray[15]}&game_ids[]=${gameIdArray[16]}&game_ids[]=${gameIdArray[17]}&page=4`).then(response => response.json())
+//                     .then(function (data) {
+//                         statsData.push(...data.data);
+//                     }),
+//                 await fetch(`${statsURL}&game_ids[]=${gameIdArray[0]}&game_ids[]=${gameIdArray[1]}&game_ids[]=${gameIdArray[2]}&game_ids[]=${gameIdArray[3]}&game_ids[]=${gameIdArray[4]}&game_ids[]=${gameIdArray[5]}&game_ids[]=${gameIdArray[6]}&game_ids[]=${gameIdArray[7]}&game_ids[]=${gameIdArray[8]}&game_ids[]=${gameIdArray[9]}&game_ids[]=${gameIdArray[10]}&game_ids[]=${gameIdArray[11]}&game_ids[]=${gameIdArray[12]}&game_ids[]=${gameIdArray[13]}&game_ids[]=${gameIdArray[14]}&game_ids[]=${gameIdArray[15]}&game_ids[]=${gameIdArray[16]}&game_ids[]=${gameIdArray[17]}&page=5`)
+//                     .then(response => response.json())
+//                     .then(function (data) {
+//                         statsData.push(...data.data);
+//                     })
+//             ]);
+//             return statsData;
+//         })
+//         .then(function (statsData) {
+//             nbaTeams.data.forEach(function (nbaTeam) {
+//                 nbaTeam.players = [];
+//                 statsData.forEach(function (stat) {
+//                     if (nbaTeam.id === stat.player.team_id) {
+//                         nbaTeam.players.push(stat.player);
+//                     };
+//                 });
+//                 return nbaTeams;
+//             })
+//         })
+//     console.log("nbaTeams", nbaTeams);
+//     return nbaTeams;
+// }
 
-    const response = await fetch(`${playersURL}?search=${last}`)
-        .then(response => response.json())
-        .then(function (playerData) {
-            let playerFilter = playerData.data.filter(function (playerDatum) {
-                return (playerDatum.first_name === first && playerDatum.last_name === last);
-            })
-            playerId = playerFilter[0];
-        })
-        .then(async function () {
-            await fetch(`${statsURL}&player_ids[]=${playerId.id}`)
-                .then(response => response.json())
-                .then(function (playerStatistics) {
-                    let playerStatisticsSorted = playerStatistics.data.sort(function (playerStatisticA, playerStatisticB) {
-                        return (playerStatisticA.id - playerStatisticB.id);
-                    })
-                    let statSlice = playerStatisticsSorted.slice((playerStatisticsSorted.length - 1), playerStatisticsSorted.length)
-                    endProduct = statSlice;
-                    // console.log('ep', endProduct); 
-                });
-
-        });
-    return endProduct;
-}
 async function playerNBATeamMatcher2(nbaTeamId) {
     let gameIdArray = [];
     let endProduct = [];
@@ -291,22 +260,31 @@ async function playerNBATeamMatcher2(nbaTeamId) {
             gameSlice.forEach(function (game) {
                 gameIdArray.push(game.id);
             });
+            console.log(gameIdArray);
             return gameIdArray;
         })
         .then(async function () {
-                await fetch(`${statsURL}&game_ids[]=${gameIdArray[0]}&page=1`)
-                    .then(response => response.json())
-                    .then(function (data) {
-                       console.log("dataoutput", data)
-                        statsData.push(...data.data);
-                    })
-            console.log('sD', statsData);
+            await fetch(`${statsURL}&game_id[]=${gameIdArray[0]}&page=1`)
+                .then(response => response.json())
+                .then(function (data) {
+                    statsData.push(...data.data);
+                })
+            return statsData;
+        })
+        .then(async function () {
+            statsData.forEach(function (stat, idx) {
+                console.log(stat);
+                if (!stat.player.team_id) {
+                   statsData.slice(idx,1)
+                };
+            });
             return statsData;
         })
         .then(function (statsData) {
             nbaTeams.data.forEach(function (nbaTeam) {
                 nbaTeam.players = [];
                 statsData.forEach(function (stat) {
+                    console.log(stat);
                     if (nbaTeam.id === stat.player.team_id) {
                         nbaTeam.players.push(stat.player);
                     };

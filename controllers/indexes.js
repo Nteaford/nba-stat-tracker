@@ -95,39 +95,3 @@ async function onLoadPlayer(first, last) {
         });
         return endProduct;  
     }
-
-
-
-
-
-
-                // async function onLoadGames(req, res) {
-                //     let finalProduct;
-                //     const response = await fetch('https://www.balldontlie.io/api/v1/games?seasons[]=2021')
-                //     .then(response => response.json())
-                //     .then(function(gamesData) {
-                //         console.log(gamesData);
-                //         let dateRangeStart = moment().format();
-                //         let dateRangeEnd = moment().subtract(5, 'days').format();
-                //         let gamesDataFiltered = gamesData.data.filter(function(gamesDatum) {
-                //             return (new Date(gamesDatum.date) <= new Date(dateRangeStart) && new Date(gamesDatum.date) >= new Date(dateRangeEnd));
-                //         })
-                //         console.log(gamesDataFiltered);
-                //         finalProduct = gamesDataFiltered;
-                //     });
-                //     return finalProduct;
-                
-                
-                // async function onLoadStats(req, res) {
-                //     let finalProduct;
-                //     const response = await fetch('https://www.balldontlie.io/api/v1/stats')
-                //     .then(response => response.json())
-                //     .then(function(statsData) {
-                //         console.log(statsData);
-                //         let statsDataSorted = statsData.data.sort(function(statsDatumA, statsDatumB) {
-                //             return (statsDatumA.id - statsDatumB.id);
-                //         })
-                //         console.log(statsDataSorted);
-                //         finalProduct = statsDataSorted;
-                //     });
-                //     return finalProduct;
