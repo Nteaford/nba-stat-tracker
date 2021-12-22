@@ -8,6 +8,7 @@ const nbaTeamSchema = new Schema({
   division: String,
   fullName: String,
   name: String,
+  players: [{type: Schema.Types.ObjectId, ref: 'Player'}]
 });
 
 module.exports = mongoose.model('NbaTeam', nbaTeamSchema); 

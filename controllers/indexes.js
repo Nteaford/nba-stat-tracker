@@ -49,21 +49,23 @@ async function onLoadTeams(req, res) {
 
 async function onLoadGames(req, res) {
     let finalProduct;
-    const response = await fetch(recentGamesURL)
-    .then(response => response.json())
-    .then(function (gamesData) {
-        let gamesDataSorted = gamesData.data.sort(function (gamesDatumA, gamesDatumB) {
-            return (gamesDatumA.id - gamesDatumB.id);
+    const response = await fetch(`${recentGamesURL}`)
+        .then(response => response.json())
+        .then(function (gamesData) {
+            gamesData.data.forEach(function (game) {
+                game.date = new Date(game.date);
+            })
+            return gamesData;
         })
+        .then(function (gamesDataUpdated) {
+            let gamesDataSorted = gamesDataUpdated.data.sort(function (gamesDatumA, gamesDatumB) {
+                return (gamesDatumA.date - gamesDatumB.date);
+            })
             let gameSlice = gamesDataSorted.slice((gamesDataSorted.length - 5), gamesDataSorted.length)
             finalProduct = gameSlice;
         });
     return finalProduct;
 }
-
-
-
-
 
 async function onLoadPlayer(first, last) {
     let playerStats;

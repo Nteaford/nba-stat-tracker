@@ -9,7 +9,7 @@ router.get('/', isLoggedIn, teamsCtrl.index);
 
 router.get('/new', isLoggedIn,teamsCtrl.new);
 router.get('/new/:team', isLoggedIn,teamsCtrl.new1);
-router.get('/new/:team/:player', isLoggedIn,teamsCtrl.new);
+router.get('/new/:team/:player', isLoggedIn,teamsCtrl.addToTeam);
 
 
 
