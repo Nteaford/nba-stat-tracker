@@ -14,8 +14,9 @@
         <h2>
           <%= t.name %>
         </h2>
-        <a href="/teams/<%= team._id %>" class="btn btn-info" role="button" >Details</a>
-        <% team.player.forEach(function(p) { <table class="table table-striped">
+        <a href="/teams/<%= t._id %>" class="btn btn-info" role="button" >Details</a>
+        <% t.players.forEach(function(p) { %>
+          <table class="table table-striped">
           <thead>
             <tr>
 
@@ -25,7 +26,7 @@
               <th scope="col">Game Date</th>
               <th scope="col">Opponent</th>
               <th scope="col">Points</th>
-              <th scope="col">Assists</th>
+              <th scope=rs"col">Assists</th>
               <th scope="col">Minutes</th>
               <th scope="col">Fouls</th>
             </tr>

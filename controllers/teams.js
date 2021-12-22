@@ -19,29 +19,42 @@ module.exports = {
 
 
 async function index(req, res) {
+    let teamsDataArray = [];
     const teams = await Team.find({});
-   await teams.forEach(function(team) {
-        players.forEach(async function (player) {
+    await console.log(teams);
+    await teams.forEach(async function (team) {
+        let teamArray = [];
+        await team.players.forEach(async function (player) {
+            let playerArray = [];
             await fetch(`${statsURL}&player_ids[]=${player}`)
-            .then(response => response.json())
-            .then(function (playerStatistics) {
-                playerStatistics.data.forEach(function (stat) {
-                    stat.date = new Date(stat.date);
+                .then(response => response.json())
+                .then(function (playerStatistics) {
+                    playerStatistics.data.forEach(function (stat) {
+                        stat.game.date = new Date(stat.game.date);
+                    })
+                    return playerStatistics;
                 })
-                return playerStatistics;
-            })
-            .then(function (playerStatisticsUpdated) {
+                .then(function (playerStatisticsUpdated) {
+                    let playerStatisticsSorted = playerStatisticsUpdated.data.sort(function (playerStatisticA, playerStatisticB) {
+                        return (playerStatisticA.game.date - playerStatisticB.game.date);
+                    })
+                    let statSlice = playerStatisticsSorted.slice((playerStatisticsSorted.length - 3), playerStatisticsSorted.length);
+                    playerArray = statSlice;
+                    console.log("pA", playerArray);
+                    return playerArray;
 
-                let playerStatisticsSorted = playerStatistics.data.sort(function (playerStatisticA, playerStatisticB) {
-                    return (playerStatisticA.date - playerStatisticB.date);
-                })
-                let statSlice = playerStatisticsSorted.slice((playerStatisticsSorted.length - 3), playerStatisticsSorted.length)
-                player.statArray = statSlice;
-            });
-        return player.statArray;
-    });
+                });
+
+            teamArray.push(playerArray);
+            console.log("tA", teamArray);
+
+        })
+        teamsDataArray.push(teamArray);
+        console.log("tDA", teamsDataArray);
+        return teamsDataArray;
     })
-res.render("teams/index", { title: "My Teams", teams });
+    console.log("tDAvailable", teamsDataArray);
+    res.render("teams/index", { title: "My Teams", teamsDataArray, teams });
 }
 
 
