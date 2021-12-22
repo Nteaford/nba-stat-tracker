@@ -34,6 +34,7 @@ async function newTeamNaming(req, res) {
 async function createTeam(req, res) {
     const nbaTeams = await onLoadNBATeams();
     const team = new Team(req.body);
+    team.user = req.user._id;
     team.save(function (err) {
         if (err) {
             console.log(err);
@@ -49,16 +50,29 @@ async function playerSelectionTeam(req, res) {
     const nbaTeams = await playerNBATeamMatcher();
     console.log('reqId', req.params.nbaTeam);
     players = nbaTeams.data[req.params.nbaTeam-1].players;
-     console.log(players);
-    res.render('teams/new', { title: "NBA Draft Day", nbaTeams, nameSelected:true, nbaTeamSelected:true, playerSelected: false, players});
+    console.log(players);
+    Team.findById(req.params.team).exec(function(err, team) {
+    res.render('teams/new', { title: "NBA Draft Day", nbaTeams, nameSelected:true, nbaTeamSelected:true, playerSelected: false, players, team});
+    })
 }
 
 
 
 async function addToTeam(req, res) {
-   User.
-    req.params.nbaTeam
-    req.params.player
+    const nbaTeams = await onLoadNBATeams();
+    Team.findById(req.params.team).exec(function(err, team) {
+    team.players.push(req.params.player);
+    team.save(function (err) {
+        // one way to handle errors
+        if (err) {
+          console.log(err);
+          return res.redirect("/teams/new");
+        }
+        console.log(team);
+        res.redirect(`/teams/new`);
+      });
+    res.render(`teams/new`, {title: "NBA Draft Day", nameSelected:true, nbaTeamSelected:false, playerSelected: false, team, nbaTeams } );
+})
 }
 
 
@@ -163,3 +177,34 @@ async function playerNBATeamMatcher(req, res) {
         return nbaTeams;
 }
 
+
+
+
+async function onLoadPlayer(first, last) {
+    let playerStats;
+    let playerId;
+    let endProduct;
+    
+    const response = await fetch(`${playersURL}?search=${last}`)
+    .then(response => response.json())
+    .then(function (playerData) {
+        let playerFilter = playerData.data.filter(function (playerDatum) {
+            return (playerDatum.first_name === first && playerDatum.last_name === last);
+            })
+            playerId = playerFilter[0];
+        })
+        .then(async function () {
+        await fetch(`${statsURL}&player_ids[]=${playerId.id}`)
+        .then(response => response.json())
+        .then(function (playerStatistics) {
+            let playerStatisticsSorted = playerStatistics.data.sort(function(playerStatisticA, playerStatisticB) {
+                return (playerStatisticA.id - playerStatisticB.id);
+                })
+                let statSlice = playerStatisticsSorted.slice((playerStatisticsSorted.length - 1), playerStatisticsSorted.length)
+                endProduct = statSlice;
+                // console.log('ep', endProduct); 
+            });
+            
+        });
+        return endProduct;  
+    }

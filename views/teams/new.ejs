@@ -1,5 +1,6 @@
 <%- include('../partials/header') %>
-
+<br>
+<br>
   <body>
     <h1>
       <%= title %>
@@ -19,8 +20,12 @@
       <br>
 
       <% if (nameSelected) { %>
+        <br>
         <%= team.name %>
-      <label>Player:</label>
+        <br>
+        <br>
+
+      <label>Add a Player:</label>
       <div class="dropdown show">
         <a class="btn btn-primary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
@@ -35,6 +40,11 @@
         </div>
       </div>
       <% } %>
+<br>
+<br>
+<br>
+<br>
+<br>
 
       <% if (nbaTeamSelected) { %>
       <div class="dropdown show">
