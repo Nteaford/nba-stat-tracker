@@ -4,17 +4,16 @@ const fetch = require('node-fetch');
 const moment = require('moment');
 
 const playersURL = 'https://www.balldontlie.io/api/v1/players?per_page=100';
-const teamsURL = 'https://www.balldontlie.io/api/v1/teams?seasons[]=2021';
+const nbaTeamsURL = 'https://www.balldontlie.io/api/v1/teams?seasons[]=2021';
 const gamesURL = 'https://www.balldontlie.io/api/v1/games?seasons[]=2021&start_date[]=2021-12-01&per_page=100';
 const statsURL = 'https://www.balldontlie.io/api/v1/stats?seasons[]=2021&per_page=100'
 
 module.exports = {
     index,
-    new: newTeam,
-    new1,
-    new2,
+    new: newTeamNaming,
+    playerSelectionTeam,
     addToTeam,
-    create,
+    createTeam,
 };
 
 
@@ -26,38 +25,39 @@ async function index(req, res) {
 }
 
 
-async function newTeam(req, res) {
-    const teams = await onLoadTeams();
+async function newTeamNaming(req, res) {
+    const nbaTeams = await onLoadNBATeams();
     
-    res.render("teams/new", { title: "NBA Draft Day", teamSelected:false, nameSelected:false});
+    res.render("teams/new", { title: "NBA Draft Day", nbaTeamSelected:false, nameSelected:false, playerSelected: false,});
 }
 
-async function create(req, res) {
-    const teams = await onLoadTeams();
-    Team.create(req.body, function (err) {
-        res.render('teams/new', {title: "NBA Draft Day", nameSelected:true, teamSelected:false, name:req.body, teams } );
+async function createTeam(req, res) {
+    const nbaTeams = await onLoadNBATeams();
+    const team = new Team(req.body);
+    team.save(function (err) {
+        if (err) {
+            console.log(err);
+            return res.redirect("/teams/new")
+        }
+        res.render(`teams/new`, {title: "NBA Draft Day", nameSelected:true, nbaTeamSelected:false, playerSelected: false, team, nbaTeams } );
     });
 }
 
-async function new1(req, res) {
-    const teams = await onLoadTeams();
 
-    res.render("teams/new", { title: "NBA Draft Day", teams, teamSelected: true, nameSelected:true});
-}
-async function new2(req, res) {
+async function playerSelectionTeam(req, res) {
     let players = [];
-    const teams = await playerTeamMatcher();
-    console.log('reqId', req.params.team);
-    players = teams.data[req.params.team-1].players;
+    const nbaTeams = await playerNBATeamMatcher();
+    console.log('reqId', req.params.nbaTeam);
+    players = nbaTeams.data[req.params.nbaTeam-1].players;
      console.log(players);
-    res.render('teams/new', { title: "NBA Draft Day", teams, teamSelected: true, players});
+    res.render('teams/new', { title: "NBA Draft Day", nbaTeams, nameSelected:true, nbaTeamSelected:true, playerSelected: false, players});
 }
 
 
 
 async function addToTeam(req, res) {
-   Teams
-    req.params.team
+   User.
+    req.params.nbaTeam
     req.params.player
 }
 
@@ -66,12 +66,12 @@ async function addToTeam(req, res) {
 
 
 
-async function onLoadTeams(req, res) {
+async function onLoadNBATeams(req, res) {
     let finalProduct;
-    const response = await fetch(teamsURL)
+    const response = await fetch(nbaTeamsURL)
         .then(response => response.json())
-        .then(function (teamsData) {
-            finalProduct = teamsData;
+        .then(function (nbaTeamsData) {
+            finalProduct = nbaTeamsData;
         });
     return finalProduct;
 }
@@ -90,11 +90,11 @@ async function onLoadPlayers(req, res) {
 }
 
 
-async function playerTeamMatcher(req, res) {
+async function playerNBATeamMatcher(req, res) {
     let gameIdArray = [];
     let endProduct = [];
     let statsData = [];
-    const teams = await onLoadTeams();
+    const nbaTeams = await onLoadNBATeams();
     const response = await fetch(`${gamesURL}`)
         .then(response => response.json())
         .then(function (gamesData) {
@@ -149,17 +149,17 @@ async function playerTeamMatcher(req, res) {
                 return statsData;
             })
             .then(function (statsData) {
-            teams.data.forEach(function (team) {
-                team.players = [];
+            nbaTeams.data.forEach(function (nbaTeam) {
+                nbaTeam.players = [];
                 statsData.forEach(function (stat) {
-                    if (team.id === stat.player.team_id) {
-                        team.players.push(stat.player);
+                    if (nbaTeam.id === stat.player.team_id) {
+                        nbaTeam.players.push(stat.player);
                     };
                 });
-                return teams;
+                return nbaTeams;
             })
         })
-        console.log("teams", teams);
-        return teams;
+        console.log("nbaTeams", nbaTeams);
+        return nbaTeams;
 }
 

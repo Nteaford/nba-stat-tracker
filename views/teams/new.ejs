@@ -8,32 +8,35 @@
     <br>
     <br>
     
+    <% if (!nameSelected) { %>
     <form id="add-team-nav" method="POST" action="/teams/create/">
       <label>Team Name:</label>
       <input name="name">
       <button type="submit" class="btn btn-secondary">Finalize Team Name</button>
     </form>
+    <% } %>
       <br>
       <br>
 
       <% if (nameSelected) { %>
-      <label>Player 1:</label>
+        <%= team.name %>
+      <label>Player:</label>
       <div class="dropdown show">
         <a class="btn btn-primary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
           Select a Team
         </a>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <% teams.data.forEach(function(t) { %>
-            <a class="dropdown-item" href="/teams/new/<%= t.id %>">
-              <%=t.full_name %>
+          <% nbaTeams.data.forEach(function(n) { %>
+            <a class="dropdown-item" href="/teams/new/<%= team.id %>/<%= n.id %>">
+              <%=n.full_name %>
             </a>
             <% }); %>
         </div>
       </div>
       <% } %>
 
-      <% if (teamSelected) { %>
+      <% if (nbaTeamSelected) { %>
       <div class="dropdown show">
         <a class="btn btn-primary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
@@ -41,7 +44,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
           <% players.forEach(function(p) { %>
-            <a class="dropdown-item" href="/teams/new/<%= p.team_id %>/<%= p.id%>">
+            <a class="dropdown-item" href="/teams/new/<%= team.id %>/<%= p.team_id %>/<%= p.id%>">
               <%=p.first_name %> <%=p.last_name %>
             </a>
             <% }); %>

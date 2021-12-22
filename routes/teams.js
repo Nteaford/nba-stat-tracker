@@ -6,14 +6,14 @@ const isLoggedIn = require('../config/auth')
 
 /* GET my team page. */
 router.get('/', isLoggedIn, teamsCtrl.index);
-
+router.post('/create', isLoggedIn, teamsCtrl.createTeam);
 router.get('/new', isLoggedIn,teamsCtrl.new);
-router.get('/new/:team', isLoggedIn,teamsCtrl.new1);
-router.get('/new/:team/:player', isLoggedIn,teamsCtrl.addToTeam);
+
+router.get('/new/:team/:nbaTeam', isLoggedIn,teamsCtrl.playerSelectionTeam);
+router.get('/new/:team/:nbaTeam/:player', isLoggedIn,teamsCtrl.addToTeam);
 
 
 
 
-router.post('/create', isLoggedIn, teamsCtrl.create);
 
 module.exports = router;
