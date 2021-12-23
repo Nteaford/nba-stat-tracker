@@ -2,9 +2,6 @@ const Team = require('../models/team')
 const Player = require('../models/player')
 const User = require('../models/user')
 const fetch = require('node-fetch');
-const moment = require('moment');
-
-
 
 module.exports = {
     index,
@@ -13,22 +10,15 @@ module.exports = {
     show,
     edit,
     update,
-    delete:deleteOne
+    delete: deleteOne
 };
 
 
 async function index(req, res) {
-     Team.find({}).populate('players').exec(function(err,teams) {
+    Team.find({}).populate('players').exec(function (err, teams) {
         res.render("teams/index", { title: "My Star-Studded Teams", teams });
 
     });
-}
-
-function show(req, res) {
-    Team.findById(req.params.id).populate('players').exec(function (err, team) {
-        console.log(team);
-            res.render("teams/show", {title: team.name, team});
-        });
 }
 
 function newTeam(req, res) {
@@ -56,39 +46,45 @@ function create(req, res) {
     });
 }
 
+function show(req, res) {
+    Team.findById(req.params.id).populate('players').exec(function (err, team) {
+        console.log(team);
+        res.render("teams/show", { title: team.name, team });
+    });
+}
+
 async function edit(req, res) {
     const players = await Player.find({});
     Team.findById(req.params.id).populate('players').exec(function (err, team) {
         console.log(team);
-            res.render("teams/edit", {title: team.name, team, players});
-        });
+        res.render("teams/edit", { title: team.name, team, players });
+    });
 }
 
 function update(req, res) {
     Team.findOneAndUpdate(
-        {_id: req.params.id, user: req.user._id},
-      req.body,
-      {new: true},
-      function(err, team) {
-        if (err || !team) return res.redirect('/teams');
-        res.redirect(`/teams/${team._id}`);
-      }
+        { _id: req.params.id, user: req.user._id },
+        req.body,
+        { new: true },
+        function (err, team) {
+            if (err || !team) return res.redirect('/teams');
+            res.redirect(`/teams/${team._id}`);
+        }
     );
-  }
+}
 
 function deleteOne(req, res) {
     Team.findOneAndDelete(
-        {_id: req.params.id, user: req.user._id}, function(err) {
+        { _id: req.params.id, user: req.user._id }, function (err) {
 
-          res.redirect('/teams');
+            res.redirect('/teams');
         }
-      );
+    );
 
-    }
-
-
+}
 
 
+//Legacy Code from API
 
 // async function index(req, res) {
 //     let teamsDataArray = [];

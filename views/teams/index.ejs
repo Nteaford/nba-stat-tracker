@@ -7,58 +7,53 @@
     <br>
     <br>
     <br>
-
     <% if (teams) { %>
       <% teams.forEach(function(t) { %>
-        <h2> <%= t.name %> </h2>
-        <a href="/teams/<%= t._id %>" class="btn btn-secondary" role="button" >
-        Team Details
-      </a>
-      <form action="/teams/<%= t._id %>?_method=DELETE" method="POST"><button type="submit" class="btn btn-danger">Delete Team</button></form>
-      <a href="/teams/<%= t._id %>/edit" class="btn btn-warning" role="button" >
-        Edit Team
-      </a>
-
+        <h2>
+          <%= t.name %>
+        </h2>
+        <div class="btn-group" role="group"></div>
+        <a href="/teams/<%= t._id %>" class="btn btn-outline-dark" role="button">Team Details
+        </a>
+        <a href="/teams/<%= t._id %>/edit" class="btn btn-outline-primary" role="button">
+          Edit Team
+        </a>
+        </div>
         <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Team</th>
-            <th scope="col">Position</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% t.players.forEach(function(p) { %>
-          <tr>
-            <th scope="row">
-              <%= p.first_name %> 
-              <%= p.last_name %>
-            </th>
-            <td>
-              <%= p.team.full_name %>
-            </td>
-            <td>
-              <%= p.position %>
-            </td>
-          </tr>
-          <% }) %>
-        </tbody>
-      </table>
-      <br>
-      <br>
-      <hr>
-      <br>
-      <br>
-      <% }) %>
-          
-            <% } %>
-
-              <form id="add-team-nav" method="GET" action="/teams/new">
-                <button type="submit" class="btn btn-secondary">Draft New Team</button>
-              </form>
-
-              <br>
-              <br>
-              <br>
-
-              <%- include('../partials/footer') %>
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Team</th>
+              <th scope="col">Position</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% t.players.forEach(function(p) { %>
+              <tr>
+                <th scope="row">
+                  <%= p.first_name %>
+                    <%= p.last_name %>
+                </th>
+                <td>
+                  <%= p.team.full_name %>
+                </td>
+                <td>
+                  <%= p.position %>
+                </td>
+              </tr>
+              <% }) %>
+          </tbody>
+        </table>
+        <form action="/teams/<%= t._id %>?_method=DELETE" method="POST"><button type="submit"
+            class="btn btn-outline-danger">Delete Team</button></form>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <% }) %>
+          <% } %>
+            <form id="add-team-nav" method="GET" action="/teams/new">
+              <button type="submit" class="btn btn-secondary">Draft New Team</button>
+            </form>
+            <%- include('../partials/footer') %>

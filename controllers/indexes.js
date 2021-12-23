@@ -13,17 +13,15 @@ module.exports = {
     onLoad,
 };
 
-
-
 async function onLoad(req, res) {
     const results = await Promise.all([
-      onLoadGames(),
-      onLoadTeams(),
-      onLoadPlayer('Stephen', 'Curry'),
-      onLoadPlayer('Kevin', 'Durant'),
-      onLoadPlayer('James', 'Harden'),
-      onLoadPlayer('Giannis', 'Antetokounmpo'),
-      onLoadPlayer('Joel', 'Embiid'),
+        onLoadGames(),
+        onLoadTeams(),
+        onLoadPlayer('Stephen', 'Curry'),
+        onLoadPlayer('Kevin', 'Durant'),
+        onLoadPlayer('James', 'Harden'),
+        onLoadPlayer('Giannis', 'Antetokounmpo'),
+        onLoadPlayer('Joel', 'Embiid'),
     ]);
     const games = results[0];
     const teams = results[1];
@@ -32,16 +30,15 @@ async function onLoad(req, res) {
     const playerThree = results[4];
     const playerFour = results[5];
     const playerFive = results[6];
-    res.render('index', { title: "the NBA Stat Tracker", games, teams, playerOne, playerTwo, playerThree, playerFour, playerFive});
-  }
-
+    res.render('index', { title: "the NBA Stat Tracker", games, teams, playerOne, playerTwo, playerThree, playerFour, playerFive });
+}
 
 async function onLoadTeams(req, res) {
     let finalProduct;
     const response = await fetch(teamsURL)
-    .then(response => response.json())
-    .then(function (teamsData) {
-        
+        .then(response => response.json())
+        .then(function (teamsData) {
+
             finalProduct = teamsData;
         });
     return finalProduct;
@@ -71,27 +68,27 @@ async function onLoadPlayer(first, last) {
     let playerStats;
     let playerId;
     let endProduct;
-    
+
     const response = await fetch(`${playersURL}?search=${last}`)
-    .then(response => response.json())
-    .then(function (playerData) {
-        let playerFilter = playerData.data.filter(function (playerDatum) {
-            return (playerDatum.first_name === first && playerDatum.last_name === last);
+        .then(response => response.json())
+        .then(function (playerData) {
+            let playerFilter = playerData.data.filter(function (playerDatum) {
+                return (playerDatum.first_name === first && playerDatum.last_name === last);
             })
             playerId = playerFilter[0];
         })
         .then(async function () {
-        await fetch(`${statsURL}&player_ids[]=${playerId.id}`)
-        .then(response => response.json())
-        .then(function (playerStatistics) {
-            let playerStatisticsSorted = playerStatistics.data.sort(function(playerStatisticA, playerStatisticB) {
-                return (playerStatisticA.id - playerStatisticB.id);
-                })
-                let statSlice = playerStatisticsSorted.slice((playerStatisticsSorted.length - 1), playerStatisticsSorted.length)
-                endProduct = statSlice;
-                // console.log('ep', endProduct); 
-            });
-            
+            await fetch(`${statsURL}&player_ids[]=${playerId.id}`)
+                .then(response => response.json())
+                .then(function (playerStatistics) {
+                    let playerStatisticsSorted = playerStatistics.data.sort(function (playerStatisticA, playerStatisticB) {
+                        return (playerStatisticA.id - playerStatisticB.id);
+                    })
+                    let statSlice = playerStatisticsSorted.slice((playerStatisticsSorted.length - 1), playerStatisticsSorted.length)
+                    endProduct = statSlice;
+                    // console.log('ep', endProduct); 
+                });
+
         });
-        return endProduct;  
-    }
+    return endProduct;
+}

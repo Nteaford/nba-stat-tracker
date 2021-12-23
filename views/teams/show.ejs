@@ -1,36 +1,43 @@
 <%- include('../partials/header') %>
-
-<h3> <%= team.name %></h3>
-
-
-
-
-<table class="table table-striped">
+  <h3>
+    <%= team.name %>
+  </h3>
+  <table class="table table-striped">
     <thead>
-        <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Position</th>
-            <th scope="col">Height</th>
-            <th scope="col">Weight</th>
-            <th scope="col">Nba Team</th>
-        </tr>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Position</th>
+        <th scope="col">Height</th>
+        <th scope="col">Weight</th>
+        <th scope="col">Nba Team</th>
+      </tr>
     </thead>
     <tbody>
-        <% team.players.forEach(function(p) { %>
-    <tr>
-      <th scope="row"> <%= p.first_name%> <%= p.last_name %>  </th>
-      <td><%= p.position %></td>
-      <td><%= p.height_feet%>ft <%=p.height_inches%>in </td>
-      <td><%= p.weight_pounds %>lbs</td>
-      <td><%= p.team.full_name %></td>
-      <td><%= p.position %></td>
-      
-    </tr>
-<% }) %>
-     
-  </tbody>
-</table>
-
-
-
-<%- include('../partials/footer') %>
+      <% team.players.forEach(function(p) { %>
+        <tr>
+          <th scope="row">
+            <%= p.first_name%>
+              <%= p.last_name %>
+          </th>
+          <td>
+            <%= p.position %>
+          </td>
+          <td>
+            <%= p.height_feet%>' <%=p.height_inches%>"
+          </td>
+          <td>
+            <%= p.weight_pounds %>lbs
+          </td>
+          <td>
+            <%= p.team.full_name %>
+          </td>
+          <td>
+            <%= p.position %>
+          </td>
+        </tr>
+        <% }) %>
+    </tbody>
+  </table>
+  <a href="/teams/" class="btn btn-outline-dark" role="button">Back to My Teams
+  </a>
+  <%- include('../partials/footer') %>

@@ -1,6 +1,7 @@
 <%- include('../partials/header') %>
-<br>
-<br>
+  <br>
+  <br>
+
   <body>
     <h1>
       You are editing <%= team.name %>
@@ -8,77 +9,81 @@
     <br>
     <br>
     <br>
-    
     <form id="edit-team-form" action="/teams/<%= team.id %>?_method=PUT" method="POST">
       <div class="input-group mb-3">
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroup-sizing-default">Team Name</span>
         </div>
-        <input type="text" name="name" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        <input type="text" name="name" class="form-control" aria-label="Default"
+          aria-describedby="inputGroup-sizing-default">
       </div>
       <div class="input-group mb-3">
         <div class="input-group-prepend">
           <label class="input-group-text" for="inputGroupSelect01">Pick 1</label>
         </div>
-        <select name = "players" class="custom-select" id="inputGroupSelect01">
-          
-            <option selected>Select...</option>
+        <select name="players" class="custom-select rounded" id="inputGroupSelect01">
+          <option selected>Select...</option>
           <% players.forEach(function (p){ %>
-            <option name = "players" value= "<%=p._id%>" > <%= p.first_name %> <%= p.last_name %>  ---- <%=p.team.full_name %> </option>
-            <% }) %> 
+            <option name="players" value="<%=p._id%>">
+              <%= p.first_name %>
+                <%= p.last_name %> ---- <%=p.team.full_name %>
+            </option>
+            <% }) %>
         </select>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <label class="input-group-text" for="inputGroupSelect01">Pick 2</label>
-        </div>
-        <select name = "players" class="custom-select" id="inputGroupSelect02">
-          
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">Pick 2</label>
+          </div>
+          <select name="players" class="custom-select rounded" id="inputGroupSelect02">
             <option selected>Select...</option>
-          <% players.forEach(function (p){ %>
-            <option name = "players" value="<%=p._id%>"> <%= p.first_name %> <%= p.last_name %>  ---- <%=p.team.full_name %> </option>
-            <% }) %> 
-        </select>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <label class="input-group-text" for="inputGroupSelect01">Pick 3</label>
-        </div>
-        <select name = "players" class="custom-select" id="inputGroupSelect03">
-          
-            <option selected>Select...</option>
-          <% players.forEach(function (p){ %>
-            <option name = "players" value="<%=p._id%>"> <%= p.first_name %> <%= p.last_name %>  ---- <%=p.team.full_name %> </option>
-            <% }) %> 
-        </select>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <label class="input-group-text" for="inputGroupSelect01">Pick 4 </label>
-        </div>
-        <select  name = "players"class="custom-select" id="inputGroupSelect04">
-          
-            <option selected>Select...</option>
-          <% players.forEach(function (p){ %>
-            <option name = "players" value="<%=p._id%>"> <%= p.first_name %> <%= p.last_name %>  ---- <%=p.team.full_name %> </option>
-            <% }) %> 
-        </select>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <label class="input-group-text" for="inputGroupSelect01">Pick 5</label>
-        </div>
-        <select name = "players" class="custom-select" id="inputGroupSelect05">
-          
-            <option selected>Select...</option>
-          <% players.forEach(function (p){ %>
-            <option value="<%=p._id%>"> <%= p.first_name %> <%= p.last_name %>  ---- <%=p.team.full_name %> </option>
-            <% }) %> 
-        </select>
-        
-      </div>
-      <input type="submit" value="Draft Team">
+            <% players.forEach(function (p){ %>
+              <option name="players" value="<%=p._id%>">
+                <%= p.first_name %>
+                  <%= p.last_name %> ---- <%=p.team.full_name %>
+              </option>
+              <% }) %>
+          </select>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Pick 3</label>
+            </div>
+            <select name="players" class="custom-select rounded" id="inputGroupSelect03">
+              <option selected>Select...</option>
+              <% players.forEach(function (p){ %>
+                <option name="players" value="<%=p._id%>">
+                  <%= p.first_name %>
+                    <%= p.last_name %> ---- <%=p.team.full_name %>
+                </option>
+                <% }) %>
+            </select>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Pick 4 </label>
+              </div>
+              <select name="players" class="custom-select rounded" id="inputGroupSelect04">
+                <option selected>Select...</option>
+                <% players.forEach(function (p){ %>
+                  <option name="players" value="<%=p._id%>">
+                    <%= p.first_name %>
+                      <%= p.last_name %> ---- <%=p.team.full_name %>
+                  </option>
+                  <% }) %>
+              </select>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01">Pick 5</label>
+                </div>
+                <select name="players" class="custom-select rounded" id="inputGroupSelect05">
+                  <option selected>Select...</option>
+                  <% players.forEach(function (p){ %>
+                    <option value="<%=p._id%>">
+                      <%= p.first_name %>
+                        <%= p.last_name %> ---- <%=p.team.full_name %>
+                    </option>
+                    <% }) %>
+                </select>
+              </div>
+              <input class="btn btn-outline-dark" type="submit" value="Trade Players">
     </form>
-
-
-
-
-
 
     <%- include('../partials/footer') %>
