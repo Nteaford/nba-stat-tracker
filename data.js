@@ -280,7 +280,16 @@ exports.players = [
     last_name: "Luwawu-Cabarrot",
     position: "G-F",
     team_id: 1,
-    weight_pounds: 210
+    weight_pounds: 210,
+    team: {
+      id: 1,
+      abbreviation: "ATL",
+      city: "Atlanta",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Atlanta Hawks",
+      name: "Hawks"
+    }
   },
   {
     id: 101,
@@ -290,7 +299,16 @@ exports.players = [
     last_name: "Collins",
     position: "F-C",
     team_id: 1,
-    weight_pounds: 235
+    weight_pounds: 235,
+    team: {
+      id: 1,
+      abbreviation: "ATL",
+      city: "Atlanta",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Atlanta Hawks",
+      name: "Hawks"
+    }
   },
   {
     id: 83,
@@ -300,7 +318,16 @@ exports.players = [
     last_name: "Capela",
     position: "C",
     team_id: 1,
-    weight_pounds: 240
+    weight_pounds: 240,
+    team: {
+      id: 1,
+      abbreviation: "ATL",
+      city: "Atlanta",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Atlanta Hawks",
+      name: "Hawks"
+    }
   },
   {
     id: 221,
@@ -310,7 +337,16 @@ exports.players = [
     last_name: "Huerter",
     position: "G",
     team_id: 1,
-    weight_pounds: 190
+    weight_pounds: 190,
+    team: {
+      id: 1,
+      abbreviation: "ATL",
+      city: "Atlanta",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Atlanta Hawks",
+      name: "Hawks"
+    }
   },
   {
     id: 490,
@@ -320,7 +356,16 @@ exports.players = [
     last_name: "Young",
     position: "G",
     team_id: 1,
-    weight_pounds: 180
+    weight_pounds: 180,
+    team: {
+      id: 1,
+      abbreviation: "ATL",
+      city: "Atlanta",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Atlanta Hawks",
+      name: "Hawks"
+    }
   },
   {
     id: 167,
@@ -330,7 +375,16 @@ exports.players = [
     last_name: "Gallinari",
     position: "F",
     team_id: 1,
-    weight_pounds: 225
+    weight_pounds: 225,
+    team: {
+      id: 1,
+      abbreviation: "ATL",
+      city: "Atlanta",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Atlanta Hawks",
+      name: "Hawks"
+    }
   },
   {
     id: 481,
@@ -340,7 +394,16 @@ exports.players = [
     last_name: "Williams",
     position: "G",
     team_id: 1,
-    weight_pounds: 175
+    weight_pounds: 175,
+    team: {
+      id: 1,
+      abbreviation: "ATL",
+      city: "Atlanta",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Atlanta Hawks",
+      name: "Hawks"
+    }
   },
   {
     id: 487,
@@ -350,7 +413,16 @@ exports.players = [
     last_name: "Wright",
     position: "G",
     team_id: 1,
-    weight_pounds: 183
+    weight_pounds: 183,
+    team: {
+      id: 1,
+      abbreviation: "ATL",
+      city: "Atlanta",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Atlanta Hawks",
+      name: "Hawks"
+    }
   },
   {
     id: 666860,
@@ -360,7 +432,16 @@ exports.players = [
     last_name: "Reddish",
     position: "F-G",
     team_id: 1,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 1,
+      abbreviation: "ATL",
+      city: "Atlanta",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Atlanta Hawks",
+      name: "Hawks"
+    }
   },
   {
     id: 17896029,
@@ -370,7 +451,16 @@ exports.players = [
     last_name: "Cooper",
     position: "G",
     team_id: 1,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 1,
+      abbreviation: "ATL",
+      city: "Atlanta",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Atlanta Hawks",
+      name: "Hawks"
+    }
   },
   {
     id: 666818,
@@ -380,7 +470,16 @@ exports.players = [
     last_name: "Okeke",
     position: "F",
     team_id: 22,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 22,
+      abbreviation: "ORL",
+      city: "Orlando",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Orlando Magic",
+      name: "Magic"
+    }
   },
   {
     id: 17896026,
@@ -390,7 +489,16 @@ exports.players = [
     last_name: "Wagner",
     position: "F",
     team_id: 22,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 22,
+      abbreviation: "ORL",
+      city: "Orlando",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Orlando Magic",
+      name: "Magic"
+    }
   },
   {
     id: 85,
@@ -400,7 +508,16 @@ exports.players = [
     last_name: "Carter Jr.",
     position: "F",
     team_id: 22,
-    weight_pounds: 255
+    weight_pounds: 255,
+    team: {
+      id: 22,
+      abbreviation: "ORL",
+      city: "Orlando",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Orlando Magic",
+      name: "Magic"
+    }
   },
   {
     id: 129,
@@ -410,7 +527,16 @@ exports.players = [
     last_name: "Dieng",
     position: "C",
     team_id: 1,
-    weight_pounds: 252
+    weight_pounds: 252,
+    team: {
+      id: 1,
+      abbreviation: "ATL",
+      city: "Atlanta",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Atlanta Hawks",
+      name: "Hawks"
+    }
   },
   {
     id: 3547257,
@@ -420,7 +546,16 @@ exports.players = [
     last_name: "Hampton",
     position: "G",
     team_id: 22,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 22,
+      abbreviation: "ORL",
+      city: "Orlando",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Orlando Magic",
+      name: "Magic"
+    }
   },
   {
     id: 3547251,
@@ -430,7 +565,16 @@ exports.players = [
     last_name: "Anthony",
     position: "G",
     team_id: 22,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 22,
+      abbreviation: "ORL",
+      city: "Orlando",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Orlando Magic",
+      name: "Magic"
+    }
   },
   {
     id: 402,
@@ -440,7 +584,16 @@ exports.players = [
     last_name: "Ross",
     position: "G-F",
     team_id: 22,
-    weight_pounds: 206
+    weight_pounds: 206,
+    team: {
+      id: 22,
+      abbreviation: "ORL",
+      city: "Orlando",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Orlando Magic",
+      name: "Magic"
+    }
   },
   {
     id: 666794,
@@ -450,7 +603,16 @@ exports.players = [
     last_name: "Mulder",
     position: "G",
     team_id: 22,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 22,
+      abbreviation: "ORL",
+      city: "Orlando",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Orlando Magic",
+      name: "Magic"
+    }
   },
   {
     id: 666464,
@@ -460,7 +622,16 @@ exports.players = [
     last_name: "Brazdeikis",
     position: "F",
     team_id: 22,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 22,
+      abbreviation: "ORL",
+      city: "Orlando",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Orlando Magic",
+      name: "Magic"
+    }
   },
   {
     id: 462,
@@ -470,7 +641,16 @@ exports.players = [
     last_name: "Wagner",
     position: "C",
     team_id: 22,
-    weight_pounds: 245
+    weight_pounds: 245,
+    team: {
+      id: 22,
+      abbreviation: "ORL",
+      city: "Orlando",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Orlando Magic",
+      name: "Magic"
+    }
   },
   {
     id: 284,
@@ -480,7 +660,16 @@ exports.players = [
     last_name: "Lopez",
     position: "C",
     team_id: 22,
-    weight_pounds: 275
+    weight_pounds: 275,
+    team: {
+      id: 22,
+      abbreviation: "ORL",
+      city: "Orlando",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Orlando Magic",
+      name: "Magic"
+    }
   },
   {
     id: 196,
@@ -490,7 +679,16 @@ exports.players = [
     last_name: "Harris",
     position: "G",
     team_id: 22,
-    weight_pounds: 210
+    weight_pounds: 210,
+    team: {
+      id: 22,
+      abbreviation: "ORL",
+      city: "Orlando",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Orlando Magic",
+      name: "Magic"
+    }
   },
   {
     id: 282,
@@ -500,7 +698,16 @@ exports.players = [
     last_name: "Looney",
     position: "F",
     team_id: 10,
-    weight_pounds: 220
+    weight_pounds: 220,
+    team: {
+      id: 10,
+      abbreviation: "GSW",
+      city: "Golden State",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Golden State Warriors",
+      name: "Warriors"
+    }
   },
   {
     id: 17553992,
@@ -510,7 +717,16 @@ exports.players = [
     last_name: "Moody",
     position: "G",
     team_id: 10,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 10,
+      abbreviation: "GSW",
+      city: "Golden State",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Golden State Warriors",
+      name: "Warriors"
+    }
   },
   {
     id: 115,
@@ -520,7 +736,16 @@ exports.players = [
     last_name: "Curry",
     position: "G",
     team_id: 10,
-    weight_pounds: 190
+    weight_pounds: 190,
+    team: {
+      id: 10,
+      abbreviation: "GSW",
+      city: "Golden State",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Golden State Warriors",
+      name: "Warriors"
+    }
   },
   {
     id: 49,
@@ -530,7 +755,16 @@ exports.players = [
     last_name: "Bjelica",
     position: "F",
     team_id: 10,
-    weight_pounds: 234
+    weight_pounds: 234,
+    team: {
+      id: 10,
+      abbreviation: "GSW",
+      city: "Golden State",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Golden State Warriors",
+      name: "Warriors"
+    }
   },
   {
     id: 50661,
@@ -540,7 +774,16 @@ exports.players = [
     last_name: "Chiozza",
     position: "G",
     team_id: 10,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 10,
+      abbreviation: "GSW",
+      city: "Golden State",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Golden State Warriors",
+      name: "Warriors"
+    }
   },
   {
     id: 17553988,
@@ -550,7 +793,16 @@ exports.players = [
     last_name: "Dowtin",
     position: "G",
     team_id: 10,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 10,
+      abbreviation: "GSW",
+      city: "Golden State",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Golden State Warriors",
+      name: "Warriors"
+    }
   },
   {
     id: 224,
@@ -560,7 +812,16 @@ exports.players = [
     last_name: "Iguodala",
     position: "G-F",
     team_id: 10,
-    weight_pounds: 215
+    weight_pounds: 215,
+    team: {
+      id: 10,
+      abbreviation: "GSW",
+      city: "Golden State",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Golden State Warriors",
+      name: "Warriors"
+    }
   },
   {
     id: 475,
@@ -570,7 +831,16 @@ exports.players = [
     last_name: "Wiggins",
     position: "F-G",
     team_id: 10,
-    weight_pounds: 194
+    weight_pounds: 194,
+    team: {
+      id: 10,
+      abbreviation: "GSW",
+      city: "Golden State",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Golden State Warriors",
+      name: "Warriors"
+    }
   },
   {
     id: 185,
@@ -580,7 +850,16 @@ exports.players = [
     last_name: "Green",
     position: "F",
     team_id: 10,
-    weight_pounds: 230
+    weight_pounds: 230,
+    team: {
+      id: 10,
+      abbreviation: "GSW",
+      city: "Golden State",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Golden State Warriors",
+      name: "Warriors"
+    }
   },
   {
     id: 420,
@@ -590,7 +869,16 @@ exports.players = [
     last_name: "Smart",
     position: "G",
     team_id: 2,
-    weight_pounds: 220
+    weight_pounds: 220,
+    team: {
+      id: 2,
+      abbreviation: "BOS",
+      city: "Boston",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Boston Celtics",
+      name: "Celtics"
+    }
   },
   {
     id: 666564,
@@ -600,7 +888,16 @@ exports.players = [
     last_name: "Fernando",
     position: "F",
     team_id: 2,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 2,
+      abbreviation: "BOS",
+      city: "Boston",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Boston Celtics",
+      name: "Celtics"
+    }
   },
   {
     id: 253,
@@ -610,7 +907,16 @@ exports.players = [
     last_name: "Kanter",
     position: "C",
     team_id: 2,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 2,
+      abbreviation: "BOS",
+      city: "Boston",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Boston Celtics",
+      name: "Celtics"
+    }
   },
   {
     id: 3547250,
@@ -620,7 +926,16 @@ exports.players = [
     last_name: "Nesmith",
     position: "G-F",
     team_id: 2,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 2,
+      abbreviation: "BOS",
+      city: "Boston",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Boston Celtics",
+      name: "Celtics"
+    }
   },
   {
     id: 3547276,
@@ -630,7 +945,16 @@ exports.players = [
     last_name: "Pritchard",
     position: "G",
     team_id: 2,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 2,
+      abbreviation: "BOS",
+      city: "Boston",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Boston Celtics",
+      name: "Celtics"
+    }
   },
   {
     id: 391,
@@ -640,7 +964,16 @@ exports.players = [
     last_name: "Richardson",
     position: "G-F",
     team_id: 2,
-    weight_pounds: 200
+    weight_pounds: 200,
+    team: {
+      id: 2,
+      abbreviation: "BOS",
+      city: "Boston",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Boston Celtics",
+      name: "Celtics"
+    }
   },
   {
     id: 3547306,
@@ -650,7 +983,16 @@ exports.players = [
     last_name: "Thomas",
     position: "G",
     team_id: 2,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 2,
+      abbreviation: "BOS",
+      city: "Boston",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Boston Celtics",
+      name: "Celtics"
+    }
   },
   {
     id: 17553979,
@@ -660,7 +1002,16 @@ exports.players = [
     last_name: "Kuminga",
     position: "F",
     team_id: 10,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 10,
+      abbreviation: "GSW",
+      city: "Golden State",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Golden State Warriors",
+      name: "Warriors"
+    }
   },
   {
     id: 272,
@@ -670,7 +1021,16 @@ exports.players = [
     last_name: "Lee",
     position: "G",
     team_id: 10,
-    weight_pounds: 210
+    weight_pounds: 210,
+    team: {
+      id: 10,
+      abbreviation: "GSW",
+      city: "Golden State",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Golden State Warriors",
+      name: "Warriors"
+    }
   },
   {
     id: 2189,
@@ -680,7 +1040,16 @@ exports.players = [
     last_name: "Payton II",
     position: "",
     team_id: 10,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 10,
+      abbreviation: "GSW",
+      city: "Golden State",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Golden State Warriors",
+      name: "Warriors"
+    }
   },
   {
     id: 376,
@@ -690,7 +1059,16 @@ exports.players = [
     last_name: "Porter Jr.",
     position: "F",
     team_id: 10,
-    weight_pounds: 198
+    weight_pounds: 198,
+    team: {
+      id: 10,
+      abbreviation: "GSW",
+      city: "Golden State",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Golden State Warriors",
+      name: "Warriors"
+    }
   },
   {
     id: 666925,
@@ -700,7 +1078,16 @@ exports.players = [
     last_name: "Toscano-Anderson",
     position: "F",
     team_id: 10,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 10,
+      abbreviation: "GSW",
+      city: "Golden State",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Golden State Warriors",
+      name: "Warriors"
+    }
   },
   {
     id: 666713,
@@ -710,7 +1097,16 @@ exports.players = [
     last_name: "Langford",
     position: "G",
     team_id: 2,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 2,
+      abbreviation: "BOS",
+      city: "Boston",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Boston Celtics",
+      name: "Celtics"
+    }
   },
   {
     id: 434,
@@ -720,7 +1116,16 @@ exports.players = [
     last_name: "Tatum",
     position: "F",
     team_id: 2,
-    weight_pounds: 208
+    weight_pounds: 208,
+    team: {
+      id: 2,
+      abbreviation: "BOS",
+      city: "Boston",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Boston Celtics",
+      name: "Celtics"
+    }
   },
   {
     id: 476,
@@ -730,7 +1135,16 @@ exports.players = [
     last_name: "Williams III",
     position: "C-F",
     team_id: 2,
-    weight_pounds: 240
+    weight_pounds: 240,
+    team: {
+      id: 2,
+      abbreviation: "BOS",
+      city: "Boston",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Boston Celtics",
+      name: "Celtics"
+    }
   },
   {
     id: 70,
@@ -740,7 +1154,16 @@ exports.players = [
     last_name: "Brown",
     position: "G",
     team_id: 2,
-    weight_pounds: 220
+    weight_pounds: 220,
+    team: {
+      id: 2,
+      abbreviation: "BOS",
+      city: "Boston",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Boston Celtics",
+      name: "Celtics"
+    }
   },
   {
     id: 17896055,
@@ -750,7 +1173,16 @@ exports.players = [
     last_name: "Barnes",
     position: "G-F",
     team_id: 28,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 28,
+      abbreviation: "TOR",
+      city: "Toronto",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Toronto Raptors",
+      name: "Raptors"
+    }
   },
   {
     id: 416,
@@ -761,6 +1193,15 @@ exports.players = [
     position: "F",
     team_id: 28,
     weight_pounds: 230
+    , team: {
+      id: 28,
+      abbreviation: "TOR",
+      city: "Toronto",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Toronto Raptors",
+      name: "Raptors"
+    }
   },
   {
     id: 58,
@@ -771,6 +1212,15 @@ exports.players = [
     position: "F",
     team_id: 28,
     weight_pounds: 200
+    , team: {
+      id: 28,
+      abbreviation: "TOR",
+      city: "Toronto",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Toronto Raptors",
+      name: "Raptors"
+    }
   },
   {
     id: 3089,
@@ -781,6 +1231,15 @@ exports.players = [
     position: "",
     team_id: 28,
     weight_pounds: 205
+    , team: {
+      id: 28,
+      abbreviation: "TOR",
+      city: "Toronto",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Toronto Raptors",
+      name: "Raptors"
+    }
   },
   {
     id: 458,
@@ -791,6 +1250,15 @@ exports.players = [
     position: "G",
     team_id: 28,
     weight_pounds: 195
+    , team: {
+      id: 28,
+      abbreviation: "TOR",
+      city: "Toronto",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Toronto Raptors",
+      name: "Raptors"
+    }
   },
   {
     id: 470,
@@ -801,6 +1269,15 @@ exports.players = [
     position: "G",
     team_id: 28,
     weight_pounds: 205
+    , team: {
+      id: 28,
+      abbreviation: "TOR",
+      city: "Toronto",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Toronto Raptors",
+      name: "Raptors"
+    }
   },
   {
     id: 17896039,
@@ -810,7 +1287,16 @@ exports.players = [
     last_name: "Champagnie",
     position: "F",
     team_id: 28,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 28,
+      abbreviation: "TOR",
+      city: "Toronto",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Toronto Raptors",
+      name: "Raptors"
+    }
   },
   {
     id: 3547275,
@@ -820,7 +1306,16 @@ exports.players = [
     last_name: "Flynn",
     position: "G",
     team_id: 28,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 28,
+      abbreviation: "TOR",
+      city: "Toronto",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Toronto Raptors",
+      name: "Raptors"
+    }
   },
   {
     id: 338,
@@ -831,6 +1326,15 @@ exports.players = [
     position: "G",
     team_id: 28,
     weight_pounds: 205
+    , team: {
+      id: 28,
+      abbreviation: "TOR",
+      city: "Toronto",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Toronto Raptors",
+      name: "Raptors"
+    }
   },
   {
     id: 666508,
@@ -840,7 +1344,16 @@ exports.players = [
     last_name: "Claxton",
     position: "F-C",
     team_id: 3,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 3,
+      abbreviation: "BKN",
+      city: "Brooklyn",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Brooklyn Nets",
+      name: "Nets"
+    }
   },
   {
     id: 17896049,
@@ -850,7 +1363,16 @@ exports.players = [
     last_name: "Duke Jr.",
     position: "G",
     team_id: 3,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 3,
+      abbreviation: "BKN",
+      city: "Brooklyn",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Brooklyn Nets",
+      name: "Nets"
+    }
   },
   {
     id: 319,
@@ -861,6 +1383,15 @@ exports.players = [
     position: "G",
     team_id: 3,
     weight_pounds: 180
+    , team: {
+      id: 3,
+      abbreviation: "BKN",
+      city: "Brooklyn",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Brooklyn Nets",
+      name: "Nets"
+    }
   },
   {
     id: 17896094,
@@ -870,7 +1401,16 @@ exports.players = [
     last_name: "Banton",
     position: "G",
     team_id: 28,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 28,
+      abbreviation: "TOR",
+      city: "Toronto",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Toronto Raptors",
+      name: "Raptors"
+    }
   },
   {
     id: 56,
@@ -881,6 +1421,15 @@ exports.players = [
     position: "G",
     team_id: 28,
     weight_pounds: 180
+    , team: {
+      id: 28,
+      abbreviation: "TOR",
+      city: "Toronto",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Toronto Raptors",
+      name: "Raptors"
+    }
   },
   {
     id: 140,
@@ -891,6 +1440,15 @@ exports.players = [
     position: "F",
     team_id: 3,
     weight_pounds: 240
+    , team: {
+      id: 3,
+      abbreviation: "BKN",
+      city: "Brooklyn",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Brooklyn Nets",
+      name: "Nets"
+    }
   },
   {
     id: 189,
@@ -901,6 +1459,15 @@ exports.players = [
     position: "F",
     team_id: 3,
     weight_pounds: 250
+    , team: {
+      id: 3,
+      abbreviation: "BKN",
+      city: "Brooklyn",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Brooklyn Nets",
+      name: "Nets"
+    }
   },
   {
     id: 17896044,
@@ -910,7 +1477,16 @@ exports.players = [
     last_name: "Edwards",
     position: "F",
     team_id: 3,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 3,
+      abbreviation: "BKN",
+      city: "Brooklyn",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Brooklyn Nets",
+      name: "Nets"
+    }
   },
   {
     id: 17896038,
@@ -920,7 +1496,16 @@ exports.players = [
     last_name: "Sharpe",
     position: "C",
     team_id: 3,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 3,
+      abbreviation: "BKN",
+      city: "Brooklyn",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Brooklyn Nets",
+      name: "Nets"
+    }
   },
   {
     id: 42,
@@ -931,6 +1516,15 @@ exports.players = [
     position: "F",
     team_id: 3,
     weight_pounds: 210
+    , team: {
+      id: 3,
+      abbreviation: "BKN",
+      city: "Brooklyn",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Brooklyn Nets",
+      name: "Nets"
+    }
   },
   {
     id: 69,
@@ -941,6 +1535,15 @@ exports.players = [
     position: "G",
     team_id: 3,
     weight_pounds: 202
+    , team: {
+      id: 3,
+      abbreviation: "BKN",
+      city: "Brooklyn",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Brooklyn Nets",
+      name: "Nets"
+    }
   },
   {
     id: 87,
@@ -951,6 +1554,15 @@ exports.players = [
     position: "G",
     team_id: 3,
     weight_pounds: 196
+    , team: {
+      id: 3,
+      abbreviation: "BKN",
+      city: "Brooklyn",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Brooklyn Nets",
+      name: "Nets"
+    }
   },
   {
     id: 17896048,
@@ -960,7 +1572,16 @@ exports.players = [
     last_name: "Thomas",
     position: "G",
     team_id: 3,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 3,
+      abbreviation: "BKN",
+      city: "Brooklyn",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Brooklyn Nets",
+      name: "Nets"
+    }
   },
   {
     id: 204,
@@ -970,7 +1591,16 @@ exports.players = [
     last_name: "Hayward",
     position: "F",
     team_id: 4,
-    weight_pounds: 225
+    weight_pounds: 225,
+    team: {
+      id: 4,
+      abbreviation: "CHA",
+      city: "Charlotte",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Charlotte Hornets",
+      name: "Hornets"
+    }
   },
 
   {
@@ -981,7 +1611,16 @@ exports.players = [
     last_name: "Bridges",
     position: "F",
     team_id: 4,
-    weight_pounds: 225
+    weight_pounds: 225,
+    team: {
+      id: 4,
+      abbreviation: "CHA",
+      city: "Charlotte",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Charlotte Hornets",
+      name: "Hornets"
+    }
   },
 
   {
@@ -992,7 +1631,16 @@ exports.players = [
     last_name: "Plumlee",
     position: "F-C",
     team_id: 4,
-    weight_pounds: 235
+    weight_pounds: 235,
+    team: {
+      id: 4,
+      abbreviation: "CHA",
+      city: "Charlotte",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Charlotte Hornets",
+      name: "Hornets"
+    }
   },
 
   {
@@ -1003,7 +1651,16 @@ exports.players = [
     last_name: "Martin",
     position: "F",
     team_id: 4,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 4,
+      abbreviation: "CHA",
+      city: "Charlotte",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Charlotte Hornets",
+      name: "Hornets"
+    }
   },
 
   {
@@ -1014,7 +1671,16 @@ exports.players = [
     last_name: "Rozier",
     position: "G",
     team_id: 4,
-    weight_pounds: 190
+    weight_pounds: 190,
+    team: {
+      id: 4,
+      abbreviation: "CHA",
+      city: "Charlotte",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Charlotte Hornets",
+      name: "Hornets"
+    }
   },
 
   {
@@ -1025,7 +1691,16 @@ exports.players = [
     last_name: "Bouknight",
     position: "G",
     team_id: 4,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 4,
+      abbreviation: "CHA",
+      city: "Charlotte",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Charlotte Hornets",
+      name: "Hornets"
+    }
   },
   {
     id: 3547252,
@@ -1035,7 +1710,16 @@ exports.players = [
     last_name: "Carey Jr.",
     position: "F-C",
     team_id: 4,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 4,
+      abbreviation: "CHA",
+      city: "Charlotte",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Charlotte Hornets",
+      name: "Hornets"
+    }
   },
   {
     id: 17896032,
@@ -1045,7 +1729,16 @@ exports.players = [
     last_name: "Jones",
     position: "F-C",
     team_id: 4,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 4,
+      abbreviation: "CHA",
+      city: "Charlotte",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Charlotte Hornets",
+      name: "Hornets"
+    }
   },
   {
     id: 17896061,
@@ -1055,7 +1748,16 @@ exports.players = [
     last_name: "Lewis",
     position: "G",
     team_id: 4,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 4,
+      abbreviation: "CHA",
+      city: "Charlotte",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Charlotte Hornets",
+      name: "Hornets"
+    }
   },
   {
     id: 3547282,
@@ -1065,7 +1767,16 @@ exports.players = [
     last_name: "Richards",
     position: "C",
     team_id: 4,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 4,
+      abbreviation: "CHA",
+      city: "Charlotte",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Charlotte Hornets",
+      name: "Hornets"
+    }
   },
   {
     id: 18678001,
@@ -1075,7 +1786,16 @@ exports.players = [
     last_name: "Thor",
     position: "F",
     team_id: 4,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 4,
+      abbreviation: "CHA",
+      city: "Charlotte",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Charlotte Hornets",
+      name: "Hornets"
+    }
   },
   {
     id: 666950,
@@ -1085,7 +1805,16 @@ exports.players = [
     last_name: "Washington",
     position: "F",
     team_id: 4,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 4,
+      abbreviation: "CHA",
+      city: "Charlotte",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Charlotte Hornets",
+      name: "Hornets"
+    }
   },
   {
     id: 666682,
@@ -1095,7 +1824,16 @@ exports.players = [
     last_name: "Johnson",
     position: "F",
     team_id: 27,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 27,
+      abbreviation: "SAS",
+      city: "San Antonio",
+      conference: "West",
+      division: "Southwest",
+      full_name: "San Antonio Spurs",
+      name: "Spurs"
+    }
   },
   {
     id: 305,
@@ -1106,6 +1844,15 @@ exports.players = [
     position: "F",
     team_id: 27,
     weight_pounds: 225
+    , team: {
+      id: 27,
+      abbreviation: "SAS",
+      city: "San Antonio",
+      conference: "West",
+      division: "Southwest",
+      full_name: "San Antonio Spurs",
+      name: "Spurs"
+    }
   },
   {
     id: 373,
@@ -1116,6 +1863,15 @@ exports.players = [
     position: "C",
     team_id: 27,
     weight_pounds: 230
+    , team: {
+      id: 27,
+      abbreviation: "SAS",
+      city: "San Antonio",
+      conference: "West",
+      division: "Southwest",
+      full_name: "San Antonio Spurs",
+      name: "Spurs"
+    }
   },
   {
     id: 473,
@@ -1126,6 +1882,15 @@ exports.players = [
     position: "G",
     team_id: 27,
     weight_pounds: 190
+    , team: {
+      id: 27,
+      abbreviation: "SAS",
+      city: "San Antonio",
+      conference: "West",
+      division: "Southwest",
+      full_name: "San Antonio Spurs",
+      name: "Spurs"
+    }
   },
   {
     id: 334,
@@ -1136,6 +1901,15 @@ exports.players = [
     position: "G",
     team_id: 27,
     weight_pounds: 170
+    , team: {
+      id: 27,
+      abbreviation: "SAS",
+      city: "San Antonio",
+      conference: "West",
+      division: "Southwest",
+      full_name: "San Antonio Spurs",
+      name: "Spurs"
+    }
   },
   {
     id: 32,
@@ -1146,6 +1920,15 @@ exports.players = [
     position: "F",
     team_id: 27,
     weight_pounds: 229
+    , team: {
+      id: 27,
+      abbreviation: "SAS",
+      city: "San Antonio",
+      conference: "West",
+      division: "Southwest",
+      full_name: "San Antonio Spurs",
+      name: "Spurs"
+    }
   },
   {
     id: 147,
@@ -1156,6 +1939,15 @@ exports.players = [
     position: "F",
     team_id: 27,
     weight_pounds: 245
+    , team: {
+      id: 27,
+      abbreviation: "SAS",
+      city: "San Antonio",
+      conference: "West",
+      division: "Southwest",
+      full_name: "San Antonio Spurs",
+      name: "Spurs"
+    }
   },
   {
     id: 3547274,
@@ -1165,7 +1957,16 @@ exports.players = [
     last_name: "Jones",
     position: "G",
     team_id: 27,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 27,
+      abbreviation: "SAS",
+      city: "San Antonio",
+      conference: "West",
+      division: "Southwest",
+      full_name: "San Antonio Spurs",
+      name: "Spurs"
+    }
   },
   {
     id: 666762,
@@ -1175,7 +1976,16 @@ exports.players = [
     last_name: "McDaniels",
     position: "F",
     team_id: 4,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 4,
+      abbreviation: "CHA",
+      city: "Charlotte",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Charlotte Hornets",
+      name: "Hornets"
+    }
   },
   {
     id: 360,
@@ -1185,7 +1995,16 @@ exports.players = [
     last_name: "Oubre Jr.",
     position: "F",
     team_id: 4,
-    weight_pounds: 205
+    weight_pounds: 205,
+    team: {
+      id: 4,
+      abbreviation: "CHA",
+      city: "Charlotte",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Charlotte Hornets",
+      name: "Hornets"
+    }
   },
   {
     id: 19465326,
@@ -1195,7 +2014,16 @@ exports.players = [
     last_name: "Landale",
     position: "C",
     team_id: 27,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 27,
+      abbreviation: "SAS",
+      city: "San Antonio",
+      conference: "West",
+      division: "Southwest",
+      full_name: "San Antonio Spurs",
+      name: "Spurs"
+    }
   },
   {
     id: 3547246,
@@ -1205,7 +2033,16 @@ exports.players = [
     last_name: "Vassell",
     position: "G-F",
     team_id: 27,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 27,
+      abbreviation: "SAS",
+      city: "San Antonio",
+      conference: "West",
+      division: "Southwest",
+      full_name: "San Antonio Spurs",
+      name: "Spurs"
+    }
   },
   {
     id: 489,
@@ -1216,6 +2053,15 @@ exports.players = [
     position: "F",
     team_id: 27,
     weight_pounds: 221
+    , team: {
+      id: 27,
+      abbreviation: "SAS",
+      city: "San Antonio",
+      conference: "West",
+      division: "Southwest",
+      full_name: "San Antonio Spurs",
+      name: "Spurs"
+    }
   },
   {
     id: 237,
@@ -1225,7 +2071,16 @@ exports.players = [
     last_name: "James",
     position: "F",
     team_id: 14,
-    weight_pounds: 250
+    weight_pounds: 250,
+    team: {
+      id: 14,
+      abbreviation: "LAL",
+      city: "Los Angeles",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Los Angeles Lakers",
+      name: "Lakers"
+    }
   },
 
   {
@@ -1236,7 +2091,16 @@ exports.players = [
     last_name: "Ellington",
     position: "G",
     team_id: 14,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 14,
+      abbreviation: "LAL",
+      city: "Los Angeles",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Los Angeles Lakers",
+      name: "Lakers"
+    }
   },
 
   {
@@ -1247,7 +2111,16 @@ exports.players = [
     last_name: "Jordan",
     position: "C",
     team_id: 14,
-    weight_pounds: 265
+    weight_pounds: 265,
+    team: {
+      id: 14,
+      abbreviation: "LAL",
+      city: "Los Angeles",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Los Angeles Lakers",
+      name: "Lakers"
+    }
   },
 
   {
@@ -1258,7 +2131,16 @@ exports.players = [
     last_name: "Westbrook",
     position: "G",
     team_id: 14,
-    weight_pounds: 200
+    weight_pounds: 200,
+    team: {
+      id: 14,
+      abbreviation: "LAL",
+      city: "Los Angeles",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Los Angeles Lakers",
+      name: "Lakers"
+    }
   },
 
   {
@@ -1269,7 +2151,16 @@ exports.players = [
     last_name: "Thomas",
     position: "G",
     team_id: 14,
-    weight_pounds: 185
+    weight_pounds: 185,
+    team: {
+      id: 14,
+      abbreviation: "LAL",
+      city: "Los Angeles",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Los Angeles Lakers",
+      name: "Lakers"
+    }
   },
 
   {
@@ -1280,7 +2171,16 @@ exports.players = [
     last_name: "Anthony",
     position: "F",
     team_id: 14,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 14,
+      abbreviation: "LAL",
+      city: "Los Angeles",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Los Angeles Lakers",
+      name: "Lakers"
+    }
   },
 
   {
@@ -1291,7 +2191,16 @@ exports.players = [
     last_name: "Ariza",
     position: "F",
     team_id: 14,
-    weight_pounds: 215
+    weight_pounds: 215,
+    team: {
+      id: 14,
+      abbreviation: "LAL",
+      city: "Los Angeles",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Los Angeles Lakers",
+      name: "Lakers"
+    }
   },
 
   {
@@ -1302,7 +2211,16 @@ exports.players = [
     last_name: "Brown",
     position: "G",
     team_id: 14,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 14,
+      abbreviation: "LAL",
+      city: "Los Angeles",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Los Angeles Lakers",
+      name: "Lakers"
+    }
   },
 
   {
@@ -1313,7 +2231,16 @@ exports.players = [
     last_name: "Davis",
     position: "F-C",
     team_id: 14,
-    weight_pounds: 253
+    weight_pounds: 253,
+    team: {
+      id: 14,
+      abbreviation: "LAL",
+      city: "Los Angeles",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Los Angeles Lakers",
+      name: "Lakers"
+    }
   },
 
   {
@@ -1324,7 +2251,16 @@ exports.players = [
     last_name: "Huff",
     position: "F-C",
     team_id: 14,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 14,
+      abbreviation: "LAL",
+      city: "Los Angeles",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Los Angeles Lakers",
+      name: "Lakers"
+    }
   },
 
   {
@@ -1335,7 +2271,16 @@ exports.players = [
     last_name: "Nunn",
     position: "G",
     team_id: 14,
-    weight_pounds: null
+    weight_pounds: null,
+    team: {
+      id: 14,
+      abbreviation: "LAL",
+      city: "Los Angeles",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Los Angeles Lakers",
+      name: "Lakers"
+    }
   },
 
   {
@@ -1346,7 +2291,16 @@ exports.players = [
     last_name: "Rondo",
     position: "G",
     team_id: 14,
-    weight_pounds: 186
+    weight_pounds: 186,
+    team: {
+      id: 14,
+      abbreviation: "LAL",
+      city: "Los Angeles",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Los Angeles Lakers",
+      name: "Lakers"
+    }
   },
 
   {
@@ -1358,6 +2312,15 @@ exports.players = [
     position: "G-F",
     team_id: 5,
     weight_pounds: null
+    , team: {
+      id: 5,
+      abbreviation: "CHI",
+      city: "Chicago",
+      conference: "East",
+      division: "Central",
+      full_name: "Chicago Bulls",
+      name: "Bulls"
+    }
   },
 
   {
@@ -1369,6 +2332,15 @@ exports.players = [
     position: "G",
     team_id: 5,
     weight_pounds: 220
+    , team: {
+      id: 5,
+      abbreviation: "CHI",
+      city: "Chicago",
+      conference: "East",
+      division: "Central",
+      full_name: "Chicago Bulls",
+      name: "Bulls"
+    }
   },
 
   {
@@ -1380,6 +2352,15 @@ exports.players = [
     position: "C",
     team_id: 5,
     weight_pounds: null
+    , team: {
+      id: 5,
+      abbreviation: "CHI",
+      city: "Chicago",
+      conference: "East",
+      division: "Central",
+      full_name: "Chicago Bulls",
+      name: "Bulls"
+    }
   },
 
   {
@@ -1391,6 +2372,15 @@ exports.players = [
     position: "G",
     team_id: 5,
     weight_pounds: null
+    , team: {
+      id: 5,
+      abbreviation: "CHI",
+      city: "Chicago",
+      conference: "East",
+      division: "Central",
+      full_name: "Chicago Bulls",
+      name: "Bulls"
+    }
   },
 
   {
@@ -1402,6 +2392,15 @@ exports.players = [
     position: "C",
     team_id: 5,
     weight_pounds: null
+    , team: {
+      id: 5,
+      abbreviation: "CHI",
+      city: "Chicago",
+      conference: "East",
+      division: "Central",
+      full_name: "Chicago Bulls",
+      name: "Bulls"
+    }
   },
 
   {
@@ -1413,6 +2412,15 @@ exports.players = [
     position: "F-G",
     team_id: 5,
     weight_pounds: 200
+    , team: {
+      id: 5,
+      abbreviation: "CHI",
+      city: "Chicago",
+      conference: "East",
+      division: "Central",
+      full_name: "Chicago Bulls",
+      name: "Bulls"
+    }
   },
 
   {
@@ -1424,6 +2432,15 @@ exports.players = [
     position: "C",
     team_id: 5,
     weight_pounds: 248
+    , team: {
+      id: 5,
+      abbreviation: "CHI",
+      city: "Chicago",
+      conference: "East",
+      division: "Central",
+      full_name: "Chicago Bulls",
+      name: "Bulls"
+    }
   },
 
   {
@@ -1435,6 +2452,15 @@ exports.players = [
     position: "C",
     team_id: 5,
     weight_pounds: 260
+    , team: {
+      id: 5,
+      abbreviation: "CHI",
+      city: "Chicago",
+      conference: "East",
+      division: "Central",
+      full_name: "Chicago Bulls",
+      name: "Bulls"
+    }
   },
 
   {
@@ -1446,6 +2472,15 @@ exports.players = [
     position: "G",
     team_id: 5,
     weight_pounds: 186
+    , team: {
+      id: 5,
+      abbreviation: "CHI",
+      city: "Chicago",
+      conference: "East",
+      division: "Central",
+      full_name: "Chicago Bulls",
+      name: "Bulls"
+    }
   },
 
   {
@@ -1457,6 +2492,15 @@ exports.players = [
     position: "G",
     team_id: 5,
     weight_pounds: 190
+    , team: {
+      id: 5,
+      abbreviation: "CHI",
+      city: "Chicago",
+      conference: "East",
+      division: "Central",
+      full_name: "Chicago Bulls",
+      name: "Bulls"
+    }
   },
 
   {
@@ -1468,6 +2512,15 @@ exports.players = [
     position: "G",
     team_id: 5,
     weight_pounds: null
+    , team: {
+      id: 5,
+      abbreviation: "CHI",
+      city: "Chicago",
+      conference: "East",
+      division: "Central",
+      full_name: "Chicago Bulls",
+      name: "Bulls"
+    }
   },
 
   {
@@ -1479,6 +2532,15 @@ exports.players = [
     position: "F",
     team_id: 5,
     weight_pounds: 215
+    , team: {
+      id: 5,
+      abbreviation: "CHI",
+      city: "Chicago",
+      conference: "East",
+      division: "Central",
+      full_name: "Chicago Bulls",
+      name: "Bulls"
+    }
   },
 
   {
@@ -1490,6 +2552,15 @@ exports.players = [
     position: "F",
     team_id: 6,
     weight_pounds: 240
+    , team: {
+      id: 6,
+      abbreviation: "CLE",
+      city: "Cleveland",
+      conference: "East",
+      division: "Central",
+      full_name: "Cleveland Cavaliers",
+      name: "Cavaliers"
+    }
   },
   {
     id: 666940,
@@ -1500,6 +2571,15 @@ exports.players = [
     position: "F",
     team_id: 6,
     weight_pounds: null
+    , team: {
+      id: 6,
+      abbreviation: "CLE",
+      city: "Cleveland",
+      conference: "East",
+      division: "Central",
+      full_name: "Cleveland Cavaliers",
+      name: "Cavaliers"
+    }
   },
   {
     id: 9,
@@ -1510,6 +2590,15 @@ exports.players = [
     position: "C",
     team_id: 6,
     weight_pounds: 237
+    , team: {
+      id: 6,
+      abbreviation: "CLE",
+      city: "Cleveland",
+      conference: "East",
+      division: "Central",
+      full_name: "Cleveland Cavaliers",
+      name: "Cavaliers"
+    }
   },
   {
     id: 3547279,
@@ -1520,6 +2609,15 @@ exports.players = [
     position: "F",
     team_id: 6,
     weight_pounds: null
+    , team: {
+      id: 6,
+      abbreviation: "CLE",
+      city: "Cleveland",
+      conference: "East",
+      division: "Central",
+      full_name: "Cleveland Cavaliers",
+      name: "Cavaliers"
+    }
   },
   {
     id: 666581,
@@ -1530,6 +2628,15 @@ exports.players = [
     position: "G",
     team_id: 6,
     weight_pounds: null
+    , team: {
+      id: 6,
+      abbreviation: "CLE",
+      city: "Cleveland",
+      conference: "East",
+      division: "Central",
+      full_name: "Cleveland Cavaliers",
+      name: "Cavaliers"
+    }
   },
   {
     id: 118,
@@ -1540,6 +2647,15 @@ exports.players = [
     position: "C",
     team_id: 6,
     weight_pounds: 225
+    , team: {
+      id: 6,
+      abbreviation: "CLE",
+      city: "Cleveland",
+      conference: "East",
+      division: "Central",
+      full_name: "Cleveland Cavaliers",
+      name: "Cavaliers"
+    }
   },
   {
     id: 285,
@@ -1550,6 +2666,15 @@ exports.players = [
     position: "F-C",
     team_id: 6,
     weight_pounds: 251
+    , team: {
+      id: 6,
+      abbreviation: "CLE",
+      city: "Cleveland",
+      conference: "East",
+      division: "Central",
+      full_name: "Cleveland Cavaliers",
+      name: "Cavaliers"
+    }
   },
   {
     id: 17554003,
@@ -1560,6 +2685,15 @@ exports.players = [
     position: "G",
     team_id: 6,
     weight_pounds: null
+    , team: {
+      id: 6,
+      abbreviation: "CLE",
+      city: "Cleveland",
+      conference: "East",
+      division: "Central",
+      full_name: "Cleveland Cavaliers",
+      name: "Cavaliers"
+    }
   },
   {
     id: 359,
@@ -1570,6 +2704,15 @@ exports.players = [
     position: "F",
     team_id: 6,
     weight_pounds: 215
+    , team: {
+      id: 6,
+      abbreviation: "CLE",
+      city: "Cleveland",
+      conference: "East",
+      division: "Central",
+      full_name: "Cleveland Cavaliers",
+      name: "Cavaliers"
+    }
   },
   {
     id: 19465586,
@@ -1580,6 +2723,15 @@ exports.players = [
     position: "G",
     team_id: 6,
     weight_pounds: null
+    , team: {
+      id: 6,
+      abbreviation: "CLE",
+      city: "Cleveland",
+      conference: "East",
+      division: "Central",
+      full_name: "Cleveland Cavaliers",
+      name: "Cavaliers"
+    }
   },
   {
     id: 404,
@@ -1590,6 +2742,15 @@ exports.players = [
     position: "G",
     team_id: 6,
     weight_pounds: 190
+    , team: {
+      id: 6,
+      abbreviation: "CLE",
+      city: "Cleveland",
+      conference: "East",
+      division: "Central",
+      full_name: "Cleveland Cavaliers",
+      name: "Cavaliers"
+    }
   },
   {
     id: 456,
@@ -1600,6 +2761,15 @@ exports.players = [
     position: "G",
     team_id: 6,
     weight_pounds: 210
+    , team: {
+      id: 6,
+      abbreviation: "CLE",
+      city: "Cleveland",
+      conference: "East",
+      division: "Central",
+      full_name: "Cleveland Cavaliers",
+      name: "Cavaliers"
+    }
   },
   {
     id: 666971,
@@ -1610,6 +2780,15 @@ exports.players = [
     position: "G-F",
     team_id: 6,
     weight_pounds: null
+    , team: {
+      id: 6,
+      abbreviation: "CLE",
+      city: "Cleveland",
+      conference: "East",
+      division: "Central",
+      full_name: "Cleveland Cavaliers",
+      name: "Cavaliers"
+    }
   },
   {
     id: 3547207,
@@ -1620,6 +2799,15 @@ exports.players = [
     position: "F",
     team_id: 17,
     weight_pounds: null
+    , team: {
+      id: 17,
+      abbreviation: "MIL",
+      city: "Milwaukee",
+      conference: "East",
+      division: "Central",
+      full_name: "Milwaukee Bucks",
+      name: "Bucks"
+    }
   },
   {
     id: 17896059,
@@ -1630,6 +2818,15 @@ exports.players = [
     position: "F",
     team_id: 17,
     weight_pounds: null
+    , team: {
+      id: 17,
+      abbreviation: "MIL",
+      city: "Milwaukee",
+      conference: "East",
+      division: "Central",
+      full_name: "Milwaukee Bucks",
+      name: "Bucks"
+    }
   },
   {
     id: 107,
@@ -1640,6 +2837,15 @@ exports.players = [
     position: "C",
     team_id: 17,
     weight_pounds: 270
+    , team: {
+      id: 17,
+      abbreviation: "MIL",
+      city: "Milwaukee",
+      conference: "East",
+      division: "Central",
+      full_name: "Milwaukee Bucks",
+      name: "Bucks"
+    }
   },
   {
     id: 17554001,
@@ -1650,6 +2856,15 @@ exports.players = [
     position: "G",
     team_id: 17,
     weight_pounds: null
+    , team: {
+      id: 17,
+      abbreviation: "MIL",
+      city: "Milwaukee",
+      conference: "East",
+      division: "Central",
+      full_name: "Milwaukee Bucks",
+      name: "Bucks"
+    }
   },
   {
     id: 211,
@@ -1660,6 +2875,15 @@ exports.players = [
     position: "G",
     team_id: 17,
     weight_pounds: 188
+    , team: {
+      id: 17,
+      abbreviation: "MIL",
+      city: "Milwaukee",
+      conference: "East",
+      division: "Central",
+      full_name: "Milwaukee Bucks",
+      name: "Bucks"
+    }
   },
   {
     id: 105,
@@ -1670,6 +2894,15 @@ exports.players = [
     position: "G",
     team_id: 17,
     weight_pounds: 209
+    , team: {
+      id: 17,
+      abbreviation: "MIL",
+      city: "Milwaukee",
+      conference: "East",
+      division: "Central",
+      full_name: "Milwaukee Bucks",
+      name: "Bucks"
+    }
   },
   {
     id: 315,
@@ -1680,6 +2913,15 @@ exports.players = [
     position: "F",
     team_id: 17,
     weight_pounds: 222
+    , team: {
+      id: 17,
+      abbreviation: "MIL",
+      city: "Milwaukee",
+      conference: "East",
+      division: "Central",
+      full_name: "Milwaukee Bucks",
+      name: "Bucks"
+    }
   },
   {
     id: 2148,
@@ -1690,6 +2932,15 @@ exports.players = [
     position: "",
     team_id: 17,
     weight_pounds: null
+    , team: {
+      id: 17,
+      abbreviation: "MIL",
+      city: "Milwaukee",
+      conference: "East",
+      division: "Central",
+      full_name: "Milwaukee Bucks",
+      name: "Bucks"
+    }
   },
   {
     id: 353,
@@ -1700,6 +2951,15 @@ exports.players = [
     position: "F",
     team_id: 17,
     weight_pounds: 241
+    , team: {
+      id: 17,
+      abbreviation: "MIL",
+      city: "Milwaukee",
+      conference: "East",
+      division: "Central",
+      full_name: "Milwaukee Bucks",
+      name: "Bucks"
+    }
   },
   {
     id: 8,
@@ -1710,6 +2970,15 @@ exports.players = [
     position: "G",
     team_id: 17,
     weight_pounds: 198
+    , team: {
+      id: 17,
+      abbreviation: "MIL",
+      city: "Milwaukee",
+      conference: "East",
+      division: "Central",
+      full_name: "Milwaukee Bucks",
+      name: "Bucks"
+    }
   },
   {
     id: 214,
@@ -1720,6 +2989,15 @@ exports.players = [
     position: "G",
     team_id: 17,
     weight_pounds: 205
+    , team: {
+      id: 17,
+      abbreviation: "MIL",
+      city: "Milwaukee",
+      conference: "East",
+      division: "Central",
+      full_name: "Milwaukee Bucks",
+      name: "Bucks"
+    }
   },
   {
     id: 347,
@@ -1730,6 +3008,15 @@ exports.players = [
     position: "G",
     team_id: 7,
     weight_pounds: 200
+    , team: {
+      id: 7,
+      abbreviation: "DAL",
+      city: "Dallas",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Dallas Mavericks",
+      name: "Mavericks"
+    }
   },
 
   {
@@ -1741,6 +3028,15 @@ exports.players = [
     position: "F",
     team_id: 7,
     weight_pounds: 220
+    , team: {
+      id: 7,
+      abbreviation: "DAL",
+      city: "Dallas",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Dallas Mavericks",
+      name: "Mavericks"
+    }
   },
 
   {
@@ -1752,6 +3048,15 @@ exports.players = [
     position: "F-C",
     team_id: 7,
     weight_pounds: 240
+    , team: {
+      id: 7,
+      abbreviation: "DAL",
+      city: "Dallas",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Dallas Mavericks",
+      name: "Mavericks"
+    }
   },
 
   {
@@ -1763,6 +3068,15 @@ exports.players = [
     position: "F-C",
     team_id: 7,
     weight_pounds: 240
+    , team: {
+      id: 7,
+      abbreviation: "DAL",
+      city: "Dallas",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Dallas Mavericks",
+      name: "Mavericks"
+    }
   },
 
   {
@@ -1774,6 +3088,15 @@ exports.players = [
     position: "G-F",
     team_id: 7,
     weight_pounds: 205
+    , team: {
+      id: 7,
+      abbreviation: "DAL",
+      city: "Dallas",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Dallas Mavericks",
+      name: "Mavericks"
+    }
   },
 
   {
@@ -1785,6 +3108,15 @@ exports.players = [
     position: "G",
     team_id: 7,
     weight_pounds: 190
+    , team: {
+      id: 7,
+      abbreviation: "DAL",
+      city: "Dallas",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Dallas Mavericks",
+      name: "Mavericks"
+    }
   },
 
   {
@@ -1796,6 +3128,15 @@ exports.players = [
     position: "C",
     team_id: 7,
     weight_pounds: null
+    , team: {
+      id: 7,
+      abbreviation: "DAL",
+      city: "Dallas",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Dallas Mavericks",
+      name: "Mavericks"
+    }
   },
 
   {
@@ -1807,6 +3148,15 @@ exports.players = [
     position: "G",
     team_id: 7,
     weight_pounds: 175
+    , team: {
+      id: 7,
+      abbreviation: "DAL",
+      city: "Dallas",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Dallas Mavericks",
+      name: "Mavericks"
+    }
   },
 
   {
@@ -1818,6 +3168,15 @@ exports.players = [
     position: "G",
     team_id: 7,
     weight_pounds: null
+    , team: {
+      id: 7,
+      abbreviation: "DAL",
+      city: "Dallas",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Dallas Mavericks",
+      name: "Mavericks"
+    }
   },
 
   {
@@ -1829,6 +3188,15 @@ exports.players = [
     position: "G",
     team_id: 7,
     weight_pounds: 205
+    , team: {
+      id: 7,
+      abbreviation: "DAL",
+      city: "Dallas",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Dallas Mavericks",
+      name: "Mavericks"
+    }
   },
 
   {
@@ -1840,6 +3208,15 @@ exports.players = [
     position: "F",
     team_id: 7,
     weight_pounds: 240
+    , team: {
+      id: 7,
+      abbreviation: "DAL",
+      city: "Dallas",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Dallas Mavericks",
+      name: "Mavericks"
+    }
   },
 
   {
@@ -1851,6 +3228,15 @@ exports.players = [
     position: "C",
     team_id: 7,
     weight_pounds: 290
+    , team: {
+      id: 7,
+      abbreviation: "DAL",
+      city: "Dallas",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Dallas Mavericks",
+      name: "Mavericks"
+    }
   },
   {
     id: 81,
@@ -1861,6 +3247,15 @@ exports.players = [
     position: "G",
     team_id: 30,
     weight_pounds: 205
+    , team: {
+      id: 30,
+      abbreviation: "WAS",
+      city: "Washington",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Washington Wizards",
+      name: "Wizards"
+    }
   },
   {
     id: 3547242,
@@ -1871,6 +3266,15 @@ exports.players = [
     position: "F",
     team_id: 30,
     weight_pounds: null
+    , team: {
+      id: 30,
+      abbreviation: "WAS",
+      city: "Washington",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Washington Wizards",
+      name: "Wizards"
+    }
   },
   {
     id: 666577,
@@ -1881,6 +3285,15 @@ exports.players = [
     position: "F",
     team_id: 30,
     weight_pounds: null
+    , team: {
+      id: 30,
+      abbreviation: "WAS",
+      city: "Washington",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Washington Wizards",
+      name: "Wizards"
+    }
   },
   {
     id: 37,
@@ -1891,6 +3304,15 @@ exports.players = [
     position: "G",
     team_id: 30,
     weight_pounds: 207
+    , team: {
+      id: 30,
+      abbreviation: "WAS",
+      city: "Washington",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Washington Wizards",
+      name: "Wizards"
+    }
   },
   {
     id: 130,
@@ -1901,6 +3323,15 @@ exports.players = [
     position: "G",
     team_id: 30,
     weight_pounds: 210
+    , team: {
+      id: 30,
+      abbreviation: "WAS",
+      city: "Washington",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Washington Wizards",
+      name: "Wizards"
+    }
   },
   {
     id: 44,
@@ -1911,6 +3342,15 @@ exports.players = [
     position: "F",
     team_id: 30,
     weight_pounds: 225
+    , team: {
+      id: 30,
+      abbreviation: "WAS",
+      city: "Washington",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Washington Wizards",
+      name: "Wizards"
+    }
   },
   {
     id: 194,
@@ -1921,6 +3361,15 @@ exports.players = [
     position: "F-C",
     team_id: 30,
     weight_pounds: 240
+    , team: {
+      id: 30,
+      abbreviation: "WAS",
+      city: "Washington",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Washington Wizards",
+      name: "Wizards"
+    }
   },
   {
     id: 343,
@@ -1931,6 +3380,15 @@ exports.players = [
     position: "G",
     team_id: 30,
     weight_pounds: 179
+    , team: {
+      id: 30,
+      abbreviation: "WAS",
+      city: "Washington",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Washington Wizards",
+      name: "Wizards"
+    }
   },
   {
     id: 3547268,
@@ -1941,6 +3399,15 @@ exports.players = [
     position: "F-C",
     team_id: 8,
     weight_pounds: null
+    , team: {
+      id: 8,
+      abbreviation: "DEN",
+      city: "Denver",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Denver Nuggets",
+      name: "Nuggets"
+    }
   },
   {
     id: 390,
@@ -1951,6 +3418,15 @@ exports.players = [
     position: "G",
     team_id: 8,
     weight_pounds: 208
+    , team: {
+      id: 8,
+      abbreviation: "DEN",
+      city: "Denver",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Denver Nuggets",
+      name: "Nuggets"
+    }
   },
   {
     id: 330,
@@ -1961,6 +3437,15 @@ exports.players = [
     position: "G",
     team_id: 8,
     weight_pounds: 175
+    , team: {
+      id: 8,
+      abbreviation: "DEN",
+      city: "Denver",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Denver Nuggets",
+      name: "Nuggets"
+    }
   },
   {
     id: 3547304,
@@ -1971,6 +3456,15 @@ exports.players = [
     position: "",
     team_id: 8,
     weight_pounds: null
+    , team: {
+      id: 8,
+      abbreviation: "DEN",
+      city: "Denver",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Denver Nuggets",
+      name: "Nuggets"
+    }
   },
   {
     id: 3547283,
@@ -1981,6 +3475,15 @@ exports.players = [
     position: "G",
     team_id: 8,
     weight_pounds: null
+    , team: {
+      id: 8,
+      abbreviation: "DEN",
+      city: "Denver",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Denver Nuggets",
+      name: "Nuggets"
+    }
   },
   {
     id: 17896031,
@@ -1991,6 +3494,15 @@ exports.players = [
     position: "G",
     team_id: 8,
     weight_pounds: null
+    , team: {
+      id: 8,
+      abbreviation: "DEN",
+      city: "Denver",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Denver Nuggets",
+      name: "Nuggets"
+    }
   },
   {
     id: 17896045,
@@ -2001,6 +3513,15 @@ exports.players = [
     position: "F",
     team_id: 30,
     weight_pounds: null
+    , team: {
+      id: 30,
+      abbreviation: "WAS",
+      city: "Washington",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Washington Wizards",
+      name: "Wizards"
+    }
   },
   {
     id: 213,
@@ -2011,6 +3532,15 @@ exports.players = [
     position: "G",
     team_id: 30,
     weight_pounds: 185
+    , team: {
+      id: 30,
+      abbreviation: "WAS",
+      city: "Washington",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Washington Wizards",
+      name: "Wizards"
+    }
   },
   {
     id: 3547302,
@@ -2021,6 +3551,15 @@ exports.players = [
     position: "F",
     team_id: 30,
     weight_pounds: null
+    , team: {
+      id: 30,
+      abbreviation: "WAS",
+      city: "Washington",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Washington Wizards",
+      name: "Wizards"
+    }
   },
   {
     id: 177,
@@ -2031,6 +3570,15 @@ exports.players = [
     position: "F",
     team_id: 8,
     weight_pounds: 220
+    , team: {
+      id: 8,
+      abbreviation: "DEN",
+      city: "Denver",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Denver Nuggets",
+      name: "Nuggets"
+    }
   },
   {
     id: 188,
@@ -2041,6 +3589,15 @@ exports.players = [
     position: "F",
     team_id: 8,
     weight_pounds: 235
+    , team: {
+      id: 8,
+      abbreviation: "DEN",
+      city: "Denver",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Denver Nuggets",
+      name: "Nuggets"
+    }
   },
   {
     id: 246,
@@ -2051,6 +3608,15 @@ exports.players = [
     position: "C",
     team_id: 8,
     weight_pounds: 250
+    , team: {
+      id: 8,
+      abbreviation: "DEN",
+      city: "Denver",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Denver Nuggets",
+      name: "Nuggets"
+    }
   },
   {
     id: 666451,
@@ -2061,6 +3627,15 @@ exports.players = [
     position: "C",
     team_id: 8,
     weight_pounds: null
+    , team: {
+      id: 8,
+      abbreviation: "DEN",
+      city: "Denver",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Denver Nuggets",
+      name: "Nuggets"
+    }
   },
   {
     id: 4197105,
@@ -2071,6 +3646,15 @@ exports.players = [
     position: "F",
     team_id: 8,
     weight_pounds: null
+    , team: {
+      id: 8,
+      abbreviation: "DEN",
+      city: "Denver",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Denver Nuggets",
+      name: "Nuggets"
+    }
   },
   {
     id: 666489,
@@ -2081,6 +3665,15 @@ exports.players = [
     position: "F",
     team_id: 8,
     weight_pounds: null
+    , team: {
+      id: 8,
+      abbreviation: "DEN",
+      city: "Denver",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Denver Nuggets",
+      name: "Nuggets"
+    }
   },
   {
     id: 135,
@@ -2091,6 +3684,15 @@ exports.players = [
     position: "G-F",
     team_id: 8,
     weight_pounds: 205
+    , team: {
+      id: 8,
+      abbreviation: "DEN",
+      city: "Denver",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Denver Nuggets",
+      name: "Nuggets"
+    }
   },
   {
     id: 3547301,
@@ -2101,6 +3703,15 @@ exports.players = [
     position: "F",
     team_id: 11,
     weight_pounds: null
+    , team: {
+      id: 11,
+      abbreviation: "HOU",
+      city: "Houston",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Houston Rockets",
+      name: "Rockets"
+    }
   },
 
   {
@@ -2112,6 +3723,15 @@ exports.players = [
     position: "G",
     team_id: 11,
     weight_pounds: null
+    , team: {
+      id: 11,
+      abbreviation: "HOU",
+      city: "Houston",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Houston Rockets",
+      name: "Rockets"
+    }
   },
 
   {
@@ -2123,6 +3743,15 @@ exports.players = [
     position: "F",
     team_id: 11,
     weight_pounds: 214
+    , team: {
+      id: 11,
+      abbreviation: "HOU",
+      city: "Houston",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Houston Rockets",
+      name: "Rockets"
+    }
   },
 
   {
@@ -2134,6 +3763,15 @@ exports.players = [
     position: "G",
     team_id: 11,
     weight_pounds: null
+    , team: {
+      id: 11,
+      abbreviation: "HOU",
+      city: "Houston",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Houston Rockets",
+      name: "Rockets"
+    }
   },
 
   {
@@ -2145,6 +3783,15 @@ exports.players = [
     position: "G",
     team_id: 11,
     weight_pounds: 215
+    , team: {
+      id: 11,
+      abbreviation: "HOU",
+      city: "Houston",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Houston Rockets",
+      name: "Rockets"
+    }
   },
 
   {
@@ -2156,6 +3803,15 @@ exports.players = [
     position: "G",
     team_id: 11,
     weight_pounds: 183
+    , team: {
+      id: 11,
+      abbreviation: "HOU",
+      city: "Houston",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Houston Rockets",
+      name: "Rockets"
+    }
   },
 
   {
@@ -2167,6 +3823,15 @@ exports.players = [
     position: "F",
     team_id: 11,
     weight_pounds: null
+    , team: {
+      id: 11,
+      abbreviation: "HOU",
+      city: "Houston",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Houston Rockets",
+      name: "Rockets"
+    }
   },
 
   {
@@ -2178,6 +3843,15 @@ exports.players = [
     position: "F",
     team_id: 11,
     weight_pounds: null
+    , team: {
+      id: 11,
+      abbreviation: "HOU",
+      city: "Houston",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Houston Rockets",
+      name: "Rockets"
+    }
   },
 
   {
@@ -2189,6 +3863,15 @@ exports.players = [
     position: "G",
     team_id: 11,
     weight_pounds: 219
+    , team: {
+      id: 11,
+      abbreviation: "HOU",
+      city: "Houston",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Houston Rockets",
+      name: "Rockets"
+    }
   },
 
   {
@@ -2200,6 +3883,15 @@ exports.players = [
     position: "F",
     team_id: 9,
     weight_pounds: null
+    , team: {
+      id: 9,
+      abbreviation: "DET",
+      city: "Detroit",
+      conference: "East",
+      division: "Central",
+      full_name: "Detroit Pistons",
+      name: "Pistons"
+    }
   },
 
   {
@@ -2211,6 +3903,15 @@ exports.players = [
     position: "F-C",
     team_id: 9,
     weight_pounds: null
+    , team: {
+      id: 9,
+      abbreviation: "DET",
+      city: "Detroit",
+      conference: "East",
+      division: "Central",
+      full_name: "Detroit Pistons",
+      name: "Pistons"
+    }
   },
 
   {
@@ -2222,6 +3923,15 @@ exports.players = [
     position: "G",
     team_id: 9,
     weight_pounds: null
+    , team: {
+      id: 9,
+      abbreviation: "DET",
+      city: "Detroit",
+      conference: "East",
+      division: "Central",
+      full_name: "Detroit Pistons",
+      name: "Pistons"
+    }
   },
 
   {
@@ -2233,6 +3943,15 @@ exports.players = [
     position: "G-F",
     team_id: 9,
     weight_pounds: null
+    , team: {
+      id: 9,
+      abbreviation: "DET",
+      city: "Detroit",
+      conference: "East",
+      division: "Central",
+      full_name: "Detroit Pistons",
+      name: "Pistons"
+    }
   },
 
   {
@@ -2244,6 +3963,15 @@ exports.players = [
     position: "C",
     team_id: 9,
     weight_pounds: null
+    , team: {
+      id: 9,
+      abbreviation: "DET",
+      city: "Detroit",
+      conference: "East",
+      division: "Central",
+      full_name: "Detroit Pistons",
+      name: "Pistons"
+    }
   },
 
   {
@@ -2255,6 +3983,15 @@ exports.players = [
     position: "G",
     team_id: 9,
     weight_pounds: 205
+    , team: {
+      id: 9,
+      abbreviation: "DET",
+      city: "Detroit",
+      conference: "East",
+      division: "Central",
+      full_name: "Detroit Pistons",
+      name: "Pistons"
+    }
   },
 
   {
@@ -2266,6 +4003,15 @@ exports.players = [
     position: "F",
     team_id: 9,
     weight_pounds: 200
+    , team: {
+      id: 9,
+      abbreviation: "DET",
+      city: "Detroit",
+      conference: "East",
+      division: "Central",
+      full_name: "Detroit Pistons",
+      name: "Pistons"
+    }
   },
 
   {
@@ -2277,6 +4023,15 @@ exports.players = [
     position: "G",
     team_id: 9,
     weight_pounds: 193
+    , team: {
+      id: 9,
+      abbreviation: "DET",
+      city: "Detroit",
+      conference: "East",
+      division: "Central",
+      full_name: "Detroit Pistons",
+      name: "Pistons"
+    }
   },
 
   {
@@ -2288,6 +4043,15 @@ exports.players = [
     position: "G",
     team_id: 9,
     weight_pounds: null
+    , team: {
+      id: 9,
+      abbreviation: "DET",
+      city: "Detroit",
+      conference: "East",
+      division: "Central",
+      full_name: "Detroit Pistons",
+      name: "Pistons"
+    }
   },
 
   {
@@ -2299,6 +4063,15 @@ exports.players = [
     position: "F",
     team_id: 9,
     weight_pounds: 234
+    , team: {
+      id: 9,
+      abbreviation: "DET",
+      city: "Detroit",
+      conference: "East",
+      division: "Central",
+      full_name: "Detroit Pistons",
+      name: "Pistons"
+    }
   },
 
   {
@@ -2310,6 +4083,15 @@ exports.players = [
     position: "F-G",
     team_id: 9,
     weight_pounds: 200
+    , team: {
+      id: 9,
+      abbreviation: "DET",
+      city: "Detroit",
+      conference: "East",
+      division: "Central",
+      full_name: "Detroit Pistons",
+      name: "Pistons"
+    }
   },
 
   {
@@ -2321,6 +4103,15 @@ exports.players = [
     position: "G",
     team_id: 11,
     weight_pounds: null
+    , team: {
+      id: 11,
+      abbreviation: "HOU",
+      city: "Houston",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Houston Rockets",
+      name: "Rockets"
+    }
   },
 
   {
@@ -2332,6 +4123,15 @@ exports.players = [
     position: "F-C",
     team_id: 11,
     weight_pounds: null
+    , team: {
+      id: 11,
+      abbreviation: "HOU",
+      city: "Houston",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Houston Rockets",
+      name: "Rockets"
+    }
   },
 
   {
@@ -2343,6 +4143,15 @@ exports.players = [
     position: "F",
     team_id: 11,
     weight_pounds: 243
+    , team: {
+      id: 11,
+      abbreviation: "HOU",
+      city: "Houston",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Houston Rockets",
+      name: "Rockets"
+    }
   },
 
   {
@@ -2354,6 +4163,15 @@ exports.players = [
     position: "G",
     team_id: 9,
     weight_pounds: 198
+    , team: {
+      id: 9,
+      abbreviation: "DET",
+      city: "Detroit",
+      conference: "East",
+      division: "Central",
+      full_name: "Detroit Pistons",
+      name: "Pistons"
+    }
   },
   {
     id: 666468,
@@ -2364,6 +4182,15 @@ exports.players = [
     position: "F",
     team_id: 12,
     weight_pounds: null
+    , team: {
+      id: 12,
+      abbreviation: "IND",
+      city: "Indiana",
+      conference: "East",
+      division: "Central",
+      full_name: "Indiana Pacers",
+      name: "Pacers"
+    }
   },
   {
     id: 267,
@@ -2374,6 +4201,15 @@ exports.players = [
     position: "G",
     team_id: 12,
     weight_pounds: 185
+    , team: {
+      id: 12,
+      abbreviation: "IND",
+      city: "Indiana",
+      conference: "East",
+      division: "Central",
+      full_name: "Indiana Pacers",
+      name: "Pacers"
+    }
   },
   {
     id: 666751,
@@ -2384,6 +4220,15 @@ exports.players = [
     position: "F",
     team_id: 12,
     weight_pounds: null
+    , team: {
+      id: 12,
+      abbreviation: "IND",
+      city: "Indiana",
+      conference: "East",
+      division: "Central",
+      full_name: "Indiana Pacers",
+      name: "Pacers"
+    }
   },
   {
     id: 452,
@@ -2394,6 +4239,15 @@ exports.players = [
     position: "C-F",
     team_id: 12,
     weight_pounds: 250
+    , team: {
+      id: 12,
+      abbreviation: "IND",
+      city: "Indiana",
+      conference: "East",
+      division: "Central",
+      full_name: "Indiana Pacers",
+      name: "Pacers"
+    }
   },
   {
     id: 277,
@@ -2404,6 +4258,15 @@ exports.players = [
     position: "G",
     team_id: 12,
     weight_pounds: 204
+    , team: {
+      id: 12,
+      abbreviation: "IND",
+      city: "Indiana",
+      conference: "East",
+      division: "Central",
+      full_name: "Indiana Pacers",
+      name: "Pacers"
+    }
   },
   {
     id: 65,
@@ -2414,6 +4277,15 @@ exports.players = [
     position: "G",
     team_id: 12,
     weight_pounds: 229
+    , team: {
+      id: 12,
+      abbreviation: "IND",
+      city: "Indiana",
+      conference: "East",
+      division: "Central",
+      full_name: "Indiana Pacers",
+      name: "Pacers"
+    }
   },
   {
     id: 17896089,
@@ -2424,6 +4296,15 @@ exports.players = [
     position: "G",
     team_id: 12,
     weight_pounds: null
+    , team: {
+      id: 12,
+      abbreviation: "IND",
+      city: "Indiana",
+      conference: "East",
+      division: "Central",
+      full_name: "Indiana Pacers",
+      name: "Pacers"
+    }
   },
 
   {
@@ -2435,6 +4316,15 @@ exports.players = [
     position: "G",
     team_id: 12,
     weight_pounds: null
+    , team: {
+      id: 12,
+      abbreviation: "IND",
+      city: "Indiana",
+      conference: "East",
+      division: "Central",
+      full_name: "Indiana Pacers",
+      name: "Pacers"
+    }
   },
   {
     id: 406,
@@ -2445,6 +4335,15 @@ exports.players = [
     position: "F",
     team_id: 12,
     weight_pounds: 240
+    , team: {
+      id: 12,
+      abbreviation: "IND",
+      city: "Indiana",
+      conference: "East",
+      division: "Central",
+      full_name: "Indiana Pacers",
+      name: "Pacers"
+    }
   },
   {
     id: 468,
@@ -2455,6 +4354,15 @@ exports.players = [
     position: "G",
     team_id: 12,
     weight_pounds: 210
+    , team: {
+      id: 12,
+      abbreviation: "IND",
+      city: "Indiana",
+      conference: "East",
+      division: "Central",
+      full_name: "Indiana Pacers",
+      name: "Pacers"
+    }
   },
   {
     id: 666442,
@@ -2465,6 +4373,15 @@ exports.players = [
     position: "C",
     team_id: 12,
     weight_pounds: null
+    , team: {
+      id: 12,
+      abbreviation: "IND",
+      city: "Indiana",
+      conference: "East",
+      division: "Central",
+      full_name: "Indiana Pacers",
+      name: "Pacers"
+    }
   },
   {
     id: 110,
@@ -2475,6 +4392,15 @@ exports.players = [
     position: "F",
     team_id: 12,
     weight_pounds: 215
+    , team: {
+      id: 12,
+      abbreviation: "IND",
+      city: "Indiana",
+      conference: "East",
+      division: "Central",
+      full_name: "Indiana Pacers",
+      name: "Pacers"
+    }
   },
   {
     id: 17896035,
@@ -2485,6 +4411,15 @@ exports.players = [
     position: "F",
     team_id: 12,
     weight_pounds: null
+    , team: {
+      id: 12,
+      abbreviation: "IND",
+      city: "Indiana",
+      conference: "East",
+      division: "Central",
+      full_name: "Indiana Pacers",
+      name: "Pacers"
+    }
   },
   {
     id: 666743,
@@ -2495,6 +4430,15 @@ exports.players = [
     position: "G",
     team_id: 13,
     weight_pounds: null
+    , team: {
+      id: 13,
+      abbreviation: "LAC",
+      city: "LA",
+      conference: "West",
+      division: "Pacific",
+      full_name: "LA Clippers",
+      name: "Clippers"
+    }
   },
   {
     id: 328,
@@ -2505,6 +4449,15 @@ exports.players = [
     position: "F",
     team_id: 13,
     weight_pounds: 235
+    , team: {
+      id: 13,
+      abbreviation: "LAC",
+      city: "LA",
+      conference: "West",
+      division: "Pacific",
+      full_name: "LA Clippers",
+      name: "Clippers"
+    }
   },
   {
     id: 493,
@@ -2515,6 +4468,15 @@ exports.players = [
     position: "C",
     team_id: 13,
     weight_pounds: 240
+    , team: {
+      id: 13,
+      abbreviation: "LAC",
+      city: "LA",
+      conference: "West",
+      division: "Pacific",
+      full_name: "LA Clippers",
+      name: "Clippers"
+    }
   },
   {
     id: 254,
@@ -2525,6 +4487,15 @@ exports.players = [
     position: "G",
     team_id: 13,
     weight_pounds: 206
+    , team: {
+      id: 13,
+      abbreviation: "LAC",
+      city: "LA",
+      conference: "West",
+      division: "Pacific",
+      full_name: "LA Clippers",
+      name: "Clippers"
+    }
   },
   {
     id: 236,
@@ -2535,6 +4506,15 @@ exports.players = [
     position: "G",
     team_id: 13,
     weight_pounds: 208
+    , team: {
+      id: 13,
+      abbreviation: "LAC",
+      city: "LA",
+      conference: "West",
+      division: "Pacific",
+      full_name: "LA Clippers",
+      name: "Clippers"
+    }
   },
   {
     id: 51,
@@ -2545,6 +4525,15 @@ exports.players = [
     position: "G",
     team_id: 13,
     weight_pounds: 205
+    , team: {
+      id: 13,
+      abbreviation: "LAC",
+      city: "LA",
+      conference: "West",
+      division: "Pacific",
+      full_name: "LA Clippers",
+      name: "Clippers"
+    }
   },
   {
     id: 201,
@@ -2555,6 +4544,15 @@ exports.players = [
     position: "F-C",
     team_id: 13,
     weight_pounds: 249
+    , team: {
+      id: 13,
+      abbreviation: "LAC",
+      city: "LA",
+      conference: "West",
+      division: "Pacific",
+      full_name: "LA Clippers",
+      name: "Clippers"
+    }
   },
   {
     id: 17896022,
@@ -2565,6 +4563,15 @@ exports.players = [
     position: "G",
     team_id: 13,
     weight_pounds: null
+    , team: {
+      id: 13,
+      abbreviation: "LAC",
+      city: "LA",
+      conference: "West",
+      division: "Pacific",
+      full_name: "LA Clippers",
+      name: "Clippers"
+    }
   },
   {
     id: 666511,
@@ -2575,6 +4582,15 @@ exports.players = [
     position: "G",
     team_id: 13,
     weight_pounds: null
+    , team: {
+      id: 13,
+      abbreviation: "LAC",
+      city: "LA",
+      conference: "West",
+      division: "Pacific",
+      full_name: "LA Clippers",
+      name: "Clippers"
+    }
   },
   {
     id: 17896041,
@@ -2585,6 +4601,15 @@ exports.players = [
     position: "G",
     team_id: 13,
     weight_pounds: null
+    , team: {
+      id: 13,
+      abbreviation: "LAC",
+      city: "LA",
+      conference: "West",
+      division: "Pacific",
+      full_name: "LA Clippers",
+      name: "Clippers"
+    }
   },
   {
     id: 3547280,
@@ -2595,6 +4620,15 @@ exports.players = [
     position: "G",
     team_id: 13,
     weight_pounds: null
+    , team: {
+      id: 13,
+      abbreviation: "LAC",
+      city: "LA",
+      conference: "West",
+      division: "Pacific",
+      full_name: "LA Clippers",
+      name: "Clippers"
+    }
   },
   {
     id: 485,
@@ -2605,6 +4639,15 @@ exports.players = [
     position: "F",
     team_id: 13,
     weight_pounds: 225
+    , team: {
+      id: 13,
+      abbreviation: "LAC",
+      city: "LA",
+      conference: "West",
+      division: "Pacific",
+      full_name: "LA Clippers",
+      name: "Clippers"
+    }
   },
   {
     id: 474,
@@ -2615,6 +4658,15 @@ exports.players = [
     position: "C",
     team_id: 29,
     weight_pounds: 265
+    , team: {
+      id: 29,
+      abbreviation: "UTA",
+      city: "Utah",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Utah Jazz",
+      name: "Jazz"
+    }
   },
   {
     id: 100,
@@ -2625,6 +4677,15 @@ exports.players = [
     position: "G",
     team_id: 29,
     weight_pounds: 194
+    , team: {
+      id: 29,
+      abbreviation: "UTA",
+      city: "Utah",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Utah Jazz",
+      name: "Jazz"
+    }
   },
   {
     id: 171,
@@ -2635,6 +4696,15 @@ exports.players = [
     position: "F",
     team_id: 29,
     weight_pounds: 230
+    , team: {
+      id: 29,
+      abbreviation: "UTA",
+      city: "Utah",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Utah Jazz",
+      name: "Jazz"
+    }
   },
   {
     id: 3547297,
@@ -2645,6 +4715,15 @@ exports.players = [
     position: "G",
     team_id: 29,
     weight_pounds: null
+    , team: {
+      id: 29,
+      abbreviation: "UTA",
+      city: "Utah",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Utah Jazz",
+      name: "Jazz"
+    }
   },
   {
     id: 666831,
@@ -2655,6 +4734,15 @@ exports.players = [
     position: "F",
     team_id: 29,
     weight_pounds: null
+    , team: {
+      id: 29,
+      abbreviation: "UTA",
+      city: "Utah",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Utah Jazz",
+      name: "Jazz"
+    }
   },
   {
     id: 104,
@@ -2665,6 +4753,15 @@ exports.players = [
     position: "G",
     team_id: 29,
     weight_pounds: 175
+    , team: {
+      id: 29,
+      abbreviation: "UTA",
+      city: "Utah",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Utah Jazz",
+      name: "Jazz"
+    }
   },
   {
     id: 226,
@@ -2675,6 +4772,15 @@ exports.players = [
     position: "F",
     team_id: 29,
     weight_pounds: 226
+    , team: {
+      id: 29,
+      abbreviation: "UTA",
+      city: "Utah",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Utah Jazz",
+      name: "Jazz"
+    }
   },
   {
     id: 666824,
@@ -2685,6 +4791,15 @@ exports.players = [
     position: "G",
     team_id: 29,
     weight_pounds: null
+    , team: {
+      id: 29,
+      abbreviation: "UTA",
+      city: "Utah",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Utah Jazz",
+      name: "Jazz"
+    }
   },
   {
     id: 351,
@@ -2695,6 +4810,15 @@ exports.players = [
     position: "F",
     team_id: 29,
     weight_pounds: 226
+    , team: {
+      id: 29,
+      abbreviation: "UTA",
+      city: "Utah",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Utah Jazz",
+      name: "Jazz"
+    }
   },
   {
     id: 54,
@@ -2705,6 +4829,15 @@ exports.players = [
     position: "F",
     team_id: 29,
     weight_pounds: 216
+    , team: {
+      id: 29,
+      abbreviation: "UTA",
+      city: "Utah",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Utah Jazz",
+      name: "Jazz"
+    }
   },
   {
     id: 176,
@@ -2715,6 +4848,15 @@ exports.players = [
     position: "C",
     team_id: 29,
     weight_pounds: 245
+    , team: {
+      id: 29,
+      abbreviation: "UTA",
+      city: "Utah",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Utah Jazz",
+      name: "Jazz"
+    }
   },
   {
     id: 322,
@@ -2725,6 +4867,15 @@ exports.players = [
     position: "G",
     team_id: 29,
     weight_pounds: 215
+    , team: {
+      id: 29,
+      abbreviation: "UTA",
+      city: "Utah",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Utah Jazz",
+      name: "Jazz"
+    }
   },
   {
     id: 666729,
@@ -2735,6 +4886,15 @@ exports.players = [
     position: "F",
     team_id: 25,
     weight_pounds: null
+    , team: {
+      id: 25,
+      abbreviation: "POR",
+      city: "Portland",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Portland Trail Blazers",
+      name: "Trail Blazers"
+    }
   },
   {
     id: 340,
@@ -2745,6 +4905,15 @@ exports.players = [
     position: "F",
     team_id: 25,
     weight_pounds: 230
+    , team: {
+      id: 25,
+      abbreviation: "POR",
+      city: "Portland",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Portland Trail Blazers",
+      name: "Trail Blazers"
+    }
   },
   {
     id: 349,
@@ -2755,6 +4924,15 @@ exports.players = [
     position: "C",
     team_id: 25,
     weight_pounds: 275
+    , team: {
+      id: 25,
+      abbreviation: "POR",
+      city: "Portland",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Portland Trail Blazers",
+      name: "Trail Blazers"
+    }
   },
   {
     id: 380,
@@ -2765,6 +4943,15 @@ exports.players = [
     position: "F-G",
     team_id: 25,
     weight_pounds: 215
+    , team: {
+      id: 25,
+      abbreviation: "POR",
+      city: "Portland",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Portland Trail Blazers",
+      name: "Trail Blazers"
+    }
   },
   {
     id: 278,
@@ -2775,6 +4962,15 @@ exports.players = [
     position: "G",
     team_id: 25,
     weight_pounds: 195
+    , team: {
+      id: 25,
+      abbreviation: "POR",
+      city: "Portland",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Portland Trail Blazers",
+      name: "Trail Blazers"
+    }
   },
   {
     id: 17896028,
@@ -2785,6 +4981,15 @@ exports.players = [
     position: "F",
     team_id: 25,
     weight_pounds: null
+    , team: {
+      id: 25,
+      abbreviation: "POR",
+      city: "Portland",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Portland Trail Blazers",
+      name: "Trail Blazers"
+    }
   },
   {
     id: 108,
@@ -2795,6 +5000,15 @@ exports.players = [
     position: "F",
     team_id: 25,
     weight_pounds: 225
+    , team: {
+      id: 25,
+      abbreviation: "POR",
+      city: "Portland",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Portland Trail Blazers",
+      name: "Trail Blazers"
+    }
   },
   {
     id: 3547164,
@@ -2805,6 +5019,15 @@ exports.players = [
     position: "F-G",
     team_id: 25,
     weight_pounds: null
+    , team: {
+      id: 25,
+      abbreviation: "POR",
+      city: "Portland",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Portland Trail Blazers",
+      name: "Trail Blazers"
+    }
   },
   {
     id: 309,
@@ -2815,6 +5038,15 @@ exports.players = [
     position: "G",
     team_id: 25,
     weight_pounds: null
+    , team: {
+      id: 25,
+      abbreviation: "POR",
+      city: "Portland",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Portland Trail Blazers",
+      name: "Trail Blazers"
+    }
   },
   {
     id: 666703,
@@ -2825,6 +5057,15 @@ exports.players = [
     position: "G-F",
     team_id: 15,
     weight_pounds: null
+    , team: {
+      id: 15,
+      abbreviation: "MEM",
+      city: "Memphis",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Memphis Grizzlies",
+      name: "Grizzlies"
+    }
   },
   {
     id: 17896066,
@@ -2835,6 +5076,15 @@ exports.players = [
     position: "G-F",
     team_id: 15,
     weight_pounds: null
+    , team: {
+      id: 15,
+      abbreviation: "MEM",
+      city: "Memphis",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Memphis Grizzlies",
+      name: "Grizzlies"
+    }
   },
   {
     id: 3547215,
@@ -2845,6 +5095,15 @@ exports.players = [
     position: "F-C",
     team_id: 15,
     weight_pounds: null
+    , team: {
+      id: 15,
+      abbreviation: "MEM",
+      city: "Memphis",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Memphis Grizzlies",
+      name: "Grizzlies"
+    }
   },
   {
     id: 3547285,
@@ -2855,6 +5114,15 @@ exports.players = [
     position: "F",
     team_id: 15,
     weight_pounds: null
+    , team: {
+      id: 15,
+      abbreviation: "MEM",
+      city: "Memphis",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Memphis Grizzlies",
+      name: "Grizzlies"
+    }
   },
   {
     id: 419,
@@ -2865,6 +5133,15 @@ exports.players = [
     position: "G",
     team_id: 25,
     weight_pounds: 185
+    , team: {
+      id: 25,
+      abbreviation: "POR",
+      city: "Portland",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Portland Trail Blazers",
+      name: "Trail Blazers"
+    }
   },
   {
     id: 421,
@@ -2875,6 +5152,15 @@ exports.players = [
     position: "G",
     team_id: 25,
     weight_pounds: 195
+    , team: {
+      id: 25,
+      abbreviation: "POR",
+      city: "Portland",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Portland Trail Blazers",
+      name: "Trail Blazers"
+    }
   },
   {
     id: 426,
@@ -2885,6 +5171,15 @@ exports.players = [
     position: "G",
     team_id: 25,
     weight_pounds: 213
+    , team: {
+      id: 25,
+      abbreviation: "POR",
+      city: "Portland",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Portland Trail Blazers",
+      name: "Trail Blazers"
+    }
   },
   {
     id: 17896058,
@@ -2895,6 +5190,15 @@ exports.players = [
     position: "F",
     team_id: 25,
     weight_pounds: null
+    , team: {
+      id: 25,
+      abbreviation: "POR",
+      city: "Portland",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Portland Trail Blazers",
+      name: "Trail Blazers"
+    }
   },
   {
     id: 66,
@@ -2905,6 +5209,15 @@ exports.players = [
     position: "G-F",
     team_id: 15,
     weight_pounds: 220
+    , team: {
+      id: 15,
+      abbreviation: "MEM",
+      city: "Memphis",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Memphis Grizzlies",
+      name: "Grizzlies"
+    }
   },
   {
     id: 231,
@@ -2915,6 +5228,15 @@ exports.players = [
     position: "F-C",
     team_id: 15,
     weight_pounds: 242
+    , team: {
+      id: 15,
+      abbreviation: "MEM",
+      city: "Memphis",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Memphis Grizzlies",
+      name: "Grizzlies"
+    }
   },
   {
     id: 3,
@@ -2925,6 +5247,15 @@ exports.players = [
     position: "C",
     team_id: 15,
     weight_pounds: 265
+    , team: {
+      id: 15,
+      abbreviation: "MEM",
+      city: "Memphis",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Memphis Grizzlies",
+      name: "Grizzlies"
+    }
   },
   {
     id: 3547287,
@@ -2935,6 +5266,15 @@ exports.players = [
     position: "G",
     team_id: 15,
     weight_pounds: null
+    , team: {
+      id: 15,
+      abbreviation: "MEM",
+      city: "Memphis",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Memphis Grizzlies",
+      name: "Grizzlies"
+    }
   },
   {
     id: 249,
@@ -2945,6 +5285,15 @@ exports.players = [
     position: "G",
     team_id: 15,
     weight_pounds: 196
+    , team: {
+      id: 15,
+      abbreviation: "MEM",
+      city: "Memphis",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Memphis Grizzlies",
+      name: "Grizzlies"
+    }
   },
   {
     id: 12,
@@ -2955,6 +5304,15 @@ exports.players = [
     position: "F",
     team_id: 15,
     weight_pounds: 230
+    , team: {
+      id: 15,
+      abbreviation: "MEM",
+      city: "Memphis",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Memphis Grizzlies",
+      name: "Grizzlies"
+    }
   },
   {
     id: 666523,
@@ -2965,6 +5323,15 @@ exports.players = [
     position: "G",
     team_id: 15,
     weight_pounds: null
+    , team: {
+      id: 15,
+      abbreviation: "MEM",
+      city: "Memphis",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Memphis Grizzlies",
+      name: "Grizzlies"
+    }
   },
   {
     id: 313,
@@ -2975,6 +5342,15 @@ exports.players = [
     position: "G",
     team_id: 15,
     weight_pounds: 200
+    , team: {
+      id: 15,
+      abbreviation: "MEM",
+      city: "Memphis",
+      conference: "West",
+      division: "Southwest",
+      full_name: "Memphis Grizzlies",
+      name: "Grizzlies"
+    }
   },
   {
     id: 397,
@@ -2985,8 +5361,17 @@ exports.players = [
     position: "F",
     team_id: 16,
     weight_pounds: 210
-    },
-    {
+    , team: {
+      id: 16,
+      abbreviation: "MIA",
+      city: "Miami",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Miami Heat",
+      name: "Heat"
+    }
+  },
+  {
     id: 450,
     first_name: "PJ",
     height_feet: 6,
@@ -2995,8 +5380,17 @@ exports.players = [
     position: "F",
     team_id: 16,
     weight_pounds: 245
-    },
-    {
+    , team: {
+      id: 16,
+      abbreviation: "MIA",
+      city: "Miami",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Miami Heat",
+      name: "Heat"
+    }
+  },
+  {
     id: 120,
     first_name: "Dewayne",
     height_feet: 7,
@@ -3005,8 +5399,17 @@ exports.players = [
     position: "C",
     team_id: 16,
     weight_pounds: 245
-    },
-    {
+    , team: {
+      id: 16,
+      abbreviation: "MIA",
+      city: "Miami",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Miami Heat",
+      name: "Heat"
+    }
+  },
+  {
     id: 1603383,
     first_name: "Gabe",
     height_feet: null,
@@ -3015,8 +5418,17 @@ exports.players = [
     position: "G",
     team_id: 16,
     weight_pounds: null
-    },
-    {
+    , team: {
+      id: 16,
+      abbreviation: "MIA",
+      city: "Miami",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Miami Heat",
+      name: "Heat"
+    }
+  },
+  {
     id: 286,
     first_name: "Kyle",
     height_feet: 6,
@@ -3025,8 +5437,17 @@ exports.players = [
     position: "G",
     team_id: 16,
     weight_pounds: 196
-    },
-    {
+    , team: {
+      id: 16,
+      abbreviation: "MIA",
+      city: "Miami",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Miami Heat",
+      name: "Heat"
+    }
+  },
+  {
     id: 17553997,
     first_name: "Marcus",
     height_feet: null,
@@ -3035,8 +5456,17 @@ exports.players = [
     position: "G",
     team_id: 16,
     weight_pounds: null
-    },
-    {
+    , team: {
+      id: 16,
+      abbreviation: "MIA",
+      city: "Miami",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Miami Heat",
+      name: "Heat"
+    }
+  },
+  {
     id: 666821,
     first_name: "KZ",
     height_feet: null,
@@ -3045,8 +5475,17 @@ exports.players = [
     position: "F",
     team_id: 16,
     weight_pounds: null
-    },
-    {
+    , team: {
+      id: 16,
+      abbreviation: "MIA",
+      city: "Miami",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Miami Heat",
+      name: "Heat"
+    }
+  },
+  {
     id: 666908,
     first_name: "Max",
     height_feet: null,
@@ -3055,8 +5494,17 @@ exports.players = [
     position: "G",
     team_id: 16,
     weight_pounds: null
-    },
-    {
+    , team: {
+      id: 16,
+      abbreviation: "MIA",
+      city: "Miami",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Miami Heat",
+      name: "Heat"
+    }
+  },
+  {
     id: 11891374,
     first_name: "Omer",
     height_feet: null,
@@ -3065,8 +5513,17 @@ exports.players = [
     position: "C",
     team_id: 16,
     weight_pounds: null
-    },
-    {
+    , team: {
+      id: 16,
+      abbreviation: "MIA",
+      city: "Miami",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Miami Heat",
+      name: "Heat"
+    }
+  },
+  {
     id: 666923,
     first_name: "Matisse",
     height_feet: null,
@@ -3075,8 +5532,17 @@ exports.players = [
     position: "G-F",
     team_id: 23,
     weight_pounds: null
-    },
-    {
+    , team: {
+      id: 23,
+      abbreviation: "PHI",
+      city: "Philadelphia",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Philadelphia 76ers",
+      name: "76ers"
+    }
+  },
+  {
     id: 200,
     first_name: "Tobias",
     height_feet: 6,
@@ -3085,8 +5551,17 @@ exports.players = [
     position: "F",
     team_id: 23,
     weight_pounds: 235
-    },
-    {
+    , team: {
+      id: 23,
+      abbreviation: "PHI",
+      city: "Philadelphia",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Philadelphia 76ers",
+      name: "76ers"
+    }
+  },
+  {
     id: 145,
     first_name: "Joel",
     height_feet: 7,
@@ -3095,8 +5570,17 @@ exports.players = [
     position: "F-C",
     team_id: 23,
     weight_pounds: 250
-    },
-    {
+    , team: {
+      id: 23,
+      abbreviation: "PHI",
+      city: "Philadelphia",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Philadelphia 76ers",
+      name: "76ers"
+    }
+  },
+  {
     id: 114,
     first_name: "Seth",
     height_feet: 6,
@@ -3105,8 +5589,17 @@ exports.players = [
     position: "G",
     team_id: 23,
     weight_pounds: 185
-    },
-    {
+    , team: {
+      id: 23,
+      abbreviation: "PHI",
+      city: "Philadelphia",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Philadelphia 76ers",
+      name: "76ers"
+    }
+  },
+  {
     id: 3547254,
     first_name: "Tyrese",
     height_feet: null,
@@ -3115,8 +5608,17 @@ exports.players = [
     position: "G",
     team_id: 23,
     weight_pounds: null
-    },
-    {
+    , team: {
+      id: 23,
+      abbreviation: "PHI",
+      city: "Philadelphia",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Philadelphia 76ers",
+      name: "76ers"
+    }
+  },
+  {
     id: 184,
     first_name: "Danny",
     height_feet: 6,
@@ -3125,8 +5627,17 @@ exports.players = [
     position: "G-F",
     team_id: 23,
     weight_pounds: 215
-    },
-    {
+    , team: {
+      id: 23,
+      abbreviation: "PHI",
+      city: "Philadelphia",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Philadelphia 76ers",
+      name: "76ers"
+    }
+  },
+  {
     id: 320,
     first_name: "Shake",
     height_feet: 6,
@@ -3135,8 +5646,17 @@ exports.players = [
     position: "G",
     team_id: 23,
     weight_pounds: 207
-    },
-    {
+    , team: {
+      id: 23,
+      abbreviation: "PHI",
+      city: "Philadelphia",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Philadelphia 76ers",
+      name: "76ers"
+    }
+  },
+  {
     id: 666633,
     first_name: "Tyler",
     height_feet: null,
@@ -3145,8 +5665,17 @@ exports.players = [
     position: "G",
     team_id: 16,
     weight_pounds: null
-    },
-    {
+    , team: {
+      id: 16,
+      abbreviation: "MIA",
+      city: "Miami",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Miami Heat",
+      name: "Heat"
+    }
+  },
+  {
     id: 203,
     first_name: "Udonis",
     height_feet: 6,
@@ -3155,8 +5684,17 @@ exports.players = [
     position: "F",
     team_id: 16,
     weight_pounds: 235
-    },
-    {
+    , team: {
+      id: 16,
+      abbreviation: "MIA",
+      city: "Miami",
+      conference: "East",
+      division: "Southeast",
+      full_name: "Miami Heat",
+      name: "Heat"
+    }
+  },
+  {
     id: 3547272,
     first_name: "Isaiah",
     height_feet: null,
@@ -3165,8 +5703,17 @@ exports.players = [
     position: "G",
     team_id: 23,
     weight_pounds: null
-    },
-    {
+    , team: {
+      id: 23,
+      abbreviation: "PHI",
+      city: "Philadelphia",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Philadelphia 76ers",
+      name: "76ers"
+    }
+  },
+  {
     id: 137,
     first_name: "Andre",
     height_feet: 6,
@@ -3175,8 +5722,17 @@ exports.players = [
     position: "C",
     team_id: 23,
     weight_pounds: 279
-    },
-    {
+    , team: {
+      id: 23,
+      abbreviation: "PHI",
+      city: "Philadelphia",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Philadelphia 76ers",
+      name: "76ers"
+    }
+  },
+  {
     id: 3547270,
     first_name: "Paul",
     height_feet: null,
@@ -3185,8 +5741,17 @@ exports.players = [
     position: "F",
     team_id: 23,
     weight_pounds: null
-    },
-    {
+    , team: {
+      id: 23,
+      abbreviation: "PHI",
+      city: "Philadelphia",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Philadelphia 76ers",
+      name: "76ers"
+    }
+  },
+  {
     id: 17895854,
     first_name: "Charles",
     height_feet: null,
@@ -3195,8 +5760,17 @@ exports.players = [
     position: "G",
     team_id: 23,
     weight_pounds: null
-    },
-    {
+    , team: {
+      id: 23,
+      abbreviation: "PHI",
+      city: "Philadelphia",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Philadelphia 76ers",
+      name: "76ers"
+    }
+  },
+  {
     id: 17896053,
     first_name: "Aaron",
     height_feet: null,
@@ -3205,745 +5779,1420 @@ exports.players = [
     position: "G",
     team_id: 23,
     weight_pounds: null
-    },
-    {
-      id: 457,
-      first_name: "Jarred",
-      height_feet: 6,
-      height_inches: 9,
-      last_name: "Vanderbilt",
-      position: "F",
-      team_id: 18,
-      weight_pounds: 214
-      },
-      {
-      id: 447,
-      first_name: "Karl-Anthony",
-      height_feet: 7,
-      height_inches: 0,
-      last_name: "Towns",
-      position: "C",
-      team_id: 18,
-      weight_pounds: 248
-      },
-      {
-      id: 405,
-      first_name: "D'Angelo",
-      height_feet: 6,
-      height_inches: 5,
-      last_name: "Russell",
-      position: "G",
-      team_id: 18,
-      weight_pounds: 198
-      },
-      {
-      id: 45,
-      first_name: "Patrick",
-      height_feet: 6,
-      height_inches: 1,
-      last_name: "Beverley",
-      position: "G",
-      team_id: 18,
-      weight_pounds: 185
-      },
-      {
-      id: 4197356,
-      first_name: "Leandro",
-      height_feet: null,
-      height_inches: null,
-      last_name: "Bolmaro",
-      position: "F",
-      team_id: 18,
-      weight_pounds: null
-      },
-      {
-      id: 3547295,
-      first_name: "Nathan",
-      height_feet: null,
-      height_inches: null,
-      last_name: "Knight",
-      position: "F-C",
-      team_id: 18,
-      weight_pounds: null
-      },
-      {
-      id: 269,
-      first_name: "Jake",
-      height_feet: 6,
-      height_inches: 9,
-      last_name: "Layman",
-      position: "F",
-      team_id: 18,
-      weight_pounds: 215
-      },
-      {
-      id: 3547259,
-      first_name: "Jaden",
-      height_feet: null,
-      height_inches: null,
-      last_name: "McDaniels",
-      position: "F",
-      team_id: 18,
-      weight_pounds: null
-      },
-      {
-      id: 666767,
-      first_name: "Jordan",
-      height_feet: null,
-      height_inches: null,
-      last_name: "McLaughlin",
-      position: "G",
-      team_id: 18,
-      weight_pounds: null
-      },
-      {
-      id: 38,
-      first_name: "Malik",
-      height_feet: 6,
-      height_inches: 5,
-      last_name: "Beasley",
-      position: "G",
-      team_id: 18,
-      weight_pounds: 195
-      },
-      {
-      id: 667378,
-      first_name: "Naz",
-      height_feet: null,
-      height_inches: null,
-      last_name: "Reid",
-      position: "F-C",
-      team_id: 18,
-      weight_pounds: null
-      },
-      {
-      id: 666809,
-      first_name: "Jaylen",
-      height_feet: null,
-      height_inches: null,
-      last_name: "Nowell",
-      position: "G",
-      team_id: 18,
-      weight_pounds: null
-      },
-      {
-      id: 356,
-      first_name: "Josh",
-      height_feet: 6,
-      height_inches: 4,
-      last_name: "Okogie",
-      position: "G",
-      team_id: 18,
-      weight_pounds: 212
-      },
-      {
-        id: 227,
-        first_name: "Brandon",
-        height_feet: 6,
-        height_inches: 9,
-        last_name: "Ingram",
-        position: "F",
-        team_id: 19,
-        weight_pounds: 190
-        },
-        {
-        id: 17896024,
-        first_name: "Herbert",
-        height_feet: null,
-        height_inches: null,
-        last_name: "Jones",
-        position: "F",
-        team_id: 19,
-        weight_pounds: null
-        },
-        {
-        id: 455,
-        first_name: "Jonas",
-        height_feet: 7,
-        height_inches: 0,
-        last_name: "Valanciunas",
-        position: "C",
-        team_id: 19,
-        weight_pounds: 265
-        },
-        {
-        id: 202,
-        first_name: "Josh",
-        height_feet: 6,
-        height_inches: 5,
-        last_name: "Hart",
-        position: "G",
-        team_id: 19,
-        weight_pounds: 215
-        },
-        {
-        id: 180,
-        first_name: "Devonte'",
-        height_feet: 6,
-        height_inches: 2,
-        last_name: "Graham",
-        position: "G",
-        team_id: 19,
-        weight_pounds: 185
-        },
-        {
-        id: 666400,
-        first_name: "Nickeil",
-        height_feet: null,
-        height_inches: null,
-        last_name: "Alexander-Walker",
-        position: "G",
-        team_id: 19,
-        weight_pounds: null
-        },
-        {
-        id: 98,
-        first_name: "Gary",
-        height_feet: 6,
-        height_inches: 8,
-        last_name: "Clark",
-        position: "F",
-        team_id: 19,
-        weight_pounds: 225
-        },
-        {
-        id: 666626,
-        first_name: "Jaxson",
-        height_feet: null,
-        height_inches: null,
-        last_name: "Hayes",
-        position: "C",
-        team_id: 19,
-        weight_pounds: null
-        },
-        {
-        id: 207,
-        first_name: "Willy",
-        height_feet: 6,
-        height_inches: 11,
-        last_name: "Hernangomez",
-        position: "C",
-        team_id: 19,
-        weight_pounds: 240
-        },
-        {
-        id: 3547293,
-        first_name: "Naji",
-        height_feet: null,
-        height_inches: null,
-        last_name: "Marshall",
-        position: "F",
-        team_id: 19,
-        weight_pounds: null
-        },
-        {
-        id: 18677986,
-        first_name: "Trey",
-        height_feet: null,
-        height_inches: null,
-        last_name: "Murphy III",
-        position: "F",
-        team_id: 19,
-        weight_pounds: null
-        },
-        {
-        id: 408,
-        first_name: "Tomas",
-        height_feet: 6,
-        height_inches: 7,
-        last_name: "Satoransky",
-        position: "G-F",
-        team_id: 19,
-        weight_pounds: 210
-        },
-        {
-        id: 436,
-        first_name: "Garrett",
-        height_feet: 6,
-        height_inches: 6,
-        last_name: "Temple",
-        position: "G-F",
-        team_id: 19,
-        weight_pounds: 195
-        },
-        {
-        id: 175,
-        first_name: "Shai",
-        height_feet: 6,
-        height_inches: 6,
-        last_name: "Gilgeous-Alexander",
-        position: "G",
-        team_id: 21,
-        weight_pounds: 181
-        },
-        {
-        id: 666676,
-        first_name: "Ty",
-        height_feet: null,
-        height_inches: null,
-        last_name: "Jerome",
-        position: "G",
-        team_id: 21,
-        weight_pounds: null
-        },
-        {
-        id: 17896036,
-        first_name: "Tre",
-        height_feet: null,
-        height_inches: null,
-        last_name: "Mann",
-        position: "G",
-        team_id: 21,
-        weight_pounds: null
-        },
-        {
-        id: 17896021,
-        first_name: "Jeremiah",
-        height_feet: null,
-        height_inches: null,
-        last_name: "Robinson-Earl",
-        position: "F",
-        team_id: 21,
-        weight_pounds: null
-        },
-        {
-        id: 480,
-        first_name: "Kenrich",
-        height_feet: 6,
-        height_inches: 7,
-        last_name: "Williams",
-        position: "G-F",
-        team_id: 21,
-        weight_pounds: 210
-        },
-        {
-        id: 153,
-        first_name: "Derrick",
-        height_feet: 6,
-        height_inches: 10,
-        last_name: "Favors",
-        position: "F-C",
-        team_id: 21,
-        weight_pounds: 265
-        },
-        {
-        id: 17896065,
-        first_name: "Josh",
-        height_feet: null,
-        height_inches: null,
-        last_name: "Giddey",
-        position: "G",
-        team_id: 21,
-        weight_pounds: null
-        },
-        {
-        id: 666873,
-        first_name: "Isaiah",
-        height_feet: null,
-        height_inches: null,
-        last_name: "Roby",
-        position: "F",
-        team_id: 21,
-        weight_pounds: null
-        },
-        {
-        id: 1567838,
-        first_name: "Paul",
-        height_feet: null,
-        height_inches: null,
-        last_name: "Watson",
-        position: "G",
-        team_id: 21,
-        weight_pounds: null
-        },
-        {
-        id: 337,
-        first_name: "Mike",
-        height_feet: 6,
-        height_inches: 11,
-        last_name: "Muscala",
-        position: "F-C",
-        team_id: 21,
-        weight_pounds: 240
-        },
-        {
-        id: 3547253,
-        first_name: "Theo",
-        height_feet: null,
-        height_inches: null,
-        last_name: "Maledon",
-        position: "G",
-        team_id: 21,
-        weight_pounds: null
-        },
-        {
-        id: 9530711,
-        first_name: "Gabriel",
-        height_feet: null,
-        height_inches: null,
-        last_name: "Deck",
-        position: "",
-        team_id: 21,
-        weight_pounds: null
-        },
-        {
-          id: 17896033,
-          first_name: "Miles",
-          height_feet: null,
-          height_inches: null,
-          last_name: "McBride",
-          position: "G",
-          team_id: 20,
-          weight_pounds: null
-          },
-          {
-          id: 173,
-          first_name: "Taj",
-          height_feet: 6,
-          height_inches: 9,
-          last_name: "Gibson",
-          position: "F",
-          team_id: 20,
-          weight_pounds: 232
-          },
-          {
-          id: 412,
-          first_name: "Wayne",
-          height_feet: 6,
-          height_inches: 5,
-          last_name: "Selden",
-          position: "G-F",
-          team_id: 20,
-          weight_pounds: 230
-          },
-          {
-          id: 465,
-          first_name: "Kemba",
-          height_feet: 6,
-          height_inches: 1,
-          last_name: "Walker",
-          position: "G",
-          team_id: 20,
-          weight_pounds: 184
-          },
-          {
-          id: 3547269,
-          first_name: "Immanuel",
-          height_feet: null,
-          height_inches: null,
-          last_name: "Quickley",
-          position: "G",
-          team_id: 20,
-          weight_pounds: null
-          },
-          {
-          id: 77,
-          first_name: "Alec",
-          height_feet: 6,
-          height_inches: 6,
-          last_name: "Burks",
-          position: "G",
-          team_id: 20,
-          weight_pounds: 214
-          },
-          {
-          id: 387,
-          first_name: "Julius",
-          height_feet: 6,
-          height_inches: 9,
-          last_name: "Randle",
-          position: "F",
-          team_id: 20,
-          weight_pounds: 250
-          },
-          {
-          id: 345,
-          first_name: "Nerlens",
-          height_feet: 6,
-          height_inches: 11,
-          last_name: "Noel",
-          position: "F-C",
-          team_id: 20,
-          weight_pounds: 220
-          },
-          {
-          id: 160,
-          first_name: "Evan",
-          height_feet: 6,
-          height_inches: 7,
-          last_name: "Fournier",
-          position: "G-F",
-          team_id: 20,
-          weight_pounds: 205
-          },
-          {
-          id: 401,
-          first_name: "Derrick",
-          height_feet: 6,
-          height_inches: 3,
-          last_name: "Rose",
-          position: "G",
-          team_id: 20,
-          weight_pounds: 200
-          },
-          {
-          id: 399,
-          first_name: "Mitchell",
-          height_feet: 7,
-          height_inches: 1,
-          last_name: "Robinson",
-          position: "C",
-          team_id: 20,
-          weight_pounds: 240
-          },
-          {
-            id: 222,
-            first_name: "Chandler",
-            height_feet: 6,
-            height_inches: 7,
-            last_name: "Hutchison",
-            position: "F",
-            team_id: 24,
-            weight_pounds: 197
-            },
-            {
-            id: 666679,
-            first_name: "Cameron",
-            height_feet: null,
-            height_inches: null,
-            last_name: "Johnson",
-            position: "F",
-            team_id: 24,
-            weight_pounds: null
-            },
-            {
-            id: 306,
-            first_name: "JaVale",
-            height_feet: 7,
-            height_inches: 0,
-            last_name: "McGee",
-            position: "C",
-            team_id: 24,
-            weight_pounds: 270
-            },
-            {
-            id: 368,
-            first_name: "Cameron",
-            height_feet: null,
-            height_inches: null,
-            last_name: "Payne",
-            position: "G",
-            team_id: 24,
-            weight_pounds: null
-            },
-            {
-            id: 369,
-            first_name: "Elfrid",
-            height_feet: 6,
-            height_inches: 4,
-            last_name: "Payton",
-            position: "G",
-            team_id: 24,
-            weight_pounds: 185
-            },
-            {
-            id: 17896120,
-            first_name: "Ish",
-            height_feet: null,
-            height_inches: null,
-            last_name: "Wainright",
-            position: "F",
-            team_id: 24,
-            weight_pounds: null
-            },
-            {
-            id: 61,
-            first_name: "Mikal",
-            height_feet: 6,
-            height_inches: 7,
-            last_name: "Bridges",
-            position: "F",
-            team_id: 24,
-            weight_pounds: 210
-            },
-            {
-            id: 112,
-            first_name: "Jae",
-            height_feet: 6,
-            height_inches: 6,
-            last_name: "Crowder",
-            position: "F",
-            team_id: 24,
-            weight_pounds: 235
-            },
-            {
-            id: 414,
-            first_name: "Landry",
-            height_feet: 6,
-            height_inches: 5,
-            last_name: "Shamet",
-            position: "G",
-            team_id: 24,
-            weight_pounds: 188
-            },
-            {
-            id: 367,
-            first_name: "Chris",
-            height_feet: 6,
-            height_inches: 0,
-            last_name: "Paul",
-            position: "G",
-            team_id: 24,
-            weight_pounds: 175
-            },
-            {
-            id: 22,
-            first_name: "Deandre",
-            height_feet: 7,
-            height_inches: 1,
-            last_name: "Ayton",
-            position: "C",
-            team_id: 24,
-            weight_pounds: 250
-            },
-            {
-            id: 57,
-            first_name: "Devin",
-            height_feet: 6,
-            height_inches: 6,
-            last_name: "Booker",
-            position: "G",
-            team_id: 24,
-            weight_pounds: 210
-            },
-            {
-              id: 30,
-              first_name: "Harrison",
-              height_feet: 6,
-              height_inches: 8,
-              last_name: "Barnes",
-              position: "F",
-              team_id: 26,
-              weight_pounds: 225
-              },
-              {
-              id: 314,
-              first_name: "Chimezie",
-              height_feet: 6,
-              height_inches: 10,
-              last_name: "Metu",
-              position: "F",
-              team_id: 26,
-              weight_pounds: 225
-              },
-              {
-              id: 273,
-              first_name: "Alex",
-              height_feet: 7,
-              height_inches: 1,
-              last_name: "Len",
-              position: "C",
-              team_id: 26,
-              weight_pounds: 250
-              },
-              {
-              id: 3547245,
-              first_name: "Tyrese",
-              height_feet: null,
-              height_inches: null,
-              last_name: "Haliburton",
-              position: "G",
-              team_id: 26,
-              weight_pounds: null
-              },
-              {
-              id: 161,
-              first_name: "De'Aaron",
-              height_feet: 6,
-              height_inches: 3,
-              last_name: "Fox",
-              position: "G",
-              team_id: 26,
-              weight_pounds: 175
-              },
-              {
-              id: 24,
-              first_name: "Marvin",
-              height_feet: 6,
-              height_inches: 11,
-              last_name: "Bagley III",
-              position: "F",
-              team_id: 26,
-              weight_pounds: 234
-              },
-              {
-              id: 666530,
-              first_name: "Terence",
-              height_feet: null,
-              height_inches: null,
-              last_name: "Davis",
-              position: "G",
-              team_id: 26,
-              weight_pounds: null
-              },
-              {
-              id: 193,
-              first_name: "Maurice",
-              height_feet: 6,
-              height_inches: 9,
-              last_name: "Harkless",
-              position: "F",
-              team_id: 26,
-              weight_pounds: 220
-              },
-              {
-              id: 17553994,
-              first_name: "Davion",
-              height_feet: null,
-              height_inches: null,
-              last_name: "Mitchell",
-              position: "G",
-              team_id: 26,
-              weight_pounds: null
-              },
-              {
-              id: 444,
-              first_name: "Tristan",
-              height_feet: 6,
-              height_inches: 10,
-              last_name: "Thompson",
-              position: "C-F",
-              team_id: 26,
-              weight_pounds: 238
-              },
-              {
-              id: 210,
-              first_name: "Buddy",
-              height_feet: 6,
-              height_inches: 4,
-              last_name: "Hield",
-              position: "G",
-              team_id: 26,
-              weight_pounds: 214
-              },
-              {
-              id: 248,
-              first_name: "Damian",
-              height_feet: 7,
-              height_inches: 0,
-              last_name: "Jones",
-              position: "C",
-              team_id: 26,
-              weight_pounds: 245
-              },
-              {
-              id: 666698,
-              first_name: "Louis",
-              height_feet: null,
-              height_inches: null,
-              last_name: "King",
-              position: "F",
-              team_id: 26,
-              weight_pounds: null
-              },
+    , team: {
+      id: 23,
+      abbreviation: "PHI",
+      city: "Philadelphia",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "Philadelphia 76ers",
+      name: "76ers"
+    }
+  },
+  {
+    id: 457,
+    first_name: "Jarred",
+    height_feet: 6,
+    height_inches: 9,
+    last_name: "Vanderbilt",
+    position: "F",
+    team_id: 18,
+    weight_pounds: 214
+    , team: {
+      id: 18,
+      abbreviation: "MIN",
+      city: "Minnesota",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Minnesota Timberwolves",
+      name: "Timberwolves"
+    }
+  },
+  {
+    id: 447,
+    first_name: "Karl-Anthony",
+    height_feet: 7,
+    height_inches: 0,
+    last_name: "Towns",
+    position: "C",
+    team_id: 18,
+    weight_pounds: 248
+    , team: {
+      id: 18,
+      abbreviation: "MIN",
+      city: "Minnesota",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Minnesota Timberwolves",
+      name: "Timberwolves"
+    }
+  },
+  {
+    id: 405,
+    first_name: "D'Angelo",
+    height_feet: 6,
+    height_inches: 5,
+    last_name: "Russell",
+    position: "G",
+    team_id: 18,
+    weight_pounds: 198
+    , team: {
+      id: 18,
+      abbreviation: "MIN",
+      city: "Minnesota",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Minnesota Timberwolves",
+      name: "Timberwolves"
+    }
+  },
+  {
+    id: 45,
+    first_name: "Patrick",
+    height_feet: 6,
+    height_inches: 1,
+    last_name: "Beverley",
+    position: "G",
+    team_id: 18,
+    weight_pounds: 185
+    , team: {
+      id: 18,
+      abbreviation: "MIN",
+      city: "Minnesota",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Minnesota Timberwolves",
+      name: "Timberwolves"
+    }
+  },
+  {
+    id: 4197356,
+    first_name: "Leandro",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Bolmaro",
+    position: "F",
+    team_id: 18,
+    weight_pounds: null
+    , team: {
+      id: 18,
+      abbreviation: "MIN",
+      city: "Minnesota",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Minnesota Timberwolves",
+      name: "Timberwolves"
+    }
+  },
+  {
+    id: 3547295,
+    first_name: "Nathan",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Knight",
+    position: "F-C",
+    team_id: 18,
+    weight_pounds: null
+    , team: {
+      id: 18,
+      abbreviation: "MIN",
+      city: "Minnesota",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Minnesota Timberwolves",
+      name: "Timberwolves"
+    }
+  },
+  {
+    id: 269,
+    first_name: "Jake",
+    height_feet: 6,
+    height_inches: 9,
+    last_name: "Layman",
+    position: "F",
+    team_id: 18,
+    weight_pounds: 215
+    , team: {
+      id: 18,
+      abbreviation: "MIN",
+      city: "Minnesota",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Minnesota Timberwolves",
+      name: "Timberwolves"
+    }
+  },
+  {
+    id: 3547259,
+    first_name: "Jaden",
+    height_feet: null,
+    height_inches: null,
+    last_name: "McDaniels",
+    position: "F",
+    team_id: 18,
+    weight_pounds: null
+    , team: {
+      id: 18,
+      abbreviation: "MIN",
+      city: "Minnesota",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Minnesota Timberwolves",
+      name: "Timberwolves"
+    }
+  },
+  {
+    id: 666767,
+    first_name: "Jordan",
+    height_feet: null,
+    height_inches: null,
+    last_name: "McLaughlin",
+    position: "G",
+    team_id: 18,
+    weight_pounds: null
+    , team: {
+      id: 18,
+      abbreviation: "MIN",
+      city: "Minnesota",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Minnesota Timberwolves",
+      name: "Timberwolves"
+    }
+  },
+  {
+    id: 38,
+    first_name: "Malik",
+    height_feet: 6,
+    height_inches: 5,
+    last_name: "Beasley",
+    position: "G",
+    team_id: 18,
+    weight_pounds: 195
+    , team: {
+      id: 18,
+      abbreviation: "MIN",
+      city: "Minnesota",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Minnesota Timberwolves",
+      name: "Timberwolves"
+    }
+  },
+  {
+    id: 667378,
+    first_name: "Naz",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Reid",
+    position: "F-C",
+    team_id: 18,
+    weight_pounds: null
+    , team: {
+      id: 18,
+      abbreviation: "MIN",
+      city: "Minnesota",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Minnesota Timberwolves",
+      name: "Timberwolves"
+    }
+  },
+  {
+    id: 666809,
+    first_name: "Jaylen",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Nowell",
+    position: "G",
+    team_id: 18,
+    weight_pounds: null
+    , team: {
+      id: 18,
+      abbreviation: "MIN",
+      city: "Minnesota",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Minnesota Timberwolves",
+      name: "Timberwolves"
+    }
+  },
+  {
+    id: 356,
+    first_name: "Josh",
+    height_feet: 6,
+    height_inches: 4,
+    last_name: "Okogie",
+    position: "G",
+    team_id: 18,
+    weight_pounds: 212
+    , team: {
+      id: 18,
+      abbreviation: "MIN",
+      city: "Minnesota",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Minnesota Timberwolves",
+      name: "Timberwolves"
+    }
+  },
+  {
+    id: 227,
+    first_name: "Brandon",
+    height_feet: 6,
+    height_inches: 9,
+    last_name: "Ingram",
+    position: "F",
+    team_id: 19,
+    weight_pounds: 190
+    , team: {
+      id: 19,
+      abbreviation: "NOP",
+      city: "New Orleans",
+      conference: "West",
+      division: "Southwest",
+      full_name: "New Orleans Pelicans",
+      name: "Pelicans"
+    }
+  },
+  {
+    id: 17896024,
+    first_name: "Herbert",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Jones",
+    position: "F",
+    team_id: 19,
+    weight_pounds: null
+    , team: {
+      id: 19,
+      abbreviation: "NOP",
+      city: "New Orleans",
+      conference: "West",
+      division: "Southwest",
+      full_name: "New Orleans Pelicans",
+      name: "Pelicans"
+    }
+  },
+  {
+    id: 455,
+    first_name: "Jonas",
+    height_feet: 7,
+    height_inches: 0,
+    last_name: "Valanciunas",
+    position: "C",
+    team_id: 19,
+    weight_pounds: 265
+    , team: {
+      id: 19,
+      abbreviation: "NOP",
+      city: "New Orleans",
+      conference: "West",
+      division: "Southwest",
+      full_name: "New Orleans Pelicans",
+      name: "Pelicans"
+    }
+  },
+  {
+    id: 202,
+    first_name: "Josh",
+    height_feet: 6,
+    height_inches: 5,
+    last_name: "Hart",
+    position: "G",
+    team_id: 19,
+    weight_pounds: 215
+    , team: {
+      id: 19,
+      abbreviation: "NOP",
+      city: "New Orleans",
+      conference: "West",
+      division: "Southwest",
+      full_name: "New Orleans Pelicans",
+      name: "Pelicans"
+    }
+  },
+  {
+    id: 180,
+    first_name: "Devonte'",
+    height_feet: 6,
+    height_inches: 2,
+    last_name: "Graham",
+    position: "G",
+    team_id: 19,
+    weight_pounds: 185
+    , team: {
+      id: 19,
+      abbreviation: "NOP",
+      city: "New Orleans",
+      conference: "West",
+      division: "Southwest",
+      full_name: "New Orleans Pelicans",
+      name: "Pelicans"
+    }
+  },
+  {
+    id: 666400,
+    first_name: "Nickeil",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Alexander-Walker",
+    position: "G",
+    team_id: 19,
+    weight_pounds: null
+    , team: {
+      id: 19,
+      abbreviation: "NOP",
+      city: "New Orleans",
+      conference: "West",
+      division: "Southwest",
+      full_name: "New Orleans Pelicans",
+      name: "Pelicans"
+    }
+  },
+  {
+    id: 98,
+    first_name: "Gary",
+    height_feet: 6,
+    height_inches: 8,
+    last_name: "Clark",
+    position: "F",
+    team_id: 19,
+    weight_pounds: 225
+    , team: {
+      id: 19,
+      abbreviation: "NOP",
+      city: "New Orleans",
+      conference: "West",
+      division: "Southwest",
+      full_name: "New Orleans Pelicans",
+      name: "Pelicans"
+    }
+  },
+  {
+    id: 666626,
+    first_name: "Jaxson",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Hayes",
+    position: "C",
+    team_id: 19,
+    weight_pounds: null
+    , team: {
+      id: 19,
+      abbreviation: "NOP",
+      city: "New Orleans",
+      conference: "West",
+      division: "Southwest",
+      full_name: "New Orleans Pelicans",
+      name: "Pelicans"
+    }
+  },
+  {
+    id: 207,
+    first_name: "Willy",
+    height_feet: 6,
+    height_inches: 11,
+    last_name: "Hernangomez",
+    position: "C",
+    team_id: 19,
+    weight_pounds: 240
+    , team: {
+      id: 19,
+      abbreviation: "NOP",
+      city: "New Orleans",
+      conference: "West",
+      division: "Southwest",
+      full_name: "New Orleans Pelicans",
+      name: "Pelicans"
+    }
+  },
+  {
+    id: 3547293,
+    first_name: "Naji",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Marshall",
+    position: "F",
+    team_id: 19,
+    weight_pounds: null
+    , team: {
+      id: 19,
+      abbreviation: "NOP",
+      city: "New Orleans",
+      conference: "West",
+      division: "Southwest",
+      full_name: "New Orleans Pelicans",
+      name: "Pelicans"
+    }
+  },
+  {
+    id: 18677986,
+    first_name: "Trey",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Murphy III",
+    position: "F",
+    team_id: 19,
+    weight_pounds: null
+    , team: {
+      id: 19,
+      abbreviation: "NOP",
+      city: "New Orleans",
+      conference: "West",
+      division: "Southwest",
+      full_name: "New Orleans Pelicans",
+      name: "Pelicans"
+    }
+  },
+  {
+    id: 408,
+    first_name: "Tomas",
+    height_feet: 6,
+    height_inches: 7,
+    last_name: "Satoransky",
+    position: "G-F",
+    team_id: 19,
+    weight_pounds: 210
+    , team: {
+      id: 19,
+      abbreviation: "NOP",
+      city: "New Orleans",
+      conference: "West",
+      division: "Southwest",
+      full_name: "New Orleans Pelicans",
+      name: "Pelicans"
+    }
+  },
+  {
+    id: 436,
+    first_name: "Garrett",
+    height_feet: 6,
+    height_inches: 6,
+    last_name: "Temple",
+    position: "G-F",
+    team_id: 19,
+    weight_pounds: 195
+    , team: {
+      id: 19,
+      abbreviation: "NOP",
+      city: "New Orleans",
+      conference: "West",
+      division: "Southwest",
+      full_name: "New Orleans Pelicans",
+      name: "Pelicans"
+    }
+  },
+  {
+    id: 175,
+    first_name: "Shai",
+    height_feet: 6,
+    height_inches: 6,
+    last_name: "Gilgeous-Alexander",
+    position: "G",
+    team_id: 21,
+    weight_pounds: 181
+    , team: {
+      id: 21,
+      abbreviation: "OKC",
+      city: "Oklahoma City",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Oklahoma City Thunder",
+      name: "Thunder"
+    }
+  },
+  {
+    id: 666676,
+    first_name: "Ty",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Jerome",
+    position: "G",
+    team_id: 21,
+    weight_pounds: null
+    , team: {
+      id: 21,
+      abbreviation: "OKC",
+      city: "Oklahoma City",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Oklahoma City Thunder",
+      name: "Thunder"
+    }
+  },
+  {
+    id: 17896036,
+    first_name: "Tre",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Mann",
+    position: "G",
+    team_id: 21,
+    weight_pounds: null
+    , team: {
+      id: 21,
+      abbreviation: "OKC",
+      city: "Oklahoma City",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Oklahoma City Thunder",
+      name: "Thunder"
+    }
+  },
+  {
+    id: 17896021,
+    first_name: "Jeremiah",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Robinson-Earl",
+    position: "F",
+    team_id: 21,
+    weight_pounds: null
+    , team: {
+      id: 21,
+      abbreviation: "OKC",
+      city: "Oklahoma City",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Oklahoma City Thunder",
+      name: "Thunder"
+    }
+  },
+  {
+    id: 480,
+    first_name: "Kenrich",
+    height_feet: 6,
+    height_inches: 7,
+    last_name: "Williams",
+    position: "G-F",
+    team_id: 21,
+    weight_pounds: 210
+    , team: {
+      id: 21,
+      abbreviation: "OKC",
+      city: "Oklahoma City",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Oklahoma City Thunder",
+      name: "Thunder"
+    }
+  },
+  {
+    id: 153,
+    first_name: "Derrick",
+    height_feet: 6,
+    height_inches: 10,
+    last_name: "Favors",
+    position: "F-C",
+    team_id: 21,
+    weight_pounds: 265
+    , team: {
+      id: 21,
+      abbreviation: "OKC",
+      city: "Oklahoma City",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Oklahoma City Thunder",
+      name: "Thunder"
+    }
+  },
+  {
+    id: 17896065,
+    first_name: "Josh",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Giddey",
+    position: "G",
+    team_id: 21,
+    weight_pounds: null
+    , team: {
+      id: 21,
+      abbreviation: "OKC",
+      city: "Oklahoma City",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Oklahoma City Thunder",
+      name: "Thunder"
+    }
+  },
+  {
+    id: 666873,
+    first_name: "Isaiah",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Roby",
+    position: "F",
+    team_id: 21,
+    weight_pounds: null
+    , team: {
+      id: 21,
+      abbreviation: "OKC",
+      city: "Oklahoma City",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Oklahoma City Thunder",
+      name: "Thunder"
+    }
+  },
+  {
+    id: 1567838,
+    first_name: "Paul",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Watson",
+    position: "G",
+    team_id: 21,
+    weight_pounds: null
+    , team: {
+      id: 21,
+      abbreviation: "OKC",
+      city: "Oklahoma City",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Oklahoma City Thunder",
+      name: "Thunder"
+    }
+  },
+  {
+    id: 337,
+    first_name: "Mike",
+    height_feet: 6,
+    height_inches: 11,
+    last_name: "Muscala",
+    position: "F-C",
+    team_id: 21,
+    weight_pounds: 240
+    , team: {
+      id: 21,
+      abbreviation: "OKC",
+      city: "Oklahoma City",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Oklahoma City Thunder",
+      name: "Thunder"
+    }
+  },
+  {
+    id: 3547253,
+    first_name: "Theo",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Maledon",
+    position: "G",
+    team_id: 21,
+    weight_pounds: null
+    , team: {
+      id: 21,
+      abbreviation: "OKC",
+      city: "Oklahoma City",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Oklahoma City Thunder",
+      name: "Thunder"
+    }
+  },
+  {
+    id: 9530711,
+    first_name: "Gabriel",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Deck",
+    position: "",
+    team_id: 21,
+    weight_pounds: null
+    , team: {
+      id: 21,
+      abbreviation: "OKC",
+      city: "Oklahoma City",
+      conference: "West",
+      division: "Northwest",
+      full_name: "Oklahoma City Thunder",
+      name: "Thunder"
+    }
+  },
+  {
+    id: 17896033,
+    first_name: "Miles",
+    height_feet: null,
+    height_inches: null,
+    last_name: "McBride",
+    position: "G",
+    team_id: 20,
+    weight_pounds: null
+    , team: {
+      id: 20,
+      abbreviation: "NYK",
+      city: "New York",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "New York Knicks",
+      name: "Knicks"
+    }
+  },
+  {
+    id: 173,
+    first_name: "Taj",
+    height_feet: 6,
+    height_inches: 9,
+    last_name: "Gibson",
+    position: "F",
+    team_id: 20,
+    weight_pounds: 232
+    , team: {
+      id: 20,
+      abbreviation: "NYK",
+      city: "New York",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "New York Knicks",
+      name: "Knicks"
+    }
+  },
+  {
+    id: 412,
+    first_name: "Wayne",
+    height_feet: 6,
+    height_inches: 5,
+    last_name: "Selden",
+    position: "G-F",
+    team_id: 20,
+    weight_pounds: 230
+    , team: {
+      id: 20,
+      abbreviation: "NYK",
+      city: "New York",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "New York Knicks",
+      name: "Knicks"
+    }
+  },
+  {
+    id: 465,
+    first_name: "Kemba",
+    height_feet: 6,
+    height_inches: 1,
+    last_name: "Walker",
+    position: "G",
+    team_id: 20,
+    weight_pounds: 184
+    , team: {
+      id: 20,
+      abbreviation: "NYK",
+      city: "New York",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "New York Knicks",
+      name: "Knicks"
+    }
+  },
+  {
+    id: 3547269,
+    first_name: "Immanuel",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Quickley",
+    position: "G",
+    team_id: 20,
+    weight_pounds: null
+    , team: {
+      id: 20,
+      abbreviation: "NYK",
+      city: "New York",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "New York Knicks",
+      name: "Knicks"
+    }
+  },
+  {
+    id: 77,
+    first_name: "Alec",
+    height_feet: 6,
+    height_inches: 6,
+    last_name: "Burks",
+    position: "G",
+    team_id: 20,
+    weight_pounds: 214
+    , team: {
+      id: 20,
+      abbreviation: "NYK",
+      city: "New York",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "New York Knicks",
+      name: "Knicks"
+    }
+  },
+  {
+    id: 387,
+    first_name: "Julius",
+    height_feet: 6,
+    height_inches: 9,
+    last_name: "Randle",
+    position: "F",
+    team_id: 20,
+    weight_pounds: 250
+    , team: {
+      id: 20,
+      abbreviation: "NYK",
+      city: "New York",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "New York Knicks",
+      name: "Knicks"
+    }
+  },
+  {
+    id: 345,
+    first_name: "Nerlens",
+    height_feet: 6,
+    height_inches: 11,
+    last_name: "Noel",
+    position: "F-C",
+    team_id: 20,
+    weight_pounds: 220
+    , team: {
+      id: 20,
+      abbreviation: "NYK",
+      city: "New York",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "New York Knicks",
+      name: "Knicks"
+    }
+  },
+  {
+    id: 160,
+    first_name: "Evan",
+    height_feet: 6,
+    height_inches: 7,
+    last_name: "Fournier",
+    position: "G-F",
+    team_id: 20,
+    weight_pounds: 205
+    , team: {
+      id: 20,
+      abbreviation: "NYK",
+      city: "New York",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "New York Knicks",
+      name: "Knicks"
+    }
+  },
+  {
+    id: 401,
+    first_name: "Derrick",
+    height_feet: 6,
+    height_inches: 3,
+    last_name: "Rose",
+    position: "G",
+    team_id: 20,
+    weight_pounds: 200
+    , team: {
+      id: 20,
+      abbreviation: "NYK",
+      city: "New York",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "New York Knicks",
+      name: "Knicks"
+    }
+  },
+  {
+    id: 399,
+    first_name: "Mitchell",
+    height_feet: 7,
+    height_inches: 1,
+    last_name: "Robinson",
+    position: "C",
+    team_id: 20,
+    weight_pounds: 240
+    , team: {
+      id: 20,
+      abbreviation: "NYK",
+      city: "New York",
+      conference: "East",
+      division: "Atlantic",
+      full_name: "New York Knicks",
+      name: "Knicks"
+    }
+  },
+  {
+    id: 222,
+    first_name: "Chandler",
+    height_feet: 6,
+    height_inches: 7,
+    last_name: "Hutchison",
+    position: "F",
+    team_id: 24,
+    weight_pounds: 197
+    , team: {
+      id: 24,
+      abbreviation: "PHX",
+      city: "Phoenix",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Phoenix Suns",
+      name: "Suns"
+    }
+  },
+  {
+    id: 666679,
+    first_name: "Cameron",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Johnson",
+    position: "F",
+    team_id: 24,
+    weight_pounds: null
+    , team: {
+      id: 24,
+      abbreviation: "PHX",
+      city: "Phoenix",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Phoenix Suns",
+      name: "Suns"
+    }
+  },
+  {
+    id: 306,
+    first_name: "JaVale",
+    height_feet: 7,
+    height_inches: 0,
+    last_name: "McGee",
+    position: "C",
+    team_id: 24,
+    weight_pounds: 270
+    , team: {
+      id: 24,
+      abbreviation: "PHX",
+      city: "Phoenix",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Phoenix Suns",
+      name: "Suns"
+    }
+  },
+  {
+    id: 368,
+    first_name: "Cameron",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Payne",
+    position: "G",
+    team_id: 24,
+    weight_pounds: null
+    , team: {
+      id: 24,
+      abbreviation: "PHX",
+      city: "Phoenix",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Phoenix Suns",
+      name: "Suns"
+    }
+  },
+  {
+    id: 369,
+    first_name: "Elfrid",
+    height_feet: 6,
+    height_inches: 4,
+    last_name: "Payton",
+    position: "G",
+    team_id: 24,
+    weight_pounds: 185
+    , team: {
+      id: 24,
+      abbreviation: "PHX",
+      city: "Phoenix",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Phoenix Suns",
+      name: "Suns"
+    }
+  },
+  {
+    id: 17896120,
+    first_name: "Ish",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Wainright",
+    position: "F",
+    team_id: 24,
+    weight_pounds: null
+    , team: {
+      id: 24,
+      abbreviation: "PHX",
+      city: "Phoenix",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Phoenix Suns",
+      name: "Suns"
+    }
+  },
+  {
+    id: 61,
+    first_name: "Mikal",
+    height_feet: 6,
+    height_inches: 7,
+    last_name: "Bridges",
+    position: "F",
+    team_id: 24,
+    weight_pounds: 210
+    , team: {
+      id: 24,
+      abbreviation: "PHX",
+      city: "Phoenix",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Phoenix Suns",
+      name: "Suns"
+    }
+  },
+  {
+    id: 112,
+    first_name: "Jae",
+    height_feet: 6,
+    height_inches: 6,
+    last_name: "Crowder",
+    position: "F",
+    team_id: 24,
+    weight_pounds: 235
+    , team: {
+      id: 24,
+      abbreviation: "PHX",
+      city: "Phoenix",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Phoenix Suns",
+      name: "Suns"
+    }
+  },
+  {
+    id: 414,
+    first_name: "Landry",
+    height_feet: 6,
+    height_inches: 5,
+    last_name: "Shamet",
+    position: "G",
+    team_id: 24,
+    weight_pounds: 188
+    , team: {
+      id: 24,
+      abbreviation: "PHX",
+      city: "Phoenix",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Phoenix Suns",
+      name: "Suns"
+    }
+  },
+  {
+    id: 367,
+    first_name: "Chris",
+    height_feet: 6,
+    height_inches: 0,
+    last_name: "Paul",
+    position: "G",
+    team_id: 24,
+    weight_pounds: 175
+    , team: {
+      id: 24,
+      abbreviation: "PHX",
+      city: "Phoenix",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Phoenix Suns",
+      name: "Suns"
+    }
+  },
+  {
+    id: 22,
+    first_name: "Deandre",
+    height_feet: 7,
+    height_inches: 1,
+    last_name: "Ayton",
+    position: "C",
+    team_id: 24,
+    weight_pounds: 250
+    , team: {
+      id: 24,
+      abbreviation: "PHX",
+      city: "Phoenix",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Phoenix Suns",
+      name: "Suns"
+    }
+  },
+  {
+    id: 57,
+    first_name: "Devin",
+    height_feet: 6,
+    height_inches: 6,
+    last_name: "Booker",
+    position: "G",
+    team_id: 24,
+    weight_pounds: 210
+    , team: {
+      id: 24,
+      abbreviation: "PHX",
+      city: "Phoenix",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Phoenix Suns",
+      name: "Suns"
+    }
+  },
+  {
+    id: 30,
+    first_name: "Harrison",
+    height_feet: 6,
+    height_inches: 8,
+    last_name: "Barnes",
+    position: "F",
+    team_id: 26,
+    weight_pounds: 225
+    , team: {
+      id: 26,
+      abbreviation: "SAC",
+      city: "Sacramento",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Sacramento Kings",
+      name: "Kings"
+    }
+  },
+  {
+    id: 314,
+    first_name: "Chimezie",
+    height_feet: 6,
+    height_inches: 10,
+    last_name: "Metu",
+    position: "F",
+    team_id: 26,
+    weight_pounds: 225
+    , team: {
+      id: 26,
+      abbreviation: "SAC",
+      city: "Sacramento",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Sacramento Kings",
+      name: "Kings"
+    }
+  },
+  {
+    id: 273,
+    first_name: "Alex",
+    height_feet: 7,
+    height_inches: 1,
+    last_name: "Len",
+    position: "C",
+    team_id: 26,
+    weight_pounds: 250
+    , team: {
+      id: 26,
+      abbreviation: "SAC",
+      city: "Sacramento",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Sacramento Kings",
+      name: "Kings"
+    }
+  },
+  {
+    id: 3547245,
+    first_name: "Tyrese",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Haliburton",
+    position: "G",
+    team_id: 26,
+    weight_pounds: null
+    , team: {
+      id: 26,
+      abbreviation: "SAC",
+      city: "Sacramento",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Sacramento Kings",
+      name: "Kings"
+    }
+  },
+  {
+    id: 161,
+    first_name: "De'Aaron",
+    height_feet: 6,
+    height_inches: 3,
+    last_name: "Fox",
+    position: "G",
+    team_id: 26,
+    weight_pounds: 175
+    , team: {
+      id: 26,
+      abbreviation: "SAC",
+      city: "Sacramento",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Sacramento Kings",
+      name: "Kings"
+    }
+  },
+  {
+    id: 24,
+    first_name: "Marvin",
+    height_feet: 6,
+    height_inches: 11,
+    last_name: "Bagley III",
+    position: "F",
+    team_id: 26,
+    weight_pounds: 234
+    , team: {
+      id: 26,
+      abbreviation: "SAC",
+      city: "Sacramento",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Sacramento Kings",
+      name: "Kings"
+    }
+  },
+  {
+    id: 666530,
+    first_name: "Terence",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Davis",
+    position: "G",
+    team_id: 26,
+    weight_pounds: null
+    , team: {
+      id: 26,
+      abbreviation: "SAC",
+      city: "Sacramento",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Sacramento Kings",
+      name: "Kings"
+    }
+  },
+  {
+    id: 193,
+    first_name: "Maurice",
+    height_feet: 6,
+    height_inches: 9,
+    last_name: "Harkless",
+    position: "F",
+    team_id: 26,
+    weight_pounds: 220
+    , team: {
+      id: 26,
+      abbreviation: "SAC",
+      city: "Sacramento",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Sacramento Kings",
+      name: "Kings"
+    }
+  },
+  {
+    id: 17553994,
+    first_name: "Davion",
+    height_feet: null,
+    height_inches: null,
+    last_name: "Mitchell",
+    position: "G",
+    team_id: 26,
+    weight_pounds: null
+    , team: {
+      id: 26,
+      abbreviation: "SAC",
+      city: "Sacramento",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Sacramento Kings",
+      name: "Kings"
+    }
+  },
+  {
+    id: 444,
+    first_name: "Tristan",
+    height_feet: 6,
+    height_inches: 10,
+    last_name: "Thompson",
+    position: "C-F",
+    team_id: 26,
+    weight_pounds: 238
+    , team: {
+      id: 26,
+      abbreviation: "SAC",
+      city: "Sacramento",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Sacramento Kings",
+      name: "Kings"
+    }
+  },
+  {
+    id: 210,
+    first_name: "Buddy",
+    height_feet: 6,
+    height_inches: 4,
+    last_name: "Hield",
+    position: "G",
+    team_id: 26,
+    weight_pounds: 214
+    , team: {
+      id: 26,
+      abbreviation: "SAC",
+      city: "Sacramento",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Sacramento Kings",
+      name: "Kings"
+    }
+  },
+  {
+    id: 248,
+    first_name: "Damian",
+    height_feet: 7,
+    height_inches: 0,
+    last_name: "Jones",
+    position: "C",
+    team_id: 26,
+    weight_pounds: 245
+    , team: {
+      id: 26,
+      abbreviation: "SAC",
+      city: "Sacramento",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Sacramento Kings",
+      name: "Kings"
+    }
+  },
+  {
+    id: 666698,
+    first_name: "Louis",
+    height_feet: null,
+    height_inches: null,
+    last_name: "King",
+    position: "F",
+    team_id: 26,
+    weight_pounds: null
+    , team: {
+      id: 26,
+      abbreviation: "SAC",
+      city: "Sacramento",
+      conference: "West",
+      division: "Pacific",
+      full_name: "Sacramento Kings",
+      name: "Kings"
+    }
+  },
 ]
