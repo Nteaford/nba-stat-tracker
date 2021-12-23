@@ -14,8 +14,10 @@
         <a href="/teams/<%= t._id %>" class="btn btn-info" role="button" >
         Details
       </a>
-        <a href="/teams/<%= t._id %>" class="btn btn-info" role="button" >
-        Edit
+      <form action="/teams/<%= t._id %>?_method=DELETE" method="POST"><button type="submit" class="btn btn-danger">Delete Team</button></form>
+        
+        <a href="/teams/<%= t._id %>/edit" class="btn btn-warning" role="button" >
+        Delete
       </a>
         <table class="table table-striped">
         <thead>

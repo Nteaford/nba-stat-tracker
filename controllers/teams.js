@@ -11,6 +11,9 @@ module.exports = {
     new: newTeam,
     create,
     show,
+    edit,
+    update,
+    delete:deleteOne
 };
 
 
@@ -53,6 +56,37 @@ function create(req, res) {
     });
 }
 
+function edit(req, res) {
+    Team.findOne({
+        _id: req.params.id, 
+        user: req.user._id
+    }),
+    (function (err, team) {
+        if (err || !team) return res.redirect('/teams');
+    res.render('teams/edit', {team});
+  });
+}
+
+function update(req, res) {
+    Team.findOneAndUpdate(
+        {_id: req.params.id, user: req.user._id},
+      req.body,
+      {new: true},
+      function(err, team) {
+        if (err || !team) return res.redirect('/teams');
+        res.redirect(`teams/${team._id}`);
+      }
+    );
+  }
+  
+function deleteOne(req, res) {
+    Team.findOneAndDelete(
+        {_id: req.params.id, user: req.user._id}, function(err) {
+
+          res.redirect('/teams');
+        }
+      );
+    }
 
 
 
