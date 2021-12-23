@@ -9,59 +9,72 @@
     <br>
     <br>
     
-    <% if (!nameSelected) { %>
-    <form id="add-team-nav" method="POST" action="/teams/create/">
-      <label>Team Name:</label>
-      <input name="name">
-      <button type="submit" class="btn btn-secondary">Finalize Team Name</button>
+    <form id="new-team-form" action="/teams" method="POST">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">Team Name</span>
+        </div>
+        <input type="text" name="name" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Pick 1</label>
+        </div>
+        <select name = "players" class="custom-select" id="inputGroupSelect01">
+          
+          <option selected>Select...</option>
+          <% players.forEach(function (p){ %>
+            <option name = "players" value= "<%=p._id%>" > <%= p.first_name %> <%= p.last_name %>  ---- <%=p.team.full_name %> </option>
+            <% }) %> 
+        </select>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Pick 2</label>
+        </div>
+        <select name = "players" class="custom-select" id="inputGroupSelect01">
+          
+          <option selected>Select...</option>
+          <% players.forEach(function (p){ %>
+            <option name = "players" value="<%=p._id%>"> <%= p.first_name %> <%= p.last_name %>  ---- <%=p.team.full_name %> </option>
+            <% }) %> 
+        </select>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Pick 3</label>
+        </div>
+        <select name = "players" class="custom-select" id="inputGroupSelect01">
+          
+          <option selected>Select...</option>
+          <% players.forEach(function (p){ %>
+            <option name = "players" value="<%=p._id%>"> <%= p.first_name %> <%= p.last_name %>  ---- <%=p.team.full_name %> </option>
+            <% }) %> 
+        </select>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Pick 4 </label>
+        </div>
+        <select  name = "players"class="custom-select" id="inputGroupSelect01">
+          
+          <option selected>Select...</option>
+          <% players.forEach(function (p){ %>
+            <option name = "players" value="<%=p._id%>"> <%= p.first_name %> <%= p.last_name %>  ---- <%=p.team.full_name %> </option>
+            <% }) %> 
+        </select>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Pick 5</label>
+        </div>
+        <select name = "players" class="custom-select" id="inputGroupSelect01">
+          
+          <option name = "players" selected>Select...</option>
+          <% players.forEach(function (p){ %>
+            <option value="<%=p._id%>"> <%= p.first_name %> <%= p.last_name %>  ---- <%=p.team.full_name %> </option>
+            <% }) %> 
+        </select>
+        
+      </div>
+      <input type="submit" value="Draft Team">
     </form>
-    <% } %>
-      <br>
-      <br>
-
-      <% if (nameSelected) { %>
-        <br>
-        <%= team.name %>
-        <br>
-        <br>
-
-      <label>Add a Player:</label>
-      <div class="dropdown show">
-        <a class="btn btn-primary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Select a Team
-        </a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <% nbaTeams.data.forEach(function(n) { %>
-            <a class="dropdown-item" href="/teams/new/<%= team.id %>/<%= n.id %>">
-              <%=n.full_name %>
-            </a>
-            <% }); %>
-        </div>
-      </div>
-      <% } %>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-      <% if (nbaTeamSelected) { %>
-      <div class="dropdown show">
-        <a class="btn btn-primary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Select a Player
-        </a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <% players.forEach(function(p) { %>
-            <a class="dropdown-item" href="/teams/new/<%= team.id %>/<%= p.team_id %>/<%= p.id%>">
-              <%=p.first_name %> <%=p.last_name %>
-            </a>
-            <% }); %>
-        </div>
-      </div>
-    <% } %>
-      <br>
 
 
 

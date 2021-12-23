@@ -1,4 +1,5 @@
 const Team = require('../models/team')
+const Player = require('../models/player')
 const User = require('../models/user')
 const fetch = require('node-fetch');
 const moment = require('moment');
@@ -14,39 +15,42 @@ module.exports = {
 
 
 async function index(req, res) {
-    const team = await Team.find({});
+    const teams = await Team.find({});
     res.render("teams/index", { title: "My Star-Studded Teams", teams });
-  }
-  
-  function show(req, res) {
-    Team.findById(req.params.id).populate('players').exec(function (err, movie) {
-     Players.find({_id: {$nin: team.player}}, function(err, players) {
-        res.render("teams/show", { team, players });
-      });
-    });
-  }
-  
-  function newTeam(req, res) {
-    res.render("teams/new", { title: "Draft a Team" });
-  }
-  
-  function create(req, res) {
+}
+
+function show(req, res) {
+    Team.findById(req.params.id).populate('players').exec(function (err, team) {
+        // Player.find({ _id: { $in: team.players } }, function (err, performers) {
+            res.render("teams/show", { team});
+        });
+    // });
+}
+
+function newTeam(req, res) {
+    Player.find({}, function (err, players) {
+        res.render("teams/new", { title: "Draft a Team", players });
+    })
+}
+
+function create(req, res) {
     // delete any empty properties from req.body
     for (let key in req.body) {
-      if (req.body[key] === "") delete req.body[key];
+        if (req.body[key] === "") delete req.body[key];
     }
+    console.log(req.body);
     const team = new Team(req.body);
     team.save(function (err) {
-      // one way to handle errors
-      if (err) {
-        console.log(err);
-        return res.redirect("/teams/new");
-      }
-      console.log(movie);
-      res.redirect(`/teams/${team._id}`);
+        // one way to handle errors
+        if (err) {
+            console.log(err);
+            return res.redirect("/teams/new");
+        }
+        console.log(team);
+        res.redirect(`/teams/${team._id}`);
     });
-  }
-  
+}
+
 
 
 

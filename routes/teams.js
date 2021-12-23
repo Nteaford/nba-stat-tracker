@@ -6,9 +6,9 @@ const isLoggedIn = require('../config/auth')
 
 /* GET my team page. */
 router.get('/', isLoggedIn, teamsCtrl.index);
-router.post('/create', isLoggedIn, teamsCtrl.create);
+router.post('/', isLoggedIn, teamsCtrl.create);
 router.get('/new', isLoggedIn,teamsCtrl.new);
 
-router.get('/show/:team', isLoggedIn, teamsCtrl.show)
+router.get('/:id', isLoggedIn, teamsCtrl.show)
 
 module.exports = router;
