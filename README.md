@@ -34,7 +34,7 @@ Edit A Team Page
 - VS Code (code editor)
 
 ## Getting Started
-- You can link to the app [here.](https://nteaford.github.io/Checknickers/)
+- You can link to the app [here.](https://nicks-nba-stat-tracker.herokuapp.com/)
 - You can link to my trello board [here.](https://trello.com/invite/b/pk7EXPyy/843bf6a3d7c7b188bbfbcfe8f0c7fe24/ga-project-2-planning)
 
 - Black Team will begin -- click on a black token to view movement options (make sure you're not blocked by your own team!).
