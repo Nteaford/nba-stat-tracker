@@ -21,9 +21,9 @@ module.exports = {
 async function index(req, res) {
     let teamsDataArray = [];
     const teams = await Team.find({});
-     teams.forEach(async function (team) {
+    await Promise.all(teams.map(async function (team) {
         let teamArray = [];
-         team.players.forEach(async function (player) {
+         await Promise.all(team.players.map(async function (player) {
             let playerArray = [];
             await fetch(`${statsURL}&player_ids[]=${player}`)
                 .then(response => response.json())
@@ -39,20 +39,18 @@ async function index(req, res) {
                     })
                     let statSlice = playerStatisticsSorted.slice((playerStatisticsSorted.length - 3), playerStatisticsSorted.length);
                     playerArray = statSlice;
-                    console.log("pA", playerArray);
                     return playerArray;
 
                 });
 
             teamArray.push(playerArray);
-            console.log("tA", teamArray);
-        })
 
+        }))
         teamsDataArray.push(teamArray);
         console.log("tDA", teamsDataArray);
-        return teamsDataArray;
-    })
+    }))
     console.log("tDAvailable", teamsDataArray);
+    console.log(teamsDataArray[0])
     res.render("teams/index", { title: "My Teams", teamsDataArray, teams });
 }
 

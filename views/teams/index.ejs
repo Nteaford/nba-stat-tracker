@@ -9,24 +9,21 @@
     <br>
 
     <% if (teams) { %>
-      <% teams.forEach(function(t) { %>
+      <% teamsDataArray.forEach(function(t, idx) { %>
 
-        <h2>
-          <%= t.name %>
-        </h2>
-        <a href="/teams/<%= t._id %>" class="btn btn-info" role="button" >Details</a>
-        <% t.players.forEach(function(p) { %>
+        <a href="/teams/<%= t._id %>" class="btn btn-info" role="button" >
+          Details
+        </a>
+        <% t.forEach(function(p) { %>
           <table class="table table-striped">
           <thead>
             <tr>
-
               <th scope="col">Name</th>
               <th scope="col">Team</th>
               <th scope="col">Position</th>
               <th scope="col">Game Date</th>
-              <th scope="col">Opponent</th>
               <th scope="col">Points</th>
-              <th scope=rs"col">Assists</th>
+              <th scope="col">Assists</th>
               <th scope="col">Minutes</th>
               <th scope="col">Fouls</th>
             </tr>
@@ -34,42 +31,33 @@
           <tbody>
             <tr>
               <th scope="row">
-                <%= p.statArray[0].data.player.first_name%>
-                  <%= p.statArray[0].data.player.last_name %>
+                <%= p[2].player.first_name %>
+                <%= p[2].player.last_name %>
               </th>
               <td>
-                <%= p.statArray[0].data.team.full_name %>
+                <%= p[2].team.full_name %>
               </td>
               <td>
-                <%= p.statArray[0].data.player.position %>
+                <%= p[2].player.position %>
               </td>
               <td>
-                <%= new Date(p.statArray[0].data.game.date).toLocaleDateString() %>
-              </td>
-
-              <td>
-                <% if(p.statArray[0].data.game.visitor_team_id===p.statArray[0].data.team.id) { %>
-                  <%= teams.data[(p.statArray[0].data.game.home_team_id) - 1 ].full_name %>
-                    <% } else { %>
-                      <%= teams.data[(p.statArray[0].data.game.visitor_team_id) - 1 ].full_name %>
-                        <% } %>
+                <%= new Date(p[2].game.date).toLocaleDateString() %>
               </td>
 
               <td>
-                <%= p.statArray[0].data.pts %>
+                <%= p[2].pts %>
               </td>
               <td>
-                <%= p.statArray[0].data.ast %>
+                <%= p[2].ast %>
               </td>
               <td>
-                <%= p.statArray[0].data.min %>
+                <%= p.[2].min %>
               </td>
               <td>
-                <%= p.statArray[0].data.pf %>
+                <%= p[2].pf %>
               </td>
             </tr>
 
-            
             <% }) %>
 
           </tbody>

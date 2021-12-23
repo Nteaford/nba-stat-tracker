@@ -20,7 +20,7 @@
       <div class="d-flex">
         <a class="nav-link" href="/">Home</a>
         <% if (user) { %>
-            <a class="nav-link" href="/teams" <%- title === 'My Teams' ? 'class="active"' : '' %>> My Teams </a>
+            <a class="nav-link" href="/teams/" <%- title === 'My Teams' ? 'class="active"' : '' %>> My Teams </a>
             <a class="nav-link" href="/teams/new" <%- title === 'Build a Team ' ? 'class="active"' : '' %>> Build a  Team </a>
             <a href="/logout">LOG OUT</a>
         <% } else { %>
