@@ -15,16 +15,17 @@ module.exports = {
 
 
 async function index(req, res) {
-    const teams = await Team.find({});
-    res.render("teams/index", { title: "My Star-Studded Teams", teams });
+     Team.find({}).populate('players').exec(function(err,teams) {
+        res.render("teams/index", { title: "My Star-Studded Teams", teams });
+
+    });
 }
 
 function show(req, res) {
     Team.findById(req.params.id).populate('players').exec(function (err, team) {
-        // Player.find({ _id: { $in: team.players } }, function (err, performers) {
-            res.render("teams/show", { team});
+        console.log(team);
+            res.render("teams/show", {title: team.name, team});
         });
-    // });
 }
 
 function newTeam(req, res) {
@@ -40,6 +41,7 @@ function create(req, res) {
     }
     console.log(req.body);
     const team = new Team(req.body);
+    team.user = req.user._id;
     team.save(function (err) {
         // one way to handle errors
         if (err) {

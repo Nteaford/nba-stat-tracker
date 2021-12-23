@@ -10,40 +10,40 @@
 
     <% if (teams) { %>
       <% teams.forEach(function(t) { %>
-
+        <h2> <%= t.name %> </h2>
         <a href="/teams/<%= t._id %>" class="btn btn-info" role="button" >
-          Details
-        </a>
-        <% t.players.forEach(function(p) { %>
-          <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">Name</th>
-              <th scope="col">Team</th>
-              <th scope="col">Position</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">
-                <%= p.first_name %> 
-                <%= p.last_name %>
-              </th>
-              <td>
-                <%= p.team.full_name %>
-              </td>
-              <td>
-                <%= p.position %>
-              </td>
-            </tr>
-
-            <% }) %>
-
-          </tbody>
-          </table>
-
+        Details
+      </a>
+        <a href="/teams/<%= t._id %>" class="btn btn-info" role="button" >
+        Edit
+      </a>
+        <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Team</th>
+            <th scope="col">Position</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% t.players.forEach(function(p) { %>
+          <tr>
+            <th scope="row">
+              <%= p.first_name %> 
+              <%= p.last_name %>
+            </th>
+            <td>
+              <%= p.team.full_name %>
+            </td>
+            <td>
+              <%= p.position %>
+            </td>
+          </tr>
           <% }) %>
-
+        </tbody>
+      </table>
+      <% }) %>
+          
             <% } %>
 
               <form id="add-team-nav" method="GET" action="/teams/new">

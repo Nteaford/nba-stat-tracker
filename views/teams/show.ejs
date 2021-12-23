@@ -1,4 +1,4 @@
-<%- include('./partials/header') %>
+<%- include('../partials/header') %>
 
 <h3> <%= team.name %></h3>
 
@@ -16,7 +16,7 @@
         </tr>
     </thead>
     <tbody>
-        <% team.players.forEach(function(p) { 
+        <% team.players.forEach(function(p) { %>
     <tr>
       <th scope="row"> <%= p.first_name%> <%= p.last_name %>  </th>
       <td><%= p.position %></td>
@@ -33,4 +33,4 @@
 
 
 
-<%- include('./partials/footer') %>
+<%- include('../partials/footer') %>
