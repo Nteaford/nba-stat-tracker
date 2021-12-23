@@ -56,15 +56,12 @@ function create(req, res) {
     });
 }
 
-function edit(req, res) {
-    Team.findOne({
-        _id: req.params.id, 
-        user: req.user._id
-    }),
-    (function (err, team) {
-        if (err || !team) return res.redirect('/teams');
-    res.render('teams/edit', {team});
-  });
+async function edit(req, res) {
+    const players = await Player.find({});
+    Team.findById(req.params.id).populate('players').exec(function (err, team) {
+        console.log(team);
+            res.render("teams/edit", {title: team.name, team, players});
+        });
 }
 
 function update(req, res) {
@@ -74,11 +71,11 @@ function update(req, res) {
       {new: true},
       function(err, team) {
         if (err || !team) return res.redirect('/teams');
-        res.redirect(`teams/${team._id}`);
+        res.redirect(`/teams/${team._id}`);
       }
     );
   }
-  
+
 function deleteOne(req, res) {
     Team.findOneAndDelete(
         {_id: req.params.id, user: req.user._id}, function(err) {
@@ -86,6 +83,7 @@ function deleteOne(req, res) {
           res.redirect('/teams');
         }
       );
+
     }
 
 
