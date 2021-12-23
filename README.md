@@ -28,10 +28,9 @@ Edit A Team Page
 
 ## Technologies Used
 - MEN Stack (MongoDB, Express, Node.js)
+- ejs
 - Heroku
 - balldontlie API
-- Chrome Browser (troubleshooting, rendering code changes )
-- VS Code (code editor)
 
 ## Getting Started
 - You can link to the app [here.](https://nicks-nba-stat-tracker.herokuapp.com/)
