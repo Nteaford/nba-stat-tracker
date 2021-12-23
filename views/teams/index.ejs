@@ -2,59 +2,38 @@
 
   <body>
     <h1>
-      <%= title %>
+      My Teams
     </h1>
     <br>
     <br>
     <br>
 
     <% if (teams) { %>
-      <% teamsDataArray.forEach(function(t, idx) { %>
+      <% teams.forEach(function(t) { %>
 
         <a href="/teams/<%= t._id %>" class="btn btn-info" role="button" >
           Details
         </a>
-        <% t.forEach(function(p) { %>
+        <% t.players.forEach(function(p) { %>
           <table class="table table-striped">
           <thead>
             <tr>
               <th scope="col">Name</th>
               <th scope="col">Team</th>
               <th scope="col">Position</th>
-              <th scope="col">Game Date</th>
-              <th scope="col">Points</th>
-              <th scope="col">Assists</th>
-              <th scope="col">Minutes</th>
-              <th scope="col">Fouls</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th scope="row">
-                <%= p[2].player.first_name %>
-                <%= p[2].player.last_name %>
+                <%= p.first_name %> 
+                <%= p.last_name %>
               </th>
               <td>
-                <%= p[2].team.full_name %>
+                <%= p.team.full_name %>
               </td>
               <td>
-                <%= p[2].player.position %>
-              </td>
-              <td>
-                <%= new Date(p[2].game.date).toLocaleDateString() %>
-              </td>
-
-              <td>
-                <%= p[2].pts %>
-              </td>
-              <td>
-                <%= p[2].ast %>
-              </td>
-              <td>
-                <%= p.[2].min %>
-              </td>
-              <td>
-                <%= p[2].pf %>
+                <%= p.position %>
               </td>
             </tr>
 
@@ -68,7 +47,7 @@
             <% } %>
 
               <form id="add-team-nav" method="GET" action="/teams/new">
-                <button type="button" class="btn btn-secondary">Create New Team</button>
+                <button type="button" class="btn btn-secondary">Draft New Team</button>
               </form>
 
               <br>

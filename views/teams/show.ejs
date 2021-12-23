@@ -4,51 +4,33 @@
 
 
 
-<% team.player.forEach(function(p) {
 
-<h3><%= p.statArray[0].data.player.first_name %> <%= p.statArray[0].data.player.last_name %> </h3>
 <table class="table table-striped">
-  <thead>
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Position</th>
+            <th scope="col">Height</th>
+            <th scope="col">Weight</th>
+            <th scope="col">Nba Team</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% team.players.forEach(function(p) { 
     <tr>
-      <th scope="col">Game Date</th>
-      <th scope="col">Opponent</th>
-      <th scope="col">Minutes</th>
-      <th scope="col">Points</th>
-      <th scope="col">Assists</th>
-      <th scope="col">Blocks</th>
-      <th scope="col">Offensive Rebounds</th>
-      <th scope="col">Defensive Rebounds</th>
-      <th scope="col">Fouls</th>
-    </tr>
-  </thead>
-  <tbody>
-<% p.statArray.forEach(function(s) { %>
-
-    <tr>
-      <th scope="row"> <%= new Date(s.data.game.date).toLocaleDateString()%>  </th>
+      <th scope="row"> <%= p.first_name%> <%= p.last_name %>  </th>
+      <td><%= p.position %></td>
+      <td><%= p.height_feet%>ft <%=p.height_inches%>in </td>
+      <td><%= p.weight_pounds %>lbs</td>
+      <td><%= p.team.full_name %></td>
+      <td><%= p.position %></td>
       
-      <td>
-        <% if(s.data.game.visitor_team_id === s.data.player.team_id) { %>
-          <%= nbaTeams.data[(s.game.data.home_team_id) - 1 ].full_name %>
-        <% } else { %>
-          <%= nbaTeams.data[(s.data.game.visitor_team_id) - 1 ].full_name %>
-          <% } %>
-        </td>
-
-      <td><%= s.data.min %></td>
-      <td><%= s.data.pts %></td>
-      <td><%= s.data.ast %></td>
-      <td><%= s.data.blk %></td>
-      <td><%= s.data.oreb %></td>
-      <td><%= s.data.dreb %></td>
-      <td><%= s.data.pf %></td>
     </tr>
 <% }) %>
      
   </tbody>
 </table>
 
-<% }) %>
 
 
 <%- include('./partials/footer') %>

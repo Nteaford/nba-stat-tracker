@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const teamSchema = new Schema({
     name: String,
-    players: [{type: String}],
+    players: [{type: Schema.Types.ObjectId, ref: 'Player'}],
     user: {type: Schema.Types.ObjectId, ref: 'User'}
   });
 
