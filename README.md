@@ -37,12 +37,7 @@ Edit A Team Page
 - You can link to the app [here.](https://nicks-nba-stat-tracker.herokuapp.com/)
 - You can link to my trello board [here.](https://trello.com/invite/b/pk7EXPyy/843bf6a3d7c7b188bbfbcfe8f0c7fe24/ga-project-2-planning)
 
-- Black Team will begin -- click on a black token to view movement options (make sure you're not blocked by your own team!).
-- Yellow squares will indicate where you can move. If you don't love your movement options, go ahead and select another black token.
-- When you've made your movement decision, click on the desired yellow square to move your token to that square. Once you do, it will be the Red Team's turn. 
-- Red Team operates in the same way as the Black Team, outlined above.
-
----
+Upon visiting the home page, the user has a view of recent NBA games as well as top NBA players' stats from their most recent games. In order to interact with any additional functionality of the app, the user will need to log in using a Google Account. Upon logging in through the google modal, the user will be redirected back to the homepage. From there, they have additional options available to them in the navigation bar, where they can either view their custom teams, or create a new team.
 
 ## Next Steps/Icebox Items
 
