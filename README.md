@@ -29,6 +29,7 @@ Edit A Team Page
 ## Technologies Used
 - MEN Stack (MongoDB, Express, Node.js)
 - ejs
+- Bootstrap
 - Heroku
 - balldontlie API
 

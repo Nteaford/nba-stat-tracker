@@ -304,62 +304,62 @@ function deleteOne(req, res) {
 //     return nbaTeams;
 // }
 
-// // async function playerNBATeamMatcher2(nbaTeamId) {
-// //     let gameIdArray = [];
-// //     let endProduct = [];
-// //     let statsData = [];
-// //     const nbaTeams = await onLoadNBATeams();
-// //     const response = await fetch(`${gamesURL}&team_ids[]=${nbaTeamId}`)
-// //         .then(response => response.json())
-// //         .then(function (gamesData) {
-// //             gamesData.data.forEach(function (game) {
-// //                 game.date = new Date(game.date);
-// //             })
-// //             return gamesData;
-// //         })
-// //         .then(function (gamesDataUpdated) {
-// //             let gamesDataSorted = gamesDataUpdated.data.sort(function (gamesDatumA, gamesDatumB) {
-// //                 return (gamesDatumA.date - gamesDatumB.date);
-// //             })
-// //             let gameSlice = gamesDataSorted.slice((gamesDataSorted.length - 1), gamesDataSorted.length)
-// //             gameSlice.forEach(function (game) {
-// //                 gameIdArray.push(game.id);
-// //             });
-// //             console.log(gameIdArray);
-// //             return gameIdArray;
-// //         })
-// //         .then(async function () {
-// //             await fetch(`${statsURL}&game_id[]=${gameIdArray[0]}&page=1`)
-// //                 .then(response => response.json())
-// //                 .then(function (data) {
-// //                     statsData.push(...data.data);
-// //                 })
-// //             return statsData;
-// //         })
-// //         .then(async function () {
-// //             statsData.forEach(function (stat, idx) {
-// //                 console.log(stat);
-// //                 if (!stat.player) {
-// //                    statsData.splice(idx,1)
-// //                 };
-// //             });
-// //             return statsData;
-// //         })
-// //         .then(function (statsData) {
-// //             nbaTeams.data.forEach(function (nbaTeam) {
-// //                 nbaTeam.players = [];
-// //                 statsData.forEach(function (stat) {
-// //                     console.log(stat);
-// //                     if (nbaTeam.id === stat.player.team_id) {
-// //                         nbaTeam.players.push(stat.player);
-// //                     };
-// //                 });
-// //                 return nbaTeams;
-// //             })
-// //         })
-// //     console.log("nbaTeamsUpdated", nbaTeams);
-// //     return nbaTeams;
-// // }
+async function playerNBATeamMatcher2(nbaTeamId) {
+    let gameIdArray = [];
+    let endProduct = [];
+    let statsData = [];
+    const nbaTeams = await onLoadNBATeams();
+    const response = await fetch(`${gamesURL}&team_ids[]=${nbaTeamId}`)
+        .then(response => response.json())
+        .then(function (gamesData) {
+            gamesData.data.forEach(function (game) {
+                game.date = new Date(game.date);
+            })
+            return gamesData;
+        })
+        .then(function (gamesDataUpdated) {
+            let gamesDataSorted = gamesDataUpdated.data.sort(function (gamesDatumA, gamesDatumB) {
+                return (gamesDatumA.date - gamesDatumB.date);
+            })
+            let gameSlice = gamesDataSorted.slice((gamesDataSorted.length - 1), gamesDataSorted.length)
+            gameSlice.forEach(function (game) {
+                gameIdArray.push(game.id);
+            });
+            console.log(gameIdArray);
+            return gameIdArray;
+        })
+        .then(async function () {
+            await fetch(`${statsURL}&game_id[]=${gameIdArray[0]}&page=1`)
+                .then(response => response.json())
+                .then(function (data) {
+                    statsData.push(...data.data);
+                })
+            return statsData;
+        })
+        .then(async function () {
+            statsData.forEach(function (stat, idx) {
+                console.log(stat);
+                if (!stat.player) {
+                   statsData.splice(idx,1)
+                };
+            });
+            return statsData;
+        })
+        .then(function (statsData) {
+            nbaTeams.data.forEach(function (nbaTeam) {
+                nbaTeam.players = [];
+                statsData.forEach(function (stat) {
+                    console.log(stat);
+                    if (nbaTeam.id === stat.player.team_id) {
+                        nbaTeam.players.push(stat.player);
+                    };
+                });
+                return nbaTeams;
+            })
+        })
+    console.log("nbaTeamsUpdated", nbaTeams);
+    return nbaTeams;
+}
 
 
 
