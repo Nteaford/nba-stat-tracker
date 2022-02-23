@@ -3,7 +3,7 @@ const User = require('../models/user')
 const fetch = require('node-fetch');
 const moment = require('moment');
 
-const recentGamesURL = 'https://www.balldontlie.io/api/v1/games?seasons[]=2021';
+const recentGamesURL = 'https://www.balldontlie.io/api/v1/games?seasons[]=2021&per_page=100';
 const playersURL = 'https://www.balldontlie.io/api/v1/players';
 const statsURL = 'https://www.balldontlie.io/api/v1/stats?seasons[]=2021';
 const teamsURL = 'https://www.balldontlie.io/api/v1/teams?seasons[]=2021';
@@ -48,21 +48,30 @@ async function onLoadGames(req, res) {
     let finalProduct;
     const response = await fetch(`${recentGamesURL}`)
         .then(response => response.json())
-        .then(function (gamesData) {
-            gamesData.data.forEach(function (game) {
-                game.date = new Date(game.date);
-            })
-            return gamesData;
+        .then(async function (gamesData) {
+            if (gamesData.meta.current_page !== gamesData.meta.total_pages) {
+                gamesData = await fetch(`${recentGamesURL}&page=${gamesData.meta.total_pages}`).then(response => response.json());
+                console.log(gamesData);
+                gameDataMassage(gamesData);
+            } else {
+                gameDataMassage(gamesData);
+            }
         })
-        .then(function (gamesDataUpdated) {
-            let gamesDataSorted = gamesDataUpdated.data.sort(function (gamesDatumA, gamesDatumB) {
-                return (gamesDatumA.date - gamesDatumB.date);
-            })
-            let gameSlice = gamesDataSorted.slice((gamesDataSorted.length - 5), gamesDataSorted.length)
-            finalProduct = gameSlice;
-        });
     return finalProduct;
+    
+    function gameDataMassage(gamesData) {
+        gamesData.data.forEach(function (game) {
+            game.date = new Date(game.date);
+        });
+        let gamesDataSorted = gamesData.data.sort(function (gamesDatumA, gamesDatumB) {
+            return (gamesDatumA.date - gamesDatumB.date);
+        });
+        let gameSlice = gamesDataSorted.slice((gamesDataSorted.length - 5), gamesDataSorted.length)
+        finalProduct = gameSlice;
+        return finalProduct;
+    };
 }
+
 
 async function onLoadPlayer(first, last) {
     let playerStats;
